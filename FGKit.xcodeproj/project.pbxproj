@@ -8,12 +8,78 @@
 
 /* Begin PBXBuildFile section */
 		3595F22122FA073000BA429F /* FGKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F21F22FA073000BA429F /* FGKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3595F22D22FA081E00BA429F /* Styled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F22C22FA081E00BA429F /* Styled.swift */; };
+		3595F23222FA084700BA429F /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F22E22FA084700BA429F /* UILabel+Extension.swift */; };
+		3595F23322FA084700BA429F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F22F22FA084700BA429F /* UIFont+Extension.swift */; };
+		3595F23422FA084700BA429F /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23022FA084700BA429F /* UIButton+Extension.swift */; };
+		3595F23522FA084700BA429F /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23122FA084700BA429F /* UserDefaults+Extension.swift */; };
+		3595F23722FA089900BA429F /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23622FA089900BA429F /* Security.swift */; };
+		3595F23922FA08CF00BA429F /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23822FA08CF00BA429F /* Layout.swift */; };
+		3595F25222FA098000BA429F /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23C22FA098000BA429F /* RNDecryptor.h */; };
+		3595F25322FA098000BA429F /* RNOpenSSLEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23D22FA098000BA429F /* RNOpenSSLEncryptor.h */; };
+		3595F25422FA098000BA429F /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23E22FA098000BA429F /* RNCryptor.m */; };
+		3595F25522FA098000BA429F /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23F22FA098000BA429F /* RNCryptor+Private.h */; };
+		3595F25622FA098000BA429F /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24022FA098000BA429F /* RNCryptorEngine.h */; };
+		3595F25822FA098000BA429F /* RNEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24222FA098000BA429F /* RNEncryptor.h */; };
+		3595F25922FA098000BA429F /* RNOpenSSLDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24322FA098000BA429F /* RNOpenSSLDecryptor.h */; };
+		3595F25A22FA098000BA429F /* RNOpenSSLCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24422FA098000BA429F /* RNOpenSSLCryptor.m */; };
+		3595F25B22FA098000BA429F /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24522FA098000BA429F /* RNCryptor.h */; };
+		3595F25C22FA098000BA429F /* RNOpenSSLEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24622FA098000BA429F /* RNOpenSSLEncryptor.m */; };
+		3595F25D22FA098000BA429F /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24722FA098000BA429F /* RNDecryptor.m */; };
+		3595F25E22FA098000BA429F /* RNOpenSSLDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24822FA098000BA429F /* RNOpenSSLDecryptor.m */; };
+		3595F25F22FA098000BA429F /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24922FA098000BA429F /* RNEncryptor.m */; };
+		3595F26022FA098000BA429F /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24A22FA098000BA429F /* RNCryptorEngine.m */; };
+		3595F26122FA098000BA429F /* RNOpenSSLCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24B22FA098000BA429F /* RNOpenSSLCryptor.h */; };
+		3595F26222FA098000BA429F /* LOOCryptString.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24D22FA098000BA429F /* LOOCryptString.h */; };
+		3595F26322FA098000BA429F /* DJailbreakDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24E22FA098000BA429F /* DJailbreakDetector.m */; };
+		3595F26422FA098000BA429F /* DJailbreakDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24F22FA098000BA429F /* DJailbreakDetector.h */; };
+		3595F26522FA098000BA429F /* LOOCryptString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F25022FA098000BA429F /* LOOCryptString.m */; };
+		3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */ = {isa = PBXBuildFile; fileRef = 3595F25122FA098000BA429F /* DJailbreakDetector.m-e */; };
+		3595F26922FA09CE00BA429F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26822FA09CE00BA429F /* UIColor+Extension.swift */; };
+		3595F26B22FA0A5800BA429F /* UIContol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */; };
+		3595F27022FA0A7700BA429F /* DateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26D22FA0A7700BA429F /* DateFormatTransform.swift */; };
+		3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26E22FA0A7700BA429F /* IntTransform.swift */; };
+		3595F27422FA0ADA00BA429F /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27322FA0ADA00BA429F /* Run.swift */; };
+		3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27522FA10BE00BA429F /* ClosureSleeve.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3595F21C22FA073000BA429F /* FGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3595F21F22FA073000BA429F /* FGKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FGKit.h; sourceTree = "<group>"; };
 		3595F22022FA073000BA429F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3595F22C22FA081E00BA429F /* Styled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styled.swift; sourceTree = "<group>"; };
+		3595F22E22FA084700BA429F /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		3595F22F22FA084700BA429F /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		3595F23022FA084700BA429F /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		3595F23122FA084700BA429F /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		3595F23622FA089900BA429F /* Security.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		3595F23822FA08CF00BA429F /* Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
+		3595F23C22FA098000BA429F /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		3595F23D22FA098000BA429F /* RNOpenSSLEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpenSSLEncryptor.h; sourceTree = "<group>"; };
+		3595F23E22FA098000BA429F /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		3595F23F22FA098000BA429F /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		3595F24022FA098000BA429F /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		3595F24222FA098000BA429F /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		3595F24322FA098000BA429F /* RNOpenSSLDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpenSSLDecryptor.h; sourceTree = "<group>"; };
+		3595F24422FA098000BA429F /* RNOpenSSLCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpenSSLCryptor.m; sourceTree = "<group>"; };
+		3595F24522FA098000BA429F /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		3595F24622FA098000BA429F /* RNOpenSSLEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpenSSLEncryptor.m; sourceTree = "<group>"; };
+		3595F24722FA098000BA429F /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		3595F24822FA098000BA429F /* RNOpenSSLDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNOpenSSLDecryptor.m; sourceTree = "<group>"; };
+		3595F24922FA098000BA429F /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		3595F24A22FA098000BA429F /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		3595F24B22FA098000BA429F /* RNOpenSSLCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNOpenSSLCryptor.h; sourceTree = "<group>"; };
+		3595F24D22FA098000BA429F /* LOOCryptString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOOCryptString.h; sourceTree = "<group>"; };
+		3595F24E22FA098000BA429F /* DJailbreakDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJailbreakDetector.m; sourceTree = "<group>"; };
+		3595F24F22FA098000BA429F /* DJailbreakDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJailbreakDetector.h; sourceTree = "<group>"; };
+		3595F25022FA098000BA429F /* LOOCryptString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOOCryptString.m; sourceTree = "<group>"; };
+		3595F25122FA098000BA429F /* DJailbreakDetector.m-e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "DJailbreakDetector.m-e"; sourceTree = "<group>"; };
+		3595F26822FA09CE00BA429F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIContol+Extension.swift"; sourceTree = "<group>"; };
+		3595F26D22FA0A7700BA429F /* DateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatTransform.swift; sourceTree = "<group>"; };
+		3595F26E22FA0A7700BA429F /* IntTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTransform.swift; sourceTree = "<group>"; };
+		3595F27322FA0ADA00BA429F /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		3595F27522FA10BE00BA429F /* ClosureSleeve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureSleeve.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +112,107 @@
 		3595F21E22FA073000BA429F /* FGKit */ = {
 			isa = PBXGroup;
 			children = (
+				3595F22922FA07E600BA429F /* util */,
+				3595F22A22FA07F100BA429F /* styled */,
+				3595F26722FA09C200BA429F /* extension */,
+				3595F26C22FA0A7700BA429F /* objectmapper */,
+				3595F22822FA07DD00BA429F /* libraries */,
 				3595F21F22FA073000BA429F /* FGKit.h */,
 				3595F22022FA073000BA429F /* Info.plist */,
 			);
 			path = FGKit;
+			sourceTree = "<group>";
+		};
+		3595F22822FA07DD00BA429F /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3595F23B22FA098000BA429F /* RNOpenSSLCryptor */,
+				3595F24C22FA098000BA429F /* DSJailBreakDetection */,
+			);
+			path = libraries;
+			sourceTree = "<group>";
+		};
+		3595F22922FA07E600BA429F /* util */ = {
+			isa = PBXGroup;
+			children = (
+				3595F27322FA0ADA00BA429F /* Run.swift */,
+				3595F23822FA08CF00BA429F /* Layout.swift */,
+				3595F23622FA089900BA429F /* Security.swift */,
+				3595F27522FA10BE00BA429F /* ClosureSleeve.swift */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		3595F22A22FA07F100BA429F /* styled */ = {
+			isa = PBXGroup;
+			children = (
+				3595F22C22FA081E00BA429F /* Styled.swift */,
+				3595F22B22FA07F800BA429F /* extension */,
+			);
+			path = styled;
+			sourceTree = "<group>";
+		};
+		3595F22B22FA07F800BA429F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				3595F22E22FA084700BA429F /* UILabel+Extension.swift */,
+				3595F23022FA084700BA429F /* UIButton+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		3595F23B22FA098000BA429F /* RNOpenSSLCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				3595F23C22FA098000BA429F /* RNDecryptor.h */,
+				3595F23D22FA098000BA429F /* RNOpenSSLEncryptor.h */,
+				3595F23E22FA098000BA429F /* RNCryptor.m */,
+				3595F23F22FA098000BA429F /* RNCryptor+Private.h */,
+				3595F24022FA098000BA429F /* RNCryptorEngine.h */,
+				3595F24222FA098000BA429F /* RNEncryptor.h */,
+				3595F24322FA098000BA429F /* RNOpenSSLDecryptor.h */,
+				3595F24422FA098000BA429F /* RNOpenSSLCryptor.m */,
+				3595F24522FA098000BA429F /* RNCryptor.h */,
+				3595F24622FA098000BA429F /* RNOpenSSLEncryptor.m */,
+				3595F24722FA098000BA429F /* RNDecryptor.m */,
+				3595F24822FA098000BA429F /* RNOpenSSLDecryptor.m */,
+				3595F24922FA098000BA429F /* RNEncryptor.m */,
+				3595F24A22FA098000BA429F /* RNCryptorEngine.m */,
+				3595F24B22FA098000BA429F /* RNOpenSSLCryptor.h */,
+			);
+			path = RNOpenSSLCryptor;
+			sourceTree = "<group>";
+		};
+		3595F24C22FA098000BA429F /* DSJailBreakDetection */ = {
+			isa = PBXGroup;
+			children = (
+				3595F24D22FA098000BA429F /* LOOCryptString.h */,
+				3595F24E22FA098000BA429F /* DJailbreakDetector.m */,
+				3595F24F22FA098000BA429F /* DJailbreakDetector.h */,
+				3595F25022FA098000BA429F /* LOOCryptString.m */,
+				3595F25122FA098000BA429F /* DJailbreakDetector.m-e */,
+			);
+			path = DSJailBreakDetection;
+			sourceTree = "<group>";
+		};
+		3595F26722FA09C200BA429F /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				3595F22F22FA084700BA429F /* UIFont+Extension.swift */,
+				3595F26822FA09CE00BA429F /* UIColor+Extension.swift */,
+				3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */,
+				3595F23122FA084700BA429F /* UserDefaults+Extension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		3595F26C22FA0A7700BA429F /* objectmapper */ = {
+			isa = PBXGroup;
+			children = (
+				3595F26E22FA0A7700BA429F /* IntTransform.swift */,
+				3595F26D22FA0A7700BA429F /* DateFormatTransform.swift */,
+			);
+			path = objectmapper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +222,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3595F26422FA098000BA429F /* DJailbreakDetector.h in Headers */,
 				3595F22122FA073000BA429F /* FGKit.h in Headers */,
+				3595F26122FA098000BA429F /* RNOpenSSLCryptor.h in Headers */,
+				3595F25922FA098000BA429F /* RNOpenSSLDecryptor.h in Headers */,
+				3595F25222FA098000BA429F /* RNDecryptor.h in Headers */,
+				3595F25522FA098000BA429F /* RNCryptor+Private.h in Headers */,
+				3595F25B22FA098000BA429F /* RNCryptor.h in Headers */,
+				3595F25822FA098000BA429F /* RNEncryptor.h in Headers */,
+				3595F26222FA098000BA429F /* LOOCryptString.h in Headers */,
+				3595F25622FA098000BA429F /* RNCryptorEngine.h in Headers */,
+				3595F25322FA098000BA429F /* RNOpenSSLEncryptor.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +268,7 @@
 				TargetAttributes = {
 					3595F21B22FA073000BA429F = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -120,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +305,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3595F25F22FA098000BA429F /* RNEncryptor.m in Sources */,
+				3595F23322FA084700BA429F /* UIFont+Extension.swift in Sources */,
+				3595F26322FA098000BA429F /* DJailbreakDetector.m in Sources */,
+				3595F27022FA0A7700BA429F /* DateFormatTransform.swift in Sources */,
+				3595F26B22FA0A5800BA429F /* UIContol+Extension.swift in Sources */,
+				3595F26922FA09CE00BA429F /* UIColor+Extension.swift in Sources */,
+				3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */,
+				3595F25E22FA098000BA429F /* RNOpenSSLDecryptor.m in Sources */,
+				3595F27422FA0ADA00BA429F /* Run.swift in Sources */,
+				3595F26022FA098000BA429F /* RNCryptorEngine.m in Sources */,
+				3595F25422FA098000BA429F /* RNCryptor.m in Sources */,
+				3595F23422FA084700BA429F /* UIButton+Extension.swift in Sources */,
+				3595F26522FA098000BA429F /* LOOCryptString.m in Sources */,
+				3595F23222FA084700BA429F /* UILabel+Extension.swift in Sources */,
+				3595F25D22FA098000BA429F /* RNDecryptor.m in Sources */,
+				3595F25A22FA098000BA429F /* RNOpenSSLCryptor.m in Sources */,
+				3595F23522FA084700BA429F /* UserDefaults+Extension.swift in Sources */,
+				3595F23922FA08CF00BA429F /* Layout.swift in Sources */,
+				3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */,
+				3595F22D22FA081E00BA429F /* Styled.swift in Sources */,
+				3595F25C22FA098000BA429F /* RNOpenSSLEncryptor.m in Sources */,
+				3595F23722FA089900BA429F /* Security.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +458,7 @@
 		3595F22522FA073000BA429F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -269,6 +467,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FGKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,6 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.weekg.FGKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +485,7 @@
 		3595F22622FA073000BA429F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -293,6 +494,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FGKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

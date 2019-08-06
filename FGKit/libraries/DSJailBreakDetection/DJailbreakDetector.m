@@ -1,0 +1,151 @@
+//
+//  DJailbreakDetector.m
+//  DJailbreakDetector
+//
+//  Created by Diego Sepúlveda on 8/9/16.
+//  Copyright © 2016 ionix. All rights reserved.
+//
+//
+//  Based in FGJailbreakDetector, DTTJailbreakDetection, JailbrokenDetector, LOOCryptString
+//
+
+#import "DJailbreakDetector.h"
+#import "LOOCryptString.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <dlfcn.h>
+
+#include <unistd.h>
+#include <sys/sysctl.h>
+
+@implementation DJailbreakDetector
+
++ (BOOL)hasJailbroken
+{
+#if TARGET_IPHONE_SIMULATOR
+    return NO;
+#else
+    return [self hasEvidenceOfSymbolicLinking] ||
+    [self hasSandboxIntegrityBeenCompromised] ||
+    [self hasJailbreakFiles];
+#endif
+}
+
+//secret for encrypted file
++(NSString*)getVal
+{
+    return LOO_CRYPT_STR_N("6319c9f4806391444636675f869882621c02ad9605f4ca6c4696a9c34f26c78e", 64);//getVal
+}
+
+//digest from encrypted file
++(NSString*)getDig
+{
+    return LOO_CRYPT_STR_N("a5be19532c56e3dbd8da86660be3cc208308fb531d331be62c6c129c6fb081a7", 64);//getDig
+}
+
++ (BOOL)hasJailbreakFiles
+{
+    NSArray *DJailbreakFilesPaths = @[LOO_CRYPT_STR_N("/Applications/Cydia.app", 23),
+                                      LOO_CRYPT_STR_N("/Applications/tsProtector.app", 29),
+                                      LOO_CRYPT_STR_N("/Applications/tsProtector8.app", 30),
+                                      LOO_CRYPT_STR_N("/Library/MobileSubstrate/MobileSubstrate.dylib", 46),
+                                      LOO_CRYPT_STR_N("/bin/bash", 9),
+                                      LOO_CRYPT_STR_N("/usr/sbin/sshd", 14),
+                                      LOO_CRYPT_STR_N("/etc/apt", 8),
+                                      LOO_CRYPT_STR_N("/usr/bin/ssh", 12),
+                                      LOO_CRYPT_STR_N("/private/var/lib/apt", 21)];
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+
+    for (NSString *checkFile in DJailbreakFilesPaths)
+    {
+        FILE *file = fopen([checkFile cStringUsingEncoding:NSUTF8StringEncoding], "r");
+        if (file) {
+            fclose(file);
+            return YES;
+        }
+
+        if ([[NSFileManager defaultManager] fileExistsAtPath:checkFile]) {
+            return YES;
+        }
+
+    }
+
+    // Check if the app can access outside of its sandbox
+    NSError *error = nil;
+    NSString *string = @".";
+    [string writeToFile:LOO_CRYPT_STR_N("/private/jailbreak.txt", 22) atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    if (!error) {
+        return YES;
+    } else {
+        [fileManager removeItemAtPath:LOO_CRYPT_STR_N("/private/jailbreak.txt", 22) error:nil];
+    }
+
+    // Check if the app can open a Cydia's URL scheme
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:LOO_CRYPT_STR_N("cydia://package/com.example.package", 35)]]) {
+        return YES;
+    }
+
+    return NO;
+}
+
++ (BOOL)hasSandboxIntegrityBeenCompromised
+{
+    int result = fork();
+    
+    if (!result) exit(0);
+    
+    if (result >= 0) {
+        NSLog(@"Device Jailbroken due sandbox integrity being compromised.");
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
++ (BOOL)hasEvidenceOfSymbolicLinking
+{
+    struct stat s;
+
+    NSArray *DJailbreakSymbolicLinkPaths = @[LOO_CRYPT_STR_N("/Applications", 13),
+                             LOO_CRYPT_STR_N("/usr/libexec", 12),
+                             LOO_CRYPT_STR_N("/usr/share", 10),
+                             LOO_CRYPT_STR_N("/Library/Wallpaper", 18),
+                             LOO_CRYPT_STR_N("/usr/include", 12)];
+
+    for (NSString *checkPath in DJailbreakSymbolicLinkPaths)
+    {
+        // code in jailbreak book is wrong lstat returns 0 on success
+        if(lstat([checkPath cStringUsingEncoding:NSUTF8StringEncoding], &s) == 0) {
+            BOOL isSymbolicLink = (s.st_mode & S_IFLNK) == S_IFLNK;
+            if(isSymbolicLink) {
+                NSLog(@"Device Jailbroken due to evidence of symbolic linking at - %@", checkPath);
+                return YES;
+            }
+        }
+    }
+
+    return NO;
+}
+
+
++ (BOOL)amIBeingDebugged
+// Returns true if the current process is being debugged (either running under the debugger or has a debugger attached post facto).
+{
+    // Note: It is possible to obfuscate this with ADVobfuscator (like the calls to getpid and sysctl)
+
+    struct kinfo_proc infoProcess;
+    infoProcess.kp_proc.p_flag = 0;
+
+    int mib[] = {CTL_KERN, KERN_PROC, KERN_PROC_PID, getpid()};
+
+    size_t size = sizeof(infoProcess);
+    sysctl(mib, sizeof(mib) / sizeof(*mib), &infoProcess, &size, NULL, 0);
+
+    return (infoProcess.kp_proc.p_flag & P_TRACED) != 0;
+}
+
+@end
