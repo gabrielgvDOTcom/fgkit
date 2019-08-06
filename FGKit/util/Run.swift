@@ -12,11 +12,11 @@ public struct Run {
     /** Esta función formatea el *RUN* según parametros enviados.
 
     Forma de uso:
-
-        Run.clean("12.345.678-5") //123456785
-        Run.clean("12.345.678-5", ["."]) //12345678-5
-        Run.clean("12.345.678-5", ["-"]) //12.345.6785
-
+    ```
+    Run.clean("12.345.678-5") //123456785
+    Run.clean("12.345.678-5", ["."]) //12345678-5
+    Run.clean("12.345.678-5", ["-"]) //12.345.6785
+    ```
     - Parameters:
         - run: *RUN* a formatear.
         - params: (opcional) parametros a eliminar.
@@ -38,9 +38,9 @@ public struct Run {
     /** Esta función formatea el *RUN* agregando caracteres como puntos y guión.
 
     Forma de uso:
-
-        Run.format("123456785") //12.345.678-5
-
+    ```
+    Run.format("123456785") //12.345.678-5
+    ```
     - Parameter run: *RUN* a formatear.
     - Returns: devolvera el *RUN* formateado, con puntos y guión.*/
     public static func format(_ run: String) -> String {
@@ -61,10 +61,10 @@ public struct Run {
     /** Esta función valida el *RUN* ingresado haciendo la operación para comparar su digito verificador.
 
     Forma de uso:
-
-        Run.validate("123456785") //true
-        Run.validate("126783459") //false
-
+    ```
+    Run.validate("123456785") //true
+    Run.validate("126783459") //false
+    ```
     - Parameter run: *RUN* a validar.
     - Returns: devolvera true o false dependiendo su validación. */
     public static func validate(_ run: String) -> Bool {
