@@ -6,7 +6,7 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
-/*import ObjectMapper
+import ObjectMapper
 
 public class IntTransform: TransformType {
 
@@ -36,4 +36,4 @@ public class IntTransform: TransformType {
         }
         return String(object)
     }
-}*/
+}

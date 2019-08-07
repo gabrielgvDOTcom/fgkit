@@ -98,7 +98,7 @@ public struct Styled {
              - font: fuente del texto
              - bgColor: color del fondo
              - tintColor: color del texto
-             - corner: borde redondeado
+             - corner: borde redondeado en Float
              - image: (opcional) icono a mostrar
 
          - Returns: Un objeto tipo Styled.Button

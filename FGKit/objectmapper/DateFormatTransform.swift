@@ -6,7 +6,7 @@
 //  Copyright © 2019 IONIX. All rights reserved.
 //
 
-/*import Foundation
+import Foundation
 import ObjectMapper
 
 public class DateFormatTransform: TransformType {
@@ -35,4 +35,4 @@ public class DateFormatTransform: TransformType {
         }
         return nil
     }
-}*/
+}
