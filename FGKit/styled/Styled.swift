@@ -22,7 +22,14 @@ public struct Styled {
 
         /**
          Inicializa un nuevo elemento Text para uso en UILabel.
-
+         
+         Forma de uso:
+         ```
+         Styled.Text(
+            font: UIFont(.regular, size: 16),
+            color: UIColor.gray
+         )
+         ```
          - Parameters:
             - font: fuente del texto
             - color: color del texto
@@ -77,6 +84,16 @@ public struct Styled {
         /**
          Inicializa un nuevo elemento Button para uso en UIButton.
 
+         Forma de uso:
+         ```
+         Styled.Button(
+            font: UIFont(.regular, size: 16),
+            bgColor: UIColor.gray,
+            tintColor: UIColor.white,
+            corner: 5.0,
+            image: nil
+         )
+         ```
          - Parameters:
              - font: fuente del texto
              - bgColor: color del fondo
