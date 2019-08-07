@@ -23,8 +23,8 @@ public struct Run {
     - Returns: devolvera el *RUN* formateado.*/
     public static func clean(_ run: String, _ params: [String]? = []) -> String {
         var tmp = run
-        if let params = params {
-            for item in params {
+        if let prs = params, !prs.isEmpty {
+            for item in prs {
                 tmp = tmp.replacingOccurrences(of: item, with: "", options: .literal, range: nil)
             }
         } else {

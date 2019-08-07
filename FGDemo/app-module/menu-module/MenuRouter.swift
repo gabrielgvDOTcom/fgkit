@@ -28,4 +28,8 @@ class MenuRouter: MenuProtocolRouter {
         
         return view
     }
+
+    func pushToRunController() {
+        viewController?.navigationController?.pushViewController(RunRouter.build(), animated: true)
+    }
 }

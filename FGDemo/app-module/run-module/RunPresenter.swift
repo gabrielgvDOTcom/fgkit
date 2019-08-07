@@ -1,5 +1,5 @@
 //
-//  MenuPresenter.swift
+//  RunPresenter.swift
 //  base
 //
 //  Created by Gabriel Gárate Vivanco on 7/23/19.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class MenuPresenter: MenuProtocolPresenter {
+class RunPresenter: RunProtocolPresenter {
 
     //MARK: - VARs
-    var view: MenuProtocolView?
-    var router: MenuProtocolRouter?
-    var interactor: MenuProtocolInteractorInput?
+    var view: RunProtocolView?
+    var router: RunProtocolRouter?
+    var interactor: RunProtocolInteractorInput?
     
     //MARK: - Functions
     //MARK: Notify
@@ -31,11 +31,8 @@ class MenuPresenter: MenuProtocolPresenter {
     
     //MARK: Random
     //MARK: Transition
-    func pushToRunController() {
-        router?.pushToRunController()
-    }
 }
-extension MenuPresenter: MenuProtocolInteractorOutput {
+extension RunPresenter: RunProtocolInteractorOutput {
     
     //MARK: - Functions
     //MARK: Data

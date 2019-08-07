@@ -15,10 +15,9 @@ public extension UserDefaults {
         do {
             let data = try encoder.encode(codable)
             let jsonString = String(data: data, encoding: .utf8)!
-            //debugPrint("Saving \"\(key)\": \(jsonString)")
             self.set(jsonString, forKey: key)
         } catch {
-            //debugPrint("Saving \"\(key)\" failed: \(error)")
+            debugPrint("Saving \"\(key)\" failed: \(error)")
         }
     }
     func codable<T: Decodable>(_ codable: T.Type, forKey key: String) -> T? {
@@ -26,7 +25,6 @@ public extension UserDefaults {
         guard let jsonString = self.string(forKey: key) else { return nil }
         guard let data = jsonString.data(using: .utf8) else { return nil }
         let decoder = JSONDecoder()
-        //debugPrint("Loading \"\(key)\": \(jsonString)")
         return try? decoder.decode(codable, from: data)
     }
 }

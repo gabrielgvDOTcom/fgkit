@@ -1,5 +1,5 @@
 //
-//  MenuProtocol.swift
+//  RunProtocol.swift
 //  base
 //
 //  Created by Gabriel Gárate Vivanco on 7/23/19.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-protocol MenuProtocolView: class {
+protocol RunProtocolView: class {
     
     //MARK: - VARs
-    var presenter: MenuProtocolPresenter? { get set }
+    var presenter: RunProtocolPresenter? { get set }
     
     //MARK: - Functions
     //MARK: Data
@@ -23,9 +23,9 @@ protocol MenuProtocolView: class {
     func styled()
     func hideNavigation(hide: Bool)
 }
-protocol MenuProtocolInteractorInput: class {
+protocol RunProtocolInteractorInput: class {
     
-    var presenter: MenuProtocolInteractorOutput? { get set }
+    var presenter: RunProtocolInteractorOutput? { get set }
     
     //MARK: - Functions
     //MARK: Interactor
@@ -34,15 +34,15 @@ protocol MenuProtocolInteractorInput: class {
     
     //MARK: Random
 }
-protocol MenuProtocolInteractorOutput: class {
+protocol RunProtocolInteractorOutput: class {
     
 }
-protocol MenuProtocolPresenter: class {
+protocol RunProtocolPresenter: class {
     
     //MARK: - VARs
-    var view: MenuProtocolView? { get set }
-    var router: MenuProtocolRouter? { get set }
-    var interactor: MenuProtocolInteractorInput? { get set }
+    var view: RunProtocolView? { get set }
+    var router: RunProtocolRouter? { get set }
+    var interactor: RunProtocolInteractorInput? { get set }
     
     //MARK: - Functions
     //MARK: Notify
@@ -54,15 +54,12 @@ protocol MenuProtocolPresenter: class {
     
     //MARK: Transitions
     //MARK: Random
-    func pushToRunController()
 }
-protocol MenuProtocolRouter: class {
+protocol RunProtocolRouter: class {
     
     var viewController: UIViewController? { get set }
-    
-    func pushToRunController()
 }
-protocol MenuProtocolFetchInput: class {
+protocol RunProtocolFetchInput: class {
     
     func get()
 }
