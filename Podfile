@@ -5,3 +5,7 @@ use_frameworks!
 target 'FGKit' do
 	pod 'ObjectMapper'
 end
+target 'FGDemo' do
+	pod 'ObjectMapper'
+	pod 'Alamofire'
+end
