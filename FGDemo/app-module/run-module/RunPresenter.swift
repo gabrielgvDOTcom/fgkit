@@ -36,4 +36,7 @@ extension RunPresenter: RunProtocolInteractorOutput {
     
     //MARK: - Functions
     //MARK: Data
+    func scrollView(moveTo inset: UIEdgeInsets) {
+        view?.moveKeyboard(inset: inset)
+    }
 }

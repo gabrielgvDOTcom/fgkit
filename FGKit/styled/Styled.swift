@@ -57,11 +57,30 @@ public struct Styled {
         
         public init() {}
     }
+    /// Estructura UIView, manejo de estilos para elementos UIView.
     public struct View {
         
+        /// color del fondo
         public let bgColor: UIColor
+        /// borde redondeado
         public let cornerRadius: CGFloat
         
+        /**
+         Inicializa un nuevo elemento View para uso en UIView.
+
+         Forma de uso:
+         ```
+         Styled.View(
+            bgColor: UIColor.gray,
+            corner: 5.0
+         )
+         ```
+         - Parameters:
+             - bgColor: color del fondo
+             - corner: borde redondeado en Float
+         
+         - Returns: Un objeto tipo Styled.View
+         */
         public init(bgColor: UIColor, corner: CGFloat) {
             self.bgColor = bgColor
             self.cornerRadius = corner

@@ -22,6 +22,7 @@ protocol RunProtocolView: class {
 
     func styled()
     func hideNavigation(hide: Bool)
+    func moveKeyboard(inset: UIEdgeInsets)
 }
 protocol RunProtocolInteractorInput: class {
     
@@ -36,6 +37,7 @@ protocol RunProtocolInteractorInput: class {
 }
 protocol RunProtocolInteractorOutput: class {
     
+    func scrollView(moveTo inset: UIEdgeInsets)
 }
 protocol RunProtocolPresenter: class {
     

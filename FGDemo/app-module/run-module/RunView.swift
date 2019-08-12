@@ -14,6 +14,7 @@ class RunView: UIViewController {
     var presenter: RunProtocolPresenter?
     
     //MARK: - IBOutlet
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var firstContentView: UIView!
 
     //MARK: - Cycle Life
@@ -35,6 +36,9 @@ class RunView: UIViewController {
     }
 
     //MARK: - Action´s Buttons
+    @IBAction func hideKeyboard(_ sender: Any) {
+        self.view.endEditing(true)
+    }
 
     //MARK: - Functions
     //MARK: Random
@@ -62,5 +66,8 @@ extension RunView: RunProtocolView {
     }
     func hideNavigation(hide: Bool) {
         self.navigationController?.setNavigationBarHidden(hide, animated: true)
+    }
+    func moveKeyboard(inset: UIEdgeInsets) {
+        scrollView.contentInset = inset
     }
 }

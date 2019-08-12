@@ -7,7 +7,7 @@
 //
 
 /// Estructura *RUN*, funciones utiles para el trabajo con este dato.
-public struct Run {
+public struct FGRun {
 
     /** Esta función formatea el *RUN* según parametros enviados.
 
@@ -22,6 +22,7 @@ public struct Run {
         - params: (opcional) parametros a eliminar.
     - Returns: devolvera el *RUN* formateado.*/
     public static func clean(_ run: String, _ params: [String]? = []) -> String {
+
         var tmp = run
         if let prs = params, !prs.isEmpty {
             for item in prs {

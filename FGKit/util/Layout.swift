@@ -16,7 +16,7 @@ struct FillConstraints {
     var bottom: NSLayoutConstraint!
     var right: NSLayoutConstraint!
 }
-public struct Layout {
+public struct FGLayout {
 
     public static func fill(view: UIView, container: UIView? = nil) {
         let container: UIView! = container ?? UIApplication.shared.keyWindow?.subviews.last

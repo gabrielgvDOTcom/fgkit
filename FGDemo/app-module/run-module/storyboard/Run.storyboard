@@ -74,11 +74,15 @@
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="fFr-tZ-tIX" firstAttribute="leading" secondItem="UQB-9q-YOA" secondAttribute="leading" constant="20" id="8Gx-Mc-jFv"/>
                                             <constraint firstItem="fFr-tZ-tIX" firstAttribute="top" secondItem="UQB-9q-YOA" secondAttribute="topMargin" constant="20" id="FeO-Vf-3hY"/>
                                             <constraint firstAttribute="trailing" secondItem="fFr-tZ-tIX" secondAttribute="trailing" constant="20" id="lc9-b1-Iav"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pXf-vV-Fvg" appends="YES" id="QbP-mA-cW0"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -102,9 +106,15 @@
                     </view>
                     <connections>
                         <outlet property="firstContentView" destination="fFr-tZ-tIX" id="Prd-8y-upH"/>
+                        <outlet property="scrollView" destination="47r-tX-eeU" id="1k1-2C-SO8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knC-Tl-yXG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="pXf-vV-Fvg">
+                    <connections>
+                        <action selector="hideKeyboard:" destination="F5k-zF-YlW" id="R5g-ic-02X"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="173.59999999999999" y="137.18140929535232"/>
         </scene>

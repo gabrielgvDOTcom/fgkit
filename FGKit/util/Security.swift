@@ -9,7 +9,7 @@
 import CommonCrypto
 
 /// Estructura Seguridad, funciones utiles para el manejo de encriptación de archivos y strings.
-public struct Security {
+public struct FGSecurity {
     
     public static func digest(input: Data) -> Data {
         let digestLength = Int(CC_SHA256_DIGEST_LENGTH)

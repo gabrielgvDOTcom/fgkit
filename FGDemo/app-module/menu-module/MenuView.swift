@@ -33,9 +33,12 @@ class MenuView: UIViewController {
         super.viewWillDisappear(animated)
         presenter?.viewWillDisappear()
     }
-    
+
     //MARK: - Action´s Buttons
-    
+    @IBAction func hideKeyboard(_ sender: Any) {
+        self.view.endEditing(true)
+    }
+
     //MARK: - Functions
     //MARK: Random
     //MARK: System
