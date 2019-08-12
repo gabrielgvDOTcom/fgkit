@@ -30,21 +30,21 @@
 		3595F23522FA084700BA429F /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23122FA084700BA429F /* UserDefaults+Extension.swift */; };
 		3595F23722FA089900BA429F /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23622FA089900BA429F /* Security.swift */; };
 		3595F23922FA08CF00BA429F /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23822FA08CF00BA429F /* Layout.swift */; };
-		3595F25222FA098000BA429F /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23C22FA098000BA429F /* RNDecryptor.h */; };
-		3595F25322FA098000BA429F /* RNOpenSSLEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23D22FA098000BA429F /* RNOpenSSLEncryptor.h */; };
+		3595F25222FA098000BA429F /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23C22FA098000BA429F /* RNDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3595F25322FA098000BA429F /* RNOpenSSLEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23D22FA098000BA429F /* RNOpenSSLEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3595F25422FA098000BA429F /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F23E22FA098000BA429F /* RNCryptor.m */; };
-		3595F25522FA098000BA429F /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23F22FA098000BA429F /* RNCryptor+Private.h */; };
-		3595F25622FA098000BA429F /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24022FA098000BA429F /* RNCryptorEngine.h */; };
-		3595F25822FA098000BA429F /* RNEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24222FA098000BA429F /* RNEncryptor.h */; };
-		3595F25922FA098000BA429F /* RNOpenSSLDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24322FA098000BA429F /* RNOpenSSLDecryptor.h */; };
+		3595F25522FA098000BA429F /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F23F22FA098000BA429F /* RNCryptor+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3595F25622FA098000BA429F /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24022FA098000BA429F /* RNCryptorEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3595F25822FA098000BA429F /* RNEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24222FA098000BA429F /* RNEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3595F25922FA098000BA429F /* RNOpenSSLDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24322FA098000BA429F /* RNOpenSSLDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3595F25A22FA098000BA429F /* RNOpenSSLCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24422FA098000BA429F /* RNOpenSSLCryptor.m */; };
-		3595F25B22FA098000BA429F /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24522FA098000BA429F /* RNCryptor.h */; };
+		3595F25B22FA098000BA429F /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24522FA098000BA429F /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3595F25C22FA098000BA429F /* RNOpenSSLEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24622FA098000BA429F /* RNOpenSSLEncryptor.m */; };
 		3595F25D22FA098000BA429F /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24722FA098000BA429F /* RNDecryptor.m */; };
 		3595F25E22FA098000BA429F /* RNOpenSSLDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24822FA098000BA429F /* RNOpenSSLDecryptor.m */; };
 		3595F25F22FA098000BA429F /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24922FA098000BA429F /* RNEncryptor.m */; };
 		3595F26022FA098000BA429F /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24A22FA098000BA429F /* RNCryptorEngine.m */; };
-		3595F26122FA098000BA429F /* RNOpenSSLCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24B22FA098000BA429F /* RNOpenSSLCryptor.h */; };
+		3595F26122FA098000BA429F /* RNOpenSSLCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24B22FA098000BA429F /* RNOpenSSLCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3595F26222FA098000BA429F /* LOOCryptString.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24D22FA098000BA429F /* LOOCryptString.h */; };
 		3595F26322FA098000BA429F /* DJailbreakDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F24E22FA098000BA429F /* DJailbreakDetector.m */; };
 		3595F26422FA098000BA429F /* DJailbreakDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F24F22FA098000BA429F /* DJailbreakDetector.h */; };
@@ -445,17 +445,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3595F26422FA098000BA429F /* DJailbreakDetector.h in Headers */,
-				3595F22122FA073000BA429F /* FGKit.h in Headers */,
 				3595F26122FA098000BA429F /* RNOpenSSLCryptor.h in Headers */,
 				3595F25922FA098000BA429F /* RNOpenSSLDecryptor.h in Headers */,
 				3595F25222FA098000BA429F /* RNDecryptor.h in Headers */,
 				3595F25522FA098000BA429F /* RNCryptor+Private.h in Headers */,
 				3595F25B22FA098000BA429F /* RNCryptor.h in Headers */,
 				3595F25822FA098000BA429F /* RNEncryptor.h in Headers */,
-				3595F26222FA098000BA429F /* LOOCryptString.h in Headers */,
 				3595F25622FA098000BA429F /* RNCryptorEngine.h in Headers */,
 				3595F25322FA098000BA429F /* RNOpenSSLEncryptor.h in Headers */,
+				3595F26422FA098000BA429F /* DJailbreakDetector.h in Headers */,
+				3595F22122FA073000BA429F /* FGKit.h in Headers */,
+				3595F26222FA098000BA429F /* LOOCryptString.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
