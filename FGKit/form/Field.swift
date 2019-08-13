@@ -8,19 +8,17 @@
 
 import ObjectMapper
 
-struct FGFormField {
-    
+class FGFormField: Mappable {
+
     var field: AnyObject!
     var label: String!
     var rules: [FGFormType] = []
-}
-extension FGFormField: Mappable {
+    
+    required init?(map: Map) {}
+    func mapping(map: Map) {
 
-    init?(map: Map) {}
-    mutating func mapping(map: Map) {
-
-        self.field  <-  map["field"]
-        self.label  <-  map["label"]
-        self.rules  <-  map["rules"]
+        field  <-  map["field"]
+        label  <-  map["label"]
+        rules  <-  map["rules"]
     }
 }
