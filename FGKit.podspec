@@ -17,9 +17,8 @@ Pod::Spec.new do |spec|
 	spec.framework = "CoreData"
 
 	spec.dependency "Fabric"
-	spec.dependency "Alamofire"
 	spec.dependency "Crashlytics"
-	spec.dependency "ObjectMapper"
 	spec.dependency "MBProgressHUD"
 	spec.dependency "Kingfisher", "5.4.0"
+	spec.dependency "AlamofireObjectMapper"
 end

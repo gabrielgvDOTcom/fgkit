@@ -6,6 +6,5 @@ target 'FGKit' do
 	pod 'ObjectMapper'
 end
 target 'FGDemo' do
-	pod 'ObjectMapper'
-	pod 'Alamofire'
+	pod 'AlamofireObjectMapper'
 end
