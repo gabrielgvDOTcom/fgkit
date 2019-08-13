@@ -12,7 +12,7 @@ import Foundation
 /// Estructura de Estilos, funciones y estructuras utiles para el manejo de estilos en elementos.
 public struct Styled {
     
-    /// Estructura UILabel, manejo de estilos para elementos UILabel.
+    /// Estructura Text, manejo de estilos para elementos UILabel.
     public struct Text {
 
         /// fuente del texto
@@ -41,12 +41,34 @@ public struct Styled {
             self.color = color
         }
     }
+    /// Estructura Icon, manejo de estilos para elementos UIImageView.
     public struct Icon {
 
+        /// nombre de la imagen
         public let name: String
+        /// tinte de la imagen
         public let color: UIColor
+        /// tamaño de la imagen
         public let size: CGFloat
 
+        /**
+         Inicializa un nuevo elemento Icon para uso en UIImageView.
+         
+         Forma de uso:
+         ```
+         Styled.Icon(
+            name: "icon",
+            color: UIColor.gray,
+            size: 25.0
+         )
+         ```
+         - Parameters:
+             - name: color del fondo
+             - color: tinte de la imagen
+             - size: tamaño de la imagen
+         
+         - Returns: Un objeto tipo Styled.Icon
+         */
         public init(name: String, color: UIColor, size: CGFloat) {
             self.name = name
             self.color = color
@@ -57,7 +79,7 @@ public struct Styled {
         
         public init() {}
     }
-    /// Estructura UIView, manejo de estilos para elementos UIView.
+    /// Estructura View, manejo de estilos para elementos UIView.
     public struct View {
         
         /// color del fondo
@@ -86,7 +108,7 @@ public struct Styled {
             self.cornerRadius = corner
         }
     }
-    /// Estructura UIButton, manejo de estilos para elementos UIButton.
+    /// Estructura Button, manejo de estilos para elementos UIButton.
     public struct Button {
 
         /// fuente del texto
