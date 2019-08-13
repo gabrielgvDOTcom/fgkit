@@ -68,6 +68,7 @@
 		35E46F1422FB5DC20073224F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E46F1322FB5DC20073224F /* UIView+Extension.swift */; };
 		6433DE16BBA163FECE68CA5A /* Pods_FGDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299CA75A42C1B23817F4D92C /* Pods_FGDemo.framework */; };
 		C3FEBBB4E1F1224DCBBF0AEC /* Pods_FGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59538CFC409804A7125099A3 /* Pods_FGKit.framework */; };
+		E54B586C2302556300A50B7D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B586B2302556300A50B7D /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,7 @@
 		5D4B14BCAFD1540A44AB20CC /* Pods-FGDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGDemo.debug.xcconfig"; path = "Target Support Files/Pods-FGDemo/Pods-FGDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		8298090665210D0FD1191FD7 /* Pods-FGDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGDemo.release.xcconfig"; path = "Target Support Files/Pods-FGDemo/Pods-FGDemo.release.xcconfig"; sourceTree = "<group>"; };
 		87F5011ABD014E4949A24EA8 /* Pods-FGKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGKit.release.xcconfig"; path = "Target Support Files/Pods-FGKit/Pods-FGKit.release.xcconfig"; sourceTree = "<group>"; };
+		E54B586B2302556300A50B7D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +302,7 @@
 				3595F27322FA0ADA00BA429F /* Run.swift */,
 				3595F23822FA08CF00BA429F /* Layout.swift */,
 				3595F23622FA089900BA429F /* Security.swift */,
+				E54B586B2302556300A50B7D /* Message.swift */,
 				3595F27522FA10BE00BA429F /* ClosureSleeve.swift */,
 			);
 			path = util;
@@ -675,6 +678,7 @@
 				3595F23522FA084700BA429F /* UserDefaults+Extension.swift in Sources */,
 				3595F23922FA08CF00BA429F /* Layout.swift in Sources */,
 				3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */,
+				E54B586C2302556300A50B7D /* Message.swift in Sources */,
 				3595F22D22FA081E00BA429F /* Styled.swift in Sources */,
 				3595F25C22FA098000BA429F /* RNOpenSSLEncryptor.m in Sources */,
 				3595F23722FA089900BA429F /* Security.swift in Sources */,
@@ -878,7 +882,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.weekg.FGKit;
+				PRODUCT_BUNDLE_IDENTIFIER = cl.weekg.FGKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -906,7 +910,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.weekg.FGKit;
+				PRODUCT_BUNDLE_IDENTIFIER = cl.weekg.FGKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

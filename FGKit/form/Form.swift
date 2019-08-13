@@ -31,38 +31,38 @@ public struct FGForm {
             for rule in item.rules {
                 let field: String! = String(NSString(string: item.field.description))
                 guard (field.lowercased() != "<null>") else {
-                    completion(nil) //"El campo %@ es requerido. item.label"
+                    completion(FGMessage(description: "El campo \(item.label!) es requerido").error)
                     return
                 }
                 switch rule {
                 case .required:
                     guard field.length() >= 1 else {
-                        debugPrint("El campo %@ es requerido.", item.label)
+                        completion(FGMessage(description: "El campo \(item.label!) es requerido").error)
                         return
                     }
                 case .email:
                     guard field.email() else {
-                        debugPrint("El campo %@ no contiene un correo electrónico valido.", item.label)
+                        completion(FGMessage(description: "El campo \(item.label!) no contiene un correo electrónico valido").error)
                         return
                     }
                 case .dni:
                     guard FGRun.validate(field) else {
-                        debugPrint("El %@ ingresado no contiene un formato correcto.", item.label)
+                        completion(FGMessage(description: "El \(item.label!) ingresado no contiene un formato correcto").error)
                         return
                     }
                 case .equal_to(let value):
                     guard field.elementsEqual(value) else {
-                        debugPrint("Existen campos en el formulario que no coinciden.")
+                        completion(FGMessage(description: "Existen campos en el formulario que no coinciden").error)
                         return
                     }
                 case .max_length(let value):
                     guard field.length() <= value else {
-                        debugPrint("El campo %@ no puede ser mayor de %@ caracteres.", field, value)
+                        completion(FGMessage(description: "El campo \(item.label!) no puede ser mayor de \(value) caracteres.").error)
                         return
                     }
                 case .min_length(let value):
                     guard field.length() >= value else {
-                        debugPrint("El campo %@ no puede ser menor de %@ caracteres.", field, value)
+                        completion(FGMessage(description: "El campo \(item.label!) no puede ser menor de \(value) caracteres.").error)
                         return
                     }
                 }
