@@ -9,21 +9,24 @@
 import Foundation
 
 class MenuInteractor: MenuProtocolInteractorInput {
-    
+
     //MARK: - VARs
-    var fetch: MenuProtocolFetchInput?
-    var presenter: MenuProtocolInteractorOutput?
-    
+    private let fetch: MenuProtocolFetchInput
+    weak var presenter: MenuProtocolInteractorOutput?
+
     //MARK: - Init
     init(fetch: MenuProtocolFetchInput) {
         self.fetch = fetch
     }
-    
+    deinit {
+        debugPrint(String(describing: self), "deinit")
+    }
+
     //MARK: - Functions
     //MARK: Interactor
     func setModule() {}
     func unsetModule() {}
-    
+
     //MARK: Random
 }
 

@@ -24,9 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()*/
         
-        let formRouter = FormRouter()
+        let menuRouter = MenuRouter()
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = formRouter.viewController
+        window?.rootViewController = menuRouter.viewController
         window?.makeKeyAndVisible()
         
         return true

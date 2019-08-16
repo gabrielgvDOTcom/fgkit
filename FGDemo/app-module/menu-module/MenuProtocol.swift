@@ -8,59 +8,36 @@
 
 import UIKit
 
-protocol MenuProtocolView: class {
-    
-    //MARK: - VARs
-    var presenter: MenuProtocolPresenter? { get set }
-    
-    //MARK: - Functions
-    //MARK: Data
+protocol MenuProtocolView {
 
-    //MARK: Random
     func resume()
     func load(message: String?)
-
     func styled()
     func hideNavigation(hide: Bool)
+    func moveKeyboard(inset: UIEdgeInsets)
 }
 protocol MenuProtocolInteractorInput: class {
-    
-    var presenter: MenuProtocolInteractorOutput? { get set }
-    
-    //MARK: - Functions
-    //MARK: Interactor
+
     func setModule()
     func unsetModule()
-    
-    //MARK: Random
 }
 protocol MenuProtocolInteractorOutput: class {
     
+    func scrollView(moveTo inset: UIEdgeInsets)
 }
 protocol MenuProtocolPresenter: class {
-    
-    //MARK: - VARs
-    var view: MenuProtocolView? { get set }
-    var router: MenuProtocolRouter? { get set }
-    var interactor: MenuProtocolInteractorInput? { get set }
-    
-    //MARK: - Functions
-    //MARK: Notify
+
     func viewDidLoad()
     func viewWillAppear()
     func viewDidAppear()
     func viewWillDisappear()
     func viewDidDisappear()
     
-    //MARK: Transitions
-    //MARK: Random
     func pushToRunController()
 }
-protocol MenuProtocolRouter: class {
-    
-    var viewController: UIViewController? { get set }
-    
-    func pushToRunController()
+protocol MenuProtocolRouter {
+
+    var viewController: UIViewController { get }
 }
 protocol MenuProtocolFetchInput: class {
     

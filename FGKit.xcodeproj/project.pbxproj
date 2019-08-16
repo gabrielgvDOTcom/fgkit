@@ -15,6 +15,9 @@
 		351E2F4A2306F36D0012000E /* FormFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E2F422306F36D0012000E /* FormFetch.swift */; };
 		351E2F4B2306F36D0012000E /* FormStyled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E2F442306F36D0012000E /* FormStyled.swift */; };
 		351E2F4D2306F3820012000E /* Form.xib in Resources */ = {isa = PBXBuildFile; fileRef = 351E2F4C2306F3820012000E /* Form.xib */; };
+		351E2F582306F8B10012000E /* FGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3595F21C22FA073000BA429F /* FGKit.framework */; };
+		351E2F592306F8B10012000E /* FGKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3595F21C22FA073000BA429F /* FGKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		351E2F5F2306F9430012000E /* Menu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 351E2F5E2306F9430012000E /* Menu.xib */; };
 		353D12112301B8AA001C0A2D /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12102301B8AA001C0A2D /* Form.swift */; };
 		353D12132301C91B001C0A2D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12122301C91B001C0A2D /* String+Extension.swift */; };
 		353D12172301D074001C0A2D /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12162301D074001C0A2D /* Field.swift */; };
@@ -27,7 +30,6 @@
 		3580550922FB52D5001EE9CD /* MenuStyled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580550022FB52D5001EE9CD /* MenuStyled.swift */; };
 		3580550A22FB52D5001EE9CD /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580550122FB52D5001EE9CD /* MenuPresenter.swift */; };
 		3580550B22FB52D5001EE9CD /* MenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580550222FB52D5001EE9CD /* MenuProtocol.swift */; };
-		3580550C22FB52D5001EE9CD /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3580550422FB52D5001EE9CD /* Menu.storyboard */; };
 		3580550D22FB52D5001EE9CD /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580550522FB52D5001EE9CD /* MenuInteractor.swift */; };
 		3580550E22FB52D5001EE9CD /* MenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580550622FB52D5001EE9CD /* MenuRouter.swift */; };
 		3595F22122FA073000BA429F /* FGKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3595F21F22FA073000BA429F /* FGKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,7 +66,6 @@
 		3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26E22FA0A7700BA429F /* IntTransform.swift */; };
 		3595F27422FA0ADA00BA429F /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27322FA0ADA00BA429F /* Run.swift */; };
 		3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27522FA10BE00BA429F /* ClosureSleeve.swift */; };
-		35E46EFD22FB54C70073224F /* FGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3595F21C22FA073000BA429F /* FGKit.framework */; };
 		35E46F0B22FB59260073224F /* RunStyled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E46F0122FB59250073224F /* RunStyled.swift */; };
 		35E46F0C22FB59260073224F /* RunRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E46F0222FB59250073224F /* RunRouter.swift */; };
 		35E46F0D22FB59260073224F /* RunFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E46F0422FB59250073224F /* RunFetch.swift */; };
@@ -79,6 +80,30 @@
 		E54B586C2302556300A50B7D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B586B2302556300A50B7D /* Message.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		351E2F5A2306F8B10012000E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3595F21322FA073000BA429F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3595F21B22FA073000BA429F;
+			remoteInfo = FGKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		351E2F5C2306F8B10012000E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				351E2F592306F8B10012000E /* FGKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		299CA75A42C1B23817F4D92C /* Pods_FGDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		351E2F3B2306F36D0012000E /* FormRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormRouter.swift; sourceTree = "<group>"; };
@@ -89,6 +114,7 @@
 		351E2F422306F36D0012000E /* FormFetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFetch.swift; sourceTree = "<group>"; };
 		351E2F442306F36D0012000E /* FormStyled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormStyled.swift; sourceTree = "<group>"; };
 		351E2F4C2306F3820012000E /* Form.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Form.xib; sourceTree = "<group>"; };
+		351E2F5E2306F9430012000E /* Menu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Menu.xib; sourceTree = "<group>"; };
 		353D12102301B8AA001C0A2D /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		353D12122301C91B001C0A2D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		353D12162301D074001C0A2D /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
@@ -103,7 +129,6 @@
 		3580550022FB52D5001EE9CD /* MenuStyled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuStyled.swift; sourceTree = "<group>"; };
 		3580550122FB52D5001EE9CD /* MenuPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		3580550222FB52D5001EE9CD /* MenuProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuProtocol.swift; sourceTree = "<group>"; };
-		3580550422FB52D5001EE9CD /* Menu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		3580550522FB52D5001EE9CD /* MenuInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
 		3580550622FB52D5001EE9CD /* MenuRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuRouter.swift; sourceTree = "<group>"; };
 		3595F21C22FA073000BA429F /* FGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35E46EFD22FB54C70073224F /* FGKit.framework in Frameworks */,
+				351E2F582306F8B10012000E /* FGKit.framework in Frameworks */,
 				6433DE16BBA163FECE68CA5A /* Pods_FGDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +243,14 @@
 				351E2F442306F36D0012000E /* FormStyled.swift */,
 			);
 			path = extras;
+			sourceTree = "<group>";
+		};
+		351E2F5D2306F9430012000E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				351E2F5E2306F9430012000E /* Menu.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		353D120F2301B7EA001C0A2D /* form */ = {
@@ -278,7 +311,7 @@
 				3580550122FB52D5001EE9CD /* MenuPresenter.swift */,
 				3580550622FB52D5001EE9CD /* MenuRouter.swift */,
 				358054FD22FB52D5001EE9CD /* api */,
-				3580550322FB52D5001EE9CD /* storyboard */,
+				351E2F5D2306F9430012000E /* view */,
 				358054FF22FB52D5001EE9CD /* extras */,
 			);
 			path = "menu-module";
@@ -298,14 +331,6 @@
 				3580550022FB52D5001EE9CD /* MenuStyled.swift */,
 			);
 			path = extras;
-			sourceTree = "<group>";
-		};
-		3580550322FB52D5001EE9CD /* storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				3580550422FB52D5001EE9CD /* Menu.storyboard */,
-			);
-			path = storyboard;
 			sourceTree = "<group>";
 		};
 		3595F21222FA073000BA429F = {
@@ -530,10 +555,12 @@
 				358054E022FB5158001EE9CD /* Frameworks */,
 				358054E122FB5158001EE9CD /* Resources */,
 				5FC514F36048A03C7EFA71D3 /* [CP] Embed Pods Frameworks */,
+				351E2F5C2306F8B10012000E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				351E2F5B2306F8B10012000E /* PBXTargetDependency */,
 			);
 			name = FGDemo;
 			productName = FGDemo;
@@ -602,8 +629,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3580550C22FB52D5001EE9CD /* Menu.storyboard in Resources */,
 				351E2F4D2306F3820012000E /* Form.xib in Resources */,
+				351E2F5F2306F9430012000E /* Menu.xib in Resources */,
 				358054F322FB515A001EE9CD /* LaunchScreen.storyboard in Resources */,
 				35E46F1222FB59260073224F /* Run.storyboard in Resources */,
 				358054F022FB515A001EE9CD /* Assets.xcassets in Resources */,
@@ -751,6 +778,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		351E2F5B2306F8B10012000E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3595F21B22FA073000BA429F /* FGKit */;
+			targetProxy = 351E2F5A2306F8B10012000E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		358054F122FB515A001EE9CD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -767,6 +802,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D4B14BCAFD1540A44AB20CC /* Pods-FGDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4SLU66GWH;
@@ -788,6 +824,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8298090665210D0FD1191FD7 /* Pods-FGDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4SLU66GWH;
@@ -935,6 +972,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4SLU66GWH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -963,6 +1001,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = F4SLU66GWH;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

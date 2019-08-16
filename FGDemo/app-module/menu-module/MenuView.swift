@@ -14,7 +14,18 @@ class MenuView: UIViewController {
     var presenter: MenuProtocolPresenter?
     
     //MARK: - IBOutlet
-    @IBOutlet weak var versionLabel: UILabel!
+
+    //MARK: - Init
+    init() {
+        super.init(nibName: "Menu", bundle: nil)
+        loadViewIfNeeded()
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    deinit {
+        debugPrint(String(describing: self), "deinit")
+    }
 
     //MARK: - Cycle Life
     override func viewDidLoad() {
@@ -35,6 +46,9 @@ class MenuView: UIViewController {
     }
 
     //MARK: - Action´s Buttons
+    @IBAction func pushToFormController(_ sender: UIButton) {
+        presenter?.pushToRunController()
+    }
     @IBAction func hideKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }
@@ -48,19 +62,17 @@ class MenuView: UIViewController {
 }
 extension MenuView: MenuProtocolView {
     
-    //MARK: - Functions
-    //MARK: Data
-    
-    //MARK: Random
     func resume() {
         
     }
     func load(message: String?) {
         
     }
-
     func styled() {}
     func hideNavigation(hide: Bool) {
         self.navigationController?.setNavigationBarHidden(hide, animated: true)
+    }
+    func moveKeyboard(inset: UIEdgeInsets) {
+        //scrollView.contentInset = inset
     }
 }
