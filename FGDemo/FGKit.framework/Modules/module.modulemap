@@ -1,0 +1,11 @@
+framework module FGKit {
+  umbrella header "FGKit.h"
+
+  export *
+  module * { export * }
+}
+
+module FGKit.Swift {
+    header "FGKit-Swift.h"
+    requires objc
+}

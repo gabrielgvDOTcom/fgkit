@@ -17,11 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let splash = RunRouter.build()
+        /*let splash = RunRouter.build()
         let navigationController = UINavigationController()
         navigationController.viewControllers = [splash]
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()*/
+        
+        let formRouter = FormRouter()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = formRouter.viewController
         window?.makeKeyAndVisible()
         
         return true
