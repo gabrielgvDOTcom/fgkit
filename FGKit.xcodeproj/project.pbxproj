@@ -295,8 +295,8 @@
 		358054FA22FB5264001EE9CD /* app-module */ = {
 			isa = PBXGroup;
 			children = (
-				351E2F3A2306F36D0012000E /* form-module */,
 				358054FB22FB527A001EE9CD /* menu-module */,
+				351E2F3A2306F36D0012000E /* form-module */,
 				35E46EFF22FB58EA0073224F /* run-module */,
 			);
 			path = "app-module";
@@ -807,7 +807,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4SLU66GWH;
 				INFOPLIST_FILE = FGDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -829,7 +829,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4SLU66GWH;
 				INFOPLIST_FILE = FGDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

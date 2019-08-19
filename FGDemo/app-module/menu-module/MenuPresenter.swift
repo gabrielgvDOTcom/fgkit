@@ -26,16 +26,11 @@ class MenuPresenter: MenuProtocolPresenter {
     
     //MARK: - Functions
     //MARK: Notify
-    func viewDidLoad() {
-        view?.styled()
+    func viewWillAppear() {
+        print("viewWillAppear")
     }
-    func viewWillAppear() {}
-    func viewDidAppear() {
-        interactor.setModule()
-    }
-    func viewWillDisappear() {
-        interactor.unsetModule()
-    }
+    func viewDidAppear() {}
+    func viewWillDisappear() {}
     func viewDidDisappear() {}
     
     //MARK: Random

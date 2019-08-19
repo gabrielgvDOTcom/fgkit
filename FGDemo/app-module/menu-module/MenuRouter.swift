@@ -9,26 +9,26 @@
 import UIKit
 
 class MenuRouter: MenuProtocolRouter {
-    
-    deinit {
-        debugPrint(String(describing: self), "deinit")
-    }
 
     var viewController: UIViewController {
         let view = MenuView()
         let interactor = MenuInteractor(fetch: MenuFetch())
         let presenter = MenuPresenter(interactor: interactor, router: self)
-        let navigationController = UINavigationController(rootViewController: view)
+        //let navigationController = UINavigationController(rootViewController: view)
 
-        presenter.view = view
         view.presenter = presenter
+        presenter.view = view
         interactor.presenter = presenter
 
-        return navigationController
+        return view
     }
     
-    func pushToFormController(from view: UIViewController?, animated: Bool) {
-        let controller = FormRouter()
-        view?.navigationController?.pushViewController(controller.viewController, animated: animated)
+    init() {}
+    deinit {
+        debugPrint(String(describing: self), "deinit")
+    }
+    
+    func pushToFormController(from view: UIViewController?) {
+        view?.navigationController?.pushViewController(FormRouter().viewController, animated: true)
     }
 }

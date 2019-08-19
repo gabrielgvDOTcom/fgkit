@@ -14,20 +14,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        /*let splash = RunRouter.build()
-        let navigationController = UINavigationController()
-        navigationController.viewControllers = [splash]
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()*/
-        
-        let menuRouter = MenuRouter()
+        window?.rootViewController = UINavigationController(rootViewController: MenuRouter().viewController)
+        window?.makeKeyAndVisible()
+
+        /*let menuRouter = MenuRouter()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = menuRouter.viewController
-        window?.makeKeyAndVisible()
+        window?.makeKeyAndVisible()*/
         
         return true
     }

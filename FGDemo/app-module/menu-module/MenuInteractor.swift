@@ -24,9 +24,6 @@ class MenuInteractor: MenuProtocolInteractorInput {
 
     //MARK: - Functions
     //MARK: Interactor
-    func setModule() {}
-    func unsetModule() {}
-
     //MARK: Random
 }
 

@@ -13,8 +13,6 @@ class MenuView: UIViewController {
     //MARK: - VARs
     var presenter: MenuProtocolPresenter?
     
-    //MARK: - IBOutlet
-
     //MARK: - Init
     init() {
         super.init(nibName: "Menu", bundle: nil)
@@ -27,10 +25,11 @@ class MenuView: UIViewController {
         debugPrint(String(describing: self), "deinit")
     }
 
+    //MARK: - IBOutlet
+
     //MARK: - Cycle Life
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

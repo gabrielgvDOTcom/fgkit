@@ -20,17 +20,29 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERA-NG-LFm">
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8sq-9H-a3R">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niC-WR-cdI">
                     <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="0mh-W4-xjK"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="ERA-NG-LFm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="evs-fN-w6n"/>
-                <constraint firstItem="ERA-NG-LFm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nzK-dQ-ojo"/>
+                <constraint firstItem="niC-WR-cdI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="04w-8k-tRY"/>
+                <constraint firstItem="8sq-9H-a3R" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="8me-bM-SIK"/>
+                <constraint firstItem="8sq-9H-a3R" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="FAm-C1-1Du"/>
+                <constraint firstItem="niC-WR-cdI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Jhc-l4-kOc"/>
+                <constraint firstItem="8sq-9H-a3R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="TIs-zS-S2K"/>
+                <constraint firstItem="8sq-9H-a3R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="q2G-7e-vjD"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="130.40000000000001" y="133.5832083958021"/>
         </view>
     </objects>
 </document>

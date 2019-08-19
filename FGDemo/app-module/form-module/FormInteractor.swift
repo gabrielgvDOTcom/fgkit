@@ -24,9 +24,6 @@ class FormInteractor: FormProtocolInteractorInput {
 
     //MARK: - Functions
     //MARK: Interactor
-    func setModule() {}
-    func unsetModule() {}
-
     //MARK: Random
 }
 

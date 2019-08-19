@@ -18,8 +18,7 @@ protocol MenuProtocolView {
 }
 protocol MenuProtocolInteractorInput: class {
 
-    func setModule()
-    func unsetModule()
+    
 }
 protocol MenuProtocolInteractorOutput: class {
     
@@ -27,7 +26,6 @@ protocol MenuProtocolInteractorOutput: class {
 }
 protocol MenuProtocolPresenter: class {
 
-    func viewDidLoad()
     func viewWillAppear()
     func viewDidAppear()
     func viewWillDisappear()

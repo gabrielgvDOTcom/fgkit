@@ -26,9 +26,6 @@ class FormPresenter: FormProtocolPresenter {
     
     //MARK: - Functions
     //MARK: Notify
-    func viewDidLoad() {
-        view?.styled()
-    }
     func viewWillAppear() {}
     func viewDidAppear() {
         interactor.setModule()
@@ -40,6 +37,9 @@ class FormPresenter: FormProtocolPresenter {
     
     //MARK: Random
     //MARK: Transition
+    func popController() {
+        router.pop()
+    }
     func pushToRunController() {
         router.pushToRUNController(from: view, animated: true)
     }

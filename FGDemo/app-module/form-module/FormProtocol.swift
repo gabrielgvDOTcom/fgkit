@@ -10,16 +10,11 @@ import UIKit
 
 protocol FormProtocolView {
 
-    func resume()
-    func load(message: String?)
-    func styled()
     func hideNavigation(hide: Bool)
     func moveKeyboard(inset: UIEdgeInsets)
 }
 protocol FormProtocolInteractorInput: class {
 
-    func setModule()
-    func unsetModule()
 }
 protocol FormProtocolInteractorOutput: class {
     
@@ -27,12 +22,11 @@ protocol FormProtocolInteractorOutput: class {
 }
 protocol FormProtocolPresenter: class {
 
-    func viewDidLoad()
     func viewWillAppear()
     func viewDidAppear()
     func viewWillDisappear()
     func viewDidDisappear()
-    
+
     func pushToRunController()
 }
 protocol FormProtocolRouter {

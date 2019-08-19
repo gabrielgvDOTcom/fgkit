@@ -12,8 +12,6 @@ class FormView: UIViewController {
     
     //MARK: - VARs
     var presenter: FormProtocolPresenter?
-    
-    //MARK: - IBOutlet
 
     //MARK: - Init
     init() {
@@ -27,10 +25,11 @@ class FormView: UIViewController {
         debugPrint(String(describing: self), "deinit")
     }
 
+    //MARK: - IBOutlet
+
     //MARK: - Cycle Life
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.viewDidLoad()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -46,6 +45,9 @@ class FormView: UIViewController {
     }
 
     //MARK: - Action´s Buttons
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        
+    }
     @IBAction func hideKeyboard(_ sender: Any) {
         self.view.endEditing(true)
     }
@@ -58,14 +60,7 @@ class FormView: UIViewController {
     }
 }
 extension FormView: FormProtocolView {
-    
-    func resume() {
-        
-    }
-    func load(message: String?) {
-        
-    }
-    func styled() {}
+
     func hideNavigation(hide: Bool) {
         self.navigationController?.setNavigationBarHidden(hide, animated: true)
     }
