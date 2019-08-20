@@ -36,7 +36,7 @@ class MenuPresenter: MenuProtocolPresenter {
     //MARK: Random
     //MARK: Transition
     func pushToRunController() {
-        router.pushToFormController(from: view, animated: true)
+        router.pushToFormController(from: view)
     }
 }
 extension MenuPresenter: MenuProtocolInteractorOutput {

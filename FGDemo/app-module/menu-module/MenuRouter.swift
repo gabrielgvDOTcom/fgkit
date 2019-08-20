@@ -22,12 +22,12 @@ class MenuRouter: MenuProtocolRouter {
 
         return view
     }
-    
+
     init() {}
     deinit {
         debugPrint(String(describing: self), "deinit")
     }
-    
+
     func pushToFormController(from view: UIViewController?) {
         view?.navigationController?.pushViewController(FormRouter().viewController, animated: true)
     }

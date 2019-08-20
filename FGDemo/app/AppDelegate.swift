@@ -16,8 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        let navigation = UINavigationController()
+        navigation.setRootWireframe(HelloRouter())
+        
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = UINavigationController(rootViewController: MenuRouter().viewController)
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
 
         /*let menuRouter = MenuRouter()

@@ -27,12 +27,8 @@ class FormPresenter: FormProtocolPresenter {
     //MARK: - Functions
     //MARK: Notify
     func viewWillAppear() {}
-    func viewDidAppear() {
-        interactor.setModule()
-    }
-    func viewWillDisappear() {
-        interactor.unsetModule()
-    }
+    func viewDidAppear() {}
+    func viewWillDisappear() {}
     func viewDidDisappear() {}
     
     //MARK: Random

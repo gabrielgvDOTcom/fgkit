@@ -20,6 +20,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ey1-pk-OGH">
+                    <rect key="frame" x="32.5" y="269.5" width="310" height="128"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" priority="999" constant="310" id="cph-cW-gbf"/>
+                        <constraint firstAttribute="height" constant="128" id="wg1-sc-Dtw"/>
+                    </constraints>
+                </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERA-NG-LFm">
                     <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                     <state key="normal" title="Button"/>
@@ -30,7 +38,11 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="ey1-pk-OGH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Dft-8B-X7k"/>
+                <constraint firstItem="ey1-pk-OGH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Fbw-hh-Pk4"/>
+                <constraint firstItem="ey1-pk-OGH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Tv4-lw-fJJ"/>
                 <constraint firstItem="ERA-NG-LFm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="evs-fN-w6n"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ey1-pk-OGH" secondAttribute="trailing" constant="10" id="fBQ-Se-9iL"/>
                 <constraint firstItem="ERA-NG-LFm" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nzK-dQ-ojo"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
