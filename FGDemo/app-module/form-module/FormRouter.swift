@@ -1,38 +1,34 @@
 //
 //  FormRouter.swift
-//  base
+//  FGKit
 //
-//  Created by Gabriel Gárate Vivanco on 7/23/19.
-//  Copyright © 2019 weeKG. All rights reserved.
+//  Created by Gabriel Gárate Vivanco on 8/20/19.
+//  Copyright (c) 2019 weeKG. All rights reserved.
 //
 
 import UIKit
 
-class FormRouter: FormProtocolRouter {
-    
-    var viewController: UIViewController {
-        let view = FormView()
-        let interactor = FormInteractor(fetch: FormFetch())
-        let presenter = FormPresenter(interactor: interactor, router: self)
-        //let navigationController = UINavigationController(rootViewController: view)
+final class FormRouter: BaseRouter {
 
-        presenter.view = view
-        view.presenter = presenter
-        interactor.presenter = presenter
+    // MARK: - Private properties -
+    private let storyboard = UIStoryboard(name: "Form", bundle: nil)
 
-        return view
-    }
-
-    init() {}
-    deinit {
-        debugPrint(String(describing: self), "deinit")
-    }
-    
-    func pop() {
+    // MARK: - Module setup -
+    init() {
+        let moduleViewController = storyboard.instantiateViewController(ofType: FormViewController.self)
+        super.init(viewController: moduleViewController)
         
+        let interactor = FormInteractor()
+        let presenter = FormPresenter(view: moduleViewController, interactor: interactor, router: self)
+        moduleViewController.presenter = presenter
     }
-    func pushToRUNController(from view: UIViewController?, animated: Bool) {
-        //let controller = RunRouter.build()
-        //view?.navigationController?.pushViewController(controller, animated: animated)
+    deinit {
+        debugLog("\(String(describing: self)) deinit")
+    }
+}
+extension FormRouter: FormRouterInterface {
+
+    func presentAlert(title: String, message: String) {
+        presentErrorAlert(with: message)
     }
 }

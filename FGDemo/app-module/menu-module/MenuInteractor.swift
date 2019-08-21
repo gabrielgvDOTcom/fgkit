@@ -1,29 +1,16 @@
 //
 //  MenuInteractor.swift
-//  base
+//  FGKit
 //
-//  Created by Gabriel Gárate Vivanco on 7/23/19.
-//  Copyright © 2019 weeKG. All rights reserved.
+//  Created by Gabriel Gárate Vivanco on 8/20/19.
+//  Copyright (c) 2019 weeKG. All rights reserved.
 //
 
 import Foundation
 
-class MenuInteractor: MenuProtocolInteractorInput {
+final class MenuInteractor {
 
-    //MARK: - VARs
-    private let fetch: MenuProtocolFetchInput
-    weak var presenter: MenuProtocolInteractorOutput?
-
-    //MARK: - Init
-    init(fetch: MenuProtocolFetchInput) {
-        self.fetch = fetch
-    }
-    deinit {
-        debugPrint(String(describing: self), "deinit")
-    }
-
-    //MARK: - Functions
-    //MARK: Interactor
-    //MARK: Random
 }
+extension MenuInteractor: MenuInteractorInterface {
 
+}

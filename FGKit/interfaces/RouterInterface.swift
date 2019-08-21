@@ -8,7 +8,16 @@
 
 import UIKit
 
-public protocol RouterInterface: class {}
+open class BaseRouter {
+    
+    private unowned var _viewController: UIViewController
+    private var _temporaryStoredViewController: UIViewController?
+    
+    public init(viewController: UIViewController) {
+        _temporaryStoredViewController = viewController
+        _viewController = viewController
+    }
+}
 public extension BaseRouter {
     
     var viewController: UIViewController {
@@ -20,14 +29,35 @@ public extension BaseRouter {
     }
 }
 
-open class BaseRouter {
+public protocol RouterInterface: class {
+
+    func dismiss(animated: Bool)
+    func popFromNavigationController(animated: Bool)
+
+    func presentErrorAlert(with message: String?)
+    func presentAlert(with title: String?, message: String?)
+    func presentAlert(with title: String?, message: String?, actions: [UIAlertAction])
+}
+extension BaseRouter: RouterInterface {
+
+    public func dismiss(animated: Bool) {
+        navigationController?.dismiss(animated: true)
+    }
+    public func popFromNavigationController(animated: Bool) {
+        let _ = navigationController?.popViewController(animated: animated)
+    }
     
-    private unowned var _viewController: UIViewController
-    private var _temporaryStoredViewController: UIViewController?
-    
-    public init(viewController: UIViewController) {
-        _temporaryStoredViewController = viewController
-        _viewController = viewController
+    public func presentErrorAlert(with message: String?) {
+        let okAction = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+        presentAlert(with: "Ha ocurrido un error", message: message, actions: [okAction])
+    }
+    public func presentAlert(with title: String?, message: String?) {
+        let okAction = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
+        presentAlert(with: title, message: message, actions: [okAction])
+    }
+    public func presentAlert(with title: String?, message: String?, actions: [UIAlertAction]) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        actions.forEach { alert.addAction($0) }
+        navigationController?.present(alert, animated: true, completion: nil)
     }
 }
-extension BaseRouter: RouterInterface {}

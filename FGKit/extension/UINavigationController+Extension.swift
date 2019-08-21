@@ -11,10 +11,10 @@ import UIKit
 
 public extension UINavigationController {
     
-    func pushWireframe(_ wireframe: BaseRouter, animated: Bool = true) {
-        self.pushViewController(wireframe.viewController, animated: animated)
+    func pushRouter(_ router: BaseRouter, animated: Bool = true) {
+        self.pushViewController(router.viewController, animated: animated)
     }
-    func setRootWireframe(_ wireframe: BaseRouter, animated: Bool = true) {
-        self.setViewControllers([wireframe.viewController], animated: animated)
+    func setRootRouter(_ router: BaseRouter, animated: Bool = true) {
+        self.setViewControllers([router.viewController], animated: animated)
     }
 }

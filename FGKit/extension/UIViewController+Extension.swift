@@ -11,7 +11,7 @@ import UIKit
 
 public extension UIViewController {
     
-    func presentWireframe(_ wireframe: BaseRouter, animated: Bool = true, completion: (() -> Void)? = nil) {
-        present(wireframe.viewController, animated: animated, completion: completion)
+    func presentRouter(_ router: BaseRouter, animated: Bool = true, completion: (() -> Void)? = nil) {
+        present(router.viewController, animated: animated, completion: completion)
     }
 }
