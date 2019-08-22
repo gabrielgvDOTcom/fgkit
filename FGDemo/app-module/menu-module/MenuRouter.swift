@@ -1,34 +1,40 @@
 //
 //  MenuRouter.swift
-//  base
+//  FGKit
 //
-//  Created by Gabriel Gárate Vivanco on 7/23/19.
-//  Copyright © 2019 weeKG. All rights reserved.
+//  Created by Gabriel Gárate Vivanco on 8/20/19.
+//  Copyright (c) 2019 weeKG. All rights reserved.
 //
 
 import UIKit
 
-class MenuRouter: MenuProtocolRouter {
+final class MenuRouter: BaseRouter {
 
-    var viewController: UIViewController {
-        let view = MenuView()
-        let interactor = MenuInteractor(fetch: MenuFetch())
-        let presenter = MenuPresenter(interactor: interactor, router: self)
-        //let navigationController = UINavigationController(rootViewController: view)
+    // MARK: - Private properties -
+    private let storyboard = UIStoryboard(name: "Menu", bundle: nil)
 
-        view.presenter = presenter
-        presenter.view = view
-        interactor.presenter = presenter
-
-        return view
+    // MARK: - Module setup -
+    init() {
+        let moduleViewController = storyboard.instantiateViewController(ofType: MenuViewController.self)
+        super.init(viewController: moduleViewController)
+        
+        let interactor = MenuInteractor()
+        let presenter = MenuPresenter(view: moduleViewController, interactor: interactor, router: self)
+        moduleViewController.presenter = presenter
     }
-
-    init() {}
     deinit {
-        debugPrint(String(describing: self), "deinit")
+        debugLog("\(String(describing: self)) deinit")
+    }
+}
+extension MenuRouter: MenuRouterInterface {
+
+    func navigate(to option: MenuNavigationOption) {
+        switch option {
+        case .form: form()
+        }
     }
 
-    func pushToFormController(from view: UIViewController?) {
-        view?.navigationController?.pushViewController(FormRouter().viewController, animated: true)
+    private func form() {
+        navigationController?.pushRouter(FormRouter())
     }
 }

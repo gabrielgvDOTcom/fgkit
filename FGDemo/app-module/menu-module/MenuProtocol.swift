@@ -1,43 +1,26 @@
 //
-//  MenuProtocol.swift
-//  base
+//  MenuInterfaces.swift
+//  FGKit
 //
-//  Created by Gabriel Gárate Vivanco on 7/23/19.
-//  Copyright © 2019 weeKG. All rights reserved.
+//  Created by Gabriel Gárate Vivanco on 8/20/19.
+//  Copyright (c) 2019 weeKG. All rights reserved.
 //
 
 import UIKit
 
-protocol MenuProtocolView {
+enum MenuNavigationOption {
 
-    func resume()
-    func load(message: String?)
-    func styled()
-    func hideNavigation(hide: Bool)
-    func moveKeyboard(inset: UIEdgeInsets)
+    case form
 }
-protocol MenuProtocolInteractorInput: class {
+protocol MenuRouterInterface: RouterInterface {
 
-    
+    func navigate(to option: MenuNavigationOption)
 }
-protocol MenuProtocolInteractorOutput: class {
-    
-    func scrollView(moveTo inset: UIEdgeInsets)
+protocol MenuViewInterface: ViewInterface {
 }
-protocol MenuProtocolPresenter: class {
-
-    func viewWillAppear()
-    func viewDidAppear()
-    func viewWillDisappear()
-    func viewDidDisappear()
+protocol MenuPresenterInterface: PresenterInterface {
     
-    func pushToRunController()
+    func pushFormView()
 }
-protocol MenuProtocolRouter {
-
-    var viewController: UIViewController { get }
-}
-protocol MenuProtocolFetchInput: class {
-    
-    func get()
+protocol MenuInteractorInterface: InteractorInterface {
 }

@@ -1,5 +1,5 @@
 //
-//  HelloViewController.swift
+//  MenuViewController.swift
 //  FGKit
 //
 //  Created by Gabriel Gárate Vivanco on 8/20/19.
@@ -8,20 +8,20 @@
 
 import UIKit
 
-final class HelloViewController: UIViewController {
+final class MenuViewController: UIViewController {
 
     // MARK: - Public properties -
-    var presenter: HelloPresenterInterface!
+    var presenter: MenuPresenterInterface!
 
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    @IBAction func push(_ sender: UIButton) {
-        presenter.push()
+    @IBAction private func pushFormView(_ sender: Any) {
+        presenter.pushFormView()
     }
 }
-extension HelloViewController: HelloViewInterface {
+extension MenuViewController: MenuViewInterface {
     
 }

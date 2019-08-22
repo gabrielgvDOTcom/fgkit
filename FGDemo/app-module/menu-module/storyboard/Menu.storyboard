@@ -10,35 +10,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--More View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="XJ1-QA-Nrj">
             <objects>
-                <viewController storyboardIdentifier="MoreViewController" id="zIc-eW-6fX" customClass="MoreViewController" customModule="FGDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="zIc-eW-6fX" customClass="MenuViewController" customModule="FGDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z2g-4m-atm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFo-b3-TmW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-Zg-gF2">
+                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushFormView:" destination="zIc-eW-6fX" eventType="touchUpInside" id="H8j-ov-1Dr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="tFo-b3-TmW" firstAttribute="leading" secondItem="3pi-N7-nbV" secondAttribute="leading" id="1Nc-3s-MKV"/>
-                            <constraint firstItem="tFo-b3-TmW" firstAttribute="trailing" secondItem="3pi-N7-nbV" secondAttribute="trailing" id="HP8-zj-Nor"/>
-                            <constraint firstItem="tFo-b3-TmW" firstAttribute="bottom" secondItem="3pi-N7-nbV" secondAttribute="bottom" id="RGy-f5-dyi"/>
-                            <constraint firstItem="tFo-b3-TmW" firstAttribute="top" secondItem="Z2g-4m-atm" secondAttribute="top" id="nVk-I6-pMA"/>
+                            <constraint firstItem="sRn-Zg-gF2" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="BSj-EL-s20"/>
+                            <constraint firstItem="sRn-Zg-gF2" firstAttribute="centerY" secondItem="Z2g-4m-atm" secondAttribute="centerY" id="jtc-Vk-a6s"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                     </view>
-                    <connections>
-                        <outlet property="webView" destination="tFo-b3-TmW" id="ial-BN-tIZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rle-ol-2Ax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.80000000000001" y="302.6986506746627"/>
+            <point key="canvasLocation" x="306" y="303"/>
         </scene>
     </scenes>
 </document>

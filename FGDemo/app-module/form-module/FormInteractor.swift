@@ -1,29 +1,16 @@
 //
 //  FormInteractor.swift
-//  base
+//  FGKit
 //
-//  Created by Gabriel Gárate Vivanco on 7/23/19.
-//  Copyright © 2019 weeKG. All rights reserved.
+//  Created by Gabriel Gárate Vivanco on 8/20/19.
+//  Copyright (c) 2019 weeKG. All rights reserved.
 //
 
 import Foundation
 
-class FormInteractor: FormProtocolInteractorInput {
+final class FormInteractor {
 
-    //MARK: - VARs
-    private let fetch: FormProtocolFetchInput
-    weak var presenter: FormProtocolInteractorOutput?
-
-    //MARK: - Init
-    init(fetch: FormProtocolFetchInput) {
-        self.fetch = fetch
-    }
-    deinit {
-        debugPrint(String(describing: self), "deinit")
-    }
-
-    //MARK: - Functions
-    //MARK: Interactor
-    //MARK: Random
 }
+extension FormInteractor: FormInteractorInterface {
 
+}

@@ -1,39 +1,22 @@
 //
-//  FormProtocol.swift
-//  base
+//  FormInterfaces.swift
+//  FGKit
 //
-//  Created by Gabriel Gárate Vivanco on 7/23/19.
-//  Copyright © 2019 weeKG. All rights reserved.
+//  Created by Gabriel Gárate Vivanco on 8/20/19.
+//  Copyright (c) 2019 weeKG. All rights reserved.
 //
 
 import UIKit
 
-protocol FormProtocolView {
-
-    func hideNavigation(hide: Bool)
-    func moveKeyboard(inset: UIEdgeInsets)
-}
-protocol FormProtocolInteractorInput: class {
-
-}
-protocol FormProtocolInteractorOutput: class {
+protocol FormRouterInterface: RouterInterface {
     
-    func scrollView(moveTo inset: UIEdgeInsets)
+    func presentAlert(title: String, message: String)
 }
-protocol FormProtocolPresenter: class {
-
-    func viewWillAppear()
-    func viewDidAppear()
-    func viewWillDisappear()
-    func viewDidDisappear()
-
-    func pushToRunController()
+protocol FormViewInterface: ViewInterface {
 }
-protocol FormProtocolRouter {
-
-    var viewController: UIViewController { get }
-}
-protocol FormProtocolFetchInput: class {
+protocol FormPresenterInterface: PresenterInterface {
     
-    func get()
+    func validate(run: String)
+}
+protocol FormInteractorInterface: InteractorInterface {
 }

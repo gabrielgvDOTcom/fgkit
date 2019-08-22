@@ -45,12 +45,14 @@ public struct FGRun {
     - Parameter run: *RUN* a formatear.
     - Returns: devolvera el *RUN* formateado, con puntos y guión.*/
     public static func format(_ run: String) -> String {
+        guard !run.filter("01234567890.".contains).isEmpty else { return run }
+
         let formatter = NumberFormatter()
         formatter.currencySymbol = ""
         formatter.numberStyle = NumberFormatter.Style.currency
         formatter.formatterBehavior = NumberFormatter.Behavior.behavior10_4
         formatter.locale = Locale(identifier: "es_CL")
-        
+
         let separate = self.separate(run)
         guard !separate.0.isEmpty, !separate.1.isEmpty else { return run }
         return formatter
