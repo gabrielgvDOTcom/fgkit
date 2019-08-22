@@ -14,8 +14,7 @@ Pod::Spec.new do |spec|
 	spec.resources = 'FGKit/**/*.{xcassets,xib,storyboard}' 
 	spec.source_files = "FGKit/**/*.{h,swift}"
 
-	spec.framework = "CoreData"
-
+	spec.dependency "RealmSwift"
 	spec.dependency "Fabric"
 	spec.dependency "Crashlytics"
 	spec.dependency "MBProgressHUD"
