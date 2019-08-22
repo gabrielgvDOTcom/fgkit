@@ -97,6 +97,7 @@
 		6433DE16BBA163FECE68CA5A /* Pods_FGDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299CA75A42C1B23817F4D92C /* Pods_FGDemo.framework */; };
 		C3FEBBB4E1F1224DCBBF0AEC /* Pods_FGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59538CFC409804A7125099A3 /* Pods_FGKit.framework */; };
 		E54B586C2302556300A50B7D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B586B2302556300A50B7D /* Message.swift */; };
+		E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -221,6 +222,7 @@
 		8298090665210D0FD1191FD7 /* Pods-FGDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGDemo.release.xcconfig"; path = "Target Support Files/Pods-FGDemo/Pods-FGDemo.release.xcconfig"; sourceTree = "<group>"; };
 		87F5011ABD014E4949A24EA8 /* Pods-FGKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGKit.release.xcconfig"; path = "Target Support Files/Pods-FGKit/Pods-FGKit.release.xcconfig"; sourceTree = "<group>"; };
 		E54B586B2302556300A50B7D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -426,6 +428,7 @@
 				3595F23622FA089900BA429F /* Security.swift */,
 				E54B586B2302556300A50B7D /* Message.swift */,
 				3595F27522FA10BE00BA429F /* ClosureSleeve.swift */,
+				E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -863,6 +866,7 @@
 				35A9936E230C7263003A62B2 /* UIViewController+Extension.swift in Sources */,
 				3595F26B22FA0A5800BA429F /* UIContol+Extension.swift in Sources */,
 				3595F26922FA09CE00BA429F /* UIColor+Extension.swift in Sources */,
+				E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */,
 				35A9936C230C721F003A62B2 /* UIStoryboard+Extension.swift in Sources */,
 				35B03E2C230C766E0045C031 /* PresenterInterface.swift in Sources */,
 				3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */,
