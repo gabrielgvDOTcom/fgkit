@@ -13,6 +13,7 @@ Pod::Spec.new do |spec|
 	spec.source = { git: "https://github.com/gabrielgvDOTcom/fgkit", tag: spec.version, submodules: true }
 	spec.resources = 'FGKit/**/*.{xcassets,xib,storyboard}' 
 	spec.source_files = "FGKit/**/*.{h,swift}"
+	spec.static_framework = true
 
 	spec.dependency "RealmSwift"
 	spec.dependency "Fabric"
