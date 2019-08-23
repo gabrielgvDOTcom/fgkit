@@ -19,6 +19,7 @@ Pod::Spec.new do |spec|
 	spec.dependency "Fabric"
 	spec.dependency "Crashlytics"
 	spec.dependency "MBProgressHUD"
+	spec.dependency "ObjectMapper"
+	spec.dependency "Alamofire", "4.8.2"
 	spec.dependency "Kingfisher", "5.4.0"
-	spec.dependency "AlamofireObjectMapper"
 end
