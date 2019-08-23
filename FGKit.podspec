@@ -16,7 +16,6 @@ Pod::Spec.new do |spec|
 	spec.static_framework = true
 
 	spec.dependency "Fabric"
-	spec.dependency "RNCryptor"
 	spec.dependency "RealmSwift"
 	spec.dependency "Crashlytics"
 	spec.dependency "MBProgressHUD"
