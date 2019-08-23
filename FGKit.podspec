@@ -15,8 +15,9 @@ Pod::Spec.new do |spec|
 	spec.source_files = "FGKit/**/*.{h,swift}"
 	spec.static_framework = true
 
-	spec.dependency "RealmSwift"
 	spec.dependency "Fabric"
+	spec.dependency "RNCryptor"
+	spec.dependency "RealmSwift"
 	spec.dependency "Crashlytics"
 	spec.dependency "MBProgressHUD"
 	spec.dependency "ObjectMapper"
