@@ -16,7 +16,7 @@ final class FormViewController: UIViewController {
     // MARK: - IBOutlets -
     @IBOutlet private weak var runTextField: UITextField!
     @IBOutlet private weak var scrollView: UIScrollView!
-    
+
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ final class FormViewController: UIViewController {
         super.viewDidDisappear(animated)
         NotificationCenter.default.removeObserver(self)
     }
-    
+
     // MARK: - Buttons -
     @IBAction private func validRUN(_ sender: UIButton) {
         presenter.validate(run: runTextField.text!)
@@ -37,7 +37,7 @@ final class FormViewController: UIViewController {
     @IBAction private func hideKeyboard(_ sender: UITapGestureRecognizer) {
         view.endEditing(true)
     }
-    
+
     // MARK: - Random -
     @objc private func _keyboardWillShow(_ notification: Notification) {
         guard let value = notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue else { return }

@@ -37,6 +37,8 @@ public protocol RouterInterface: class {
     func presentErrorAlert(with message: String?)
     func presentAlert(with title: String?, message: String?)
     func presentAlert(with title: String?, message: String?, actions: [UIAlertAction])
+
+    func presentActionSheet(with title: String?, message: String?, actions: [UIAlertAction])
 }
 extension BaseRouter: RouterInterface {
 
@@ -46,7 +48,7 @@ extension BaseRouter: RouterInterface {
     public func popFromNavigationController(animated: Bool) {
         let _ = navigationController?.popViewController(animated: animated)
     }
-    
+
     public func presentErrorAlert(with message: String?) {
         let okAction = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
         presentAlert(with: "Ha ocurrido un error", message: message, actions: [okAction])
@@ -57,6 +59,12 @@ extension BaseRouter: RouterInterface {
     }
     public func presentAlert(with title: String?, message: String?, actions: [UIAlertAction]) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        actions.forEach { alert.addAction($0) }
+        navigationController?.present(alert, animated: true, completion: nil)
+    }
+
+    public func presentActionSheet(with title: String?, message: String?, actions: [UIAlertAction]) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         actions.forEach { alert.addAction($0) }
         navigationController?.present(alert, animated: true, completion: nil)
     }
