@@ -6,5 +6,13 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
-public protocol ViewInterface: class {}
-extension ViewInterface {}
+public protocol ViewInterface: class {
+
+    func showProgressHUD()
+    func hideProgressHUD()
+}
+extension ViewInterface {
+
+    func showProgressHUD() {}
+    func hideProgressHUD() {}
+}
