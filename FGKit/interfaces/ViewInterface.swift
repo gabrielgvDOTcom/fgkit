@@ -10,9 +10,11 @@ public protocol ViewInterface: class {
 
     func showProgressHUD()
     func hideProgressHUD()
+    func setViewTitle(_ title: String?)
 }
 extension ViewInterface {
 
     func showProgressHUD() {}
     func hideProgressHUD() {}
+    func setViewTitle(_ title: String?) {}
 }
