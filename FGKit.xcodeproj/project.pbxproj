@@ -10,6 +10,13 @@
 		353D12112301B8AA001C0A2D /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12102301B8AA001C0A2D /* Form.swift */; };
 		353D12132301C91B001C0A2D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12122301C91B001C0A2D /* String+Extension.swift */; };
 		353D12172301D074001C0A2D /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12162301D074001C0A2D /* Field.swift */; };
+		3575620323158ADE00DC882B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575620223158ADE00DC882B /* UIImage+Extension.swift */; };
+		3575620E2315962D00DC882B /* FGPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575620C2315962D00DC882B /* FGPageCell.swift */; };
+		3575620F2315962D00DC882B /* FGPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3575620D2315962D00DC882B /* FGPageCell.xib */; };
+		357562122315963B00DC882B /* FGHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357562102315963B00DC882B /* FGHeaderCell.swift */; };
+		357562132315963B00DC882B /* FGHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357562112315963B00DC882B /* FGHeaderCell.xib */; };
+		35756217231596F800DC882B /* FGPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35756216231596F800DC882B /* FGPage.storyboard */; };
+		35756219231598DB00DC882B /* FGPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35756218231598DB00DC882B /* FGPageView.swift */; };
 		358054E622FB5158001EE9CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358054E522FB5158001EE9CD /* AppDelegate.swift */; };
 		358054EE22FB5158001EE9CD /* FGDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 358054EC22FB5158001EE9CD /* FGDemo.xcdatamodeld */; };
 		358054F022FB515A001EE9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358054EF22FB515A001EE9CD /* Assets.xcassets */; };
@@ -91,6 +98,13 @@
 		353D12102301B8AA001C0A2D /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		353D12122301C91B001C0A2D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		353D12162301D074001C0A2D /* Field.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		3575620223158ADE00DC882B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		3575620C2315962D00DC882B /* FGPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageCell.swift; sourceTree = "<group>"; };
+		3575620D2315962D00DC882B /* FGPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGPageCell.xib; sourceTree = "<group>"; };
+		357562102315963B00DC882B /* FGHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGHeaderCell.swift; sourceTree = "<group>"; };
+		357562112315963B00DC882B /* FGHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGHeaderCell.xib; sourceTree = "<group>"; };
+		35756216231596F800DC882B /* FGPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FGPage.storyboard; sourceTree = "<group>"; };
+		35756218231598DB00DC882B /* FGPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageView.swift; sourceTree = "<group>"; };
 		358054E322FB5158001EE9CD /* FGDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358054E522FB5158001EE9CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		358054ED22FB5158001EE9CD /* FGDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FGDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -179,6 +193,67 @@
 			path = form;
 			sourceTree = "<group>";
 		};
+		3575620423158F6400DC882B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				357562052315904A00DC882B /* fgpage */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		357562052315904A00DC882B /* fgpage */ = {
+			isa = PBXGroup;
+			children = (
+				35756218231598DB00DC882B /* FGPageView.swift */,
+				35756215231596E900DC882B /* storyboard */,
+				35756214231596E400DC882B /* extra */,
+			);
+			path = fgpage;
+			sourceTree = "<group>";
+		};
+		357562092315960800DC882B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				3575620B2315961100DC882B /* header */,
+				3575620A2315960C00DC882B /* page */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		3575620A2315960C00DC882B /* page */ = {
+			isa = PBXGroup;
+			children = (
+				3575620C2315962D00DC882B /* FGPageCell.swift */,
+				3575620D2315962D00DC882B /* FGPageCell.xib */,
+			);
+			path = page;
+			sourceTree = "<group>";
+		};
+		3575620B2315961100DC882B /* header */ = {
+			isa = PBXGroup;
+			children = (
+				357562102315963B00DC882B /* FGHeaderCell.swift */,
+				357562112315963B00DC882B /* FGHeaderCell.xib */,
+			);
+			path = header;
+			sourceTree = "<group>";
+		};
+		35756214231596E400DC882B /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				357562092315960800DC882B /* cell */,
+			);
+			path = extra;
+			sourceTree = "<group>";
+		};
+		35756215231596E900DC882B /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				35756216231596F800DC882B /* FGPage.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
 		358054E422FB5158001EE9CD /* FGDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +316,7 @@
 		3595F21E22FA073000BA429F /* FGKit */ = {
 			isa = PBXGroup;
 			children = (
+				3575620423158F6400DC882B /* views */,
 				3595F22922FA07E600BA429F /* util */,
 				3595F22A22FA07F100BA429F /* styled */,
 				353D120F2301B7EA001C0A2D /* form */,
@@ -313,6 +389,7 @@
 				353D12122301C91B001C0A2D /* String+Extension.swift */,
 				3595F22F22FA084700BA429F /* UIFont+Extension.swift */,
 				3595F26822FA09CE00BA429F /* UIColor+Extension.swift */,
+				3575620223158ADE00DC882B /* UIImage+Extension.swift */,
 				3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */,
 				3595F23122FA084700BA429F /* UserDefaults+Extension.swift */,
 				35A9936B230C721F003A62B2 /* UIStoryboard+Extension.swift */,
@@ -515,6 +592,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */,
+				3575620F2315962D00DC882B /* FGPageCell.xib in Resources */,
+				35756217231596F800DC882B /* FGPage.storyboard in Resources */,
+				357562132315963B00DC882B /* FGHeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +691,7 @@
 				35B03E30230C76A80045C031 /* InteractorInterface.swift in Sources */,
 				3595F23322FA084700BA429F /* UIFont+Extension.swift in Sources */,
 				3595F26322FA098000BA429F /* DJailbreakDetector.m in Sources */,
+				357562122315963B00DC882B /* FGHeaderCell.swift in Sources */,
 				3595F27022FA0A7700BA429F /* DateFormatTransform.swift in Sources */,
 				35A9936E230C7263003A62B2 /* UIViewController+Extension.swift in Sources */,
 				3595F26B22FA0A5800BA429F /* UIContol+Extension.swift in Sources */,
@@ -627,7 +708,9 @@
 				353D12172301D074001C0A2D /* Field.swift in Sources */,
 				35A99370230C7291003A62B2 /* UINavigationController+Extension.swift in Sources */,
 				3595F26522FA098000BA429F /* LOOCryptString.m in Sources */,
+				3575620E2315962D00DC882B /* FGPageCell.swift in Sources */,
 				35B03E5C230DE84D0045C031 /* Log.swift in Sources */,
+				35756219231598DB00DC882B /* FGPageView.swift in Sources */,
 				3595F23222FA084700BA429F /* UILabel+Extension.swift in Sources */,
 				353D12112301B8AA001C0A2D /* Form.swift in Sources */,
 				3595F23522FA084700BA429F /* UserDefaults+Extension.swift in Sources */,
@@ -635,6 +718,7 @@
 				35B03E2E230C76890045C031 /* ViewInterface.swift in Sources */,
 				3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */,
 				E54B586C2302556300A50B7D /* Message.swift in Sources */,
+				3575620323158ADE00DC882B /* UIImage+Extension.swift in Sources */,
 				3595F22D22FA081E00BA429F /* Styled.swift in Sources */,
 				3595F23722FA089900BA429F /* Security.swift in Sources */,
 			);

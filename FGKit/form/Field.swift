@@ -16,9 +16,8 @@ class FGFormField: Mappable {
     
     required init?(map: Map) {}
     func mapping(map: Map) {
-
-        field  <-  map["field"]
-        label  <-  map["label"]
-        rules  <-  map["rules"]
+        field <- map["field"]
+        label <- map["label"]
+        rules <- map["rules"]
     }
 }

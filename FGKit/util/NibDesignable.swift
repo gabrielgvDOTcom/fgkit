@@ -17,7 +17,7 @@ public protocol NibDesignableProtocol: NSObjectProtocol {
 
 public extension NibDesignableProtocol {
     
-    public func loadNib() -> UIView {
+    func loadNib() -> UIView {
         let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: self.nibName(), bundle: bundle)
         return nib.instantiate(withOwner: self, options: nil)[0] as! UIView
@@ -34,12 +34,12 @@ public extension NibDesignableProtocol {
 
 public extension UIView {
     
-    @objc public var nibContainerView: UIView {
+    @objc var nibContainerView: UIView {
         get {
             return self
         }
     }
-    public func nibName() -> String {
+    func nibName() -> String {
         return type(of: self).description().components(separatedBy: ".").last!
     }
 }
