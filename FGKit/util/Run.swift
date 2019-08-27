@@ -76,7 +76,7 @@ public struct FGRun {
         return self.validateDV(run)
     }
 
-    //MARK: - Private Functions
+    // MARK: - Private Functions
     private static func validateDV(_ run: String) -> Bool {
         guard NSPredicate(format: "SELF MATCHES %@", "^(\\d{1,3}(\\.?\\d{3}){2})\\-?([\\dkK])$")
             .evaluate(with: run) else { return false }

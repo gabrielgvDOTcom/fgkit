@@ -1,5 +1,5 @@
 //
-//  FGHeaderCell.swift
+//  FGPageHeader.swift
 //  FGKit
 //
 //  Created by Gabriel Gárate Vivanco on 8/27/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FGHeaderCell: UICollectionViewCell {
+class FGPageHeader: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

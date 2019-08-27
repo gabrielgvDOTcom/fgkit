@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FGPageView" customModule="FGKit" customModuleProvider="target">
+            <connections>
+                <outlet property="headerCollection" destination="YOU-uf-ALT" id="IAl-VG-fa5"/>
+                <outlet property="pageCollection" destination="KQc-ev-MNW" id="UC2-Oj-wcy"/>
+                <outlet property="view" destination="rDy-fN-kcO" id="4Oy-Vz-DM0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rDy-fN-kcO">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YOU-uf-ALT">
+                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="9z9-Ag-I4l"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Htp-Fs-bUf">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KQc-ev-MNW">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hux-Q9-s3N">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bTi-GY-1s5" firstAttribute="trailing" secondItem="YOU-uf-ALT" secondAttribute="trailing" id="6ms-c1-nPt"/>
+                <constraint firstItem="YOU-uf-ALT" firstAttribute="leading" secondItem="bTi-GY-1s5" secondAttribute="leading" id="7po-KU-2nm"/>
+                <constraint firstItem="bTi-GY-1s5" firstAttribute="bottom" secondItem="KQc-ev-MNW" secondAttribute="bottom" id="BCp-Bb-5dv"/>
+                <constraint firstItem="YOU-uf-ALT" firstAttribute="top" secondItem="bTi-GY-1s5" secondAttribute="top" id="MFA-Xb-ab8"/>
+                <constraint firstItem="bTi-GY-1s5" firstAttribute="trailing" secondItem="KQc-ev-MNW" secondAttribute="trailing" id="Sxc-Ak-6ds"/>
+                <constraint firstItem="KQc-ev-MNW" firstAttribute="top" secondItem="YOU-uf-ALT" secondAttribute="bottom" id="TJY-LE-efi"/>
+                <constraint firstItem="KQc-ev-MNW" firstAttribute="leading" secondItem="bTi-GY-1s5" secondAttribute="leading" id="sPl-Pm-sBv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bTi-GY-1s5"/>
+        </view>
+    </objects>
+</document>

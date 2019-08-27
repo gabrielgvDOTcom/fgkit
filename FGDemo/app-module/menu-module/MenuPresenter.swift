@@ -36,4 +36,7 @@ extension MenuPresenter: MenuPresenterInterface {
     func pushFormView() {
         router.navigate(to: .form)
     }
+    func pushPageView() {
+        router.navigate(to: .page)
+    }
 }

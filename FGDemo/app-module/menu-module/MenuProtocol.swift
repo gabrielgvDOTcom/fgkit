@@ -11,6 +11,7 @@ import UIKit
 enum MenuNavigationOption {
 
     case form
+    case page
 }
 protocol MenuRouterInterface: RouterInterface {
 
@@ -21,6 +22,7 @@ protocol MenuViewInterface: ViewInterface {
 protocol MenuPresenterInterface: PresenterInterface {
     
     func pushFormView()
+    func pushPageView()
 }
 protocol MenuInteractorInterface: InteractorInterface {
 }

@@ -18,18 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-Zg-gF2">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="pushFormView:" destination="zIc-eW-6fX" eventType="touchUpInside" id="H8j-ov-1Dr"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="XQl-cw-nP5">
+                                <rect key="frame" x="169.5" y="300" width="36" height="67"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRn-Zg-gF2">
+                                        <rect key="frame" x="0.0" y="0.0" width="36" height="30"/>
+                                        <state key="normal" title="Form"/>
+                                        <connections>
+                                            <action selector="pushFormView:" destination="zIc-eW-6fX" eventType="touchUpInside" id="H8j-ov-1Dr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVT-uv-J2u">
+                                        <rect key="frame" x="0.0" y="37" width="36" height="30"/>
+                                        <state key="normal" title="Page"/>
+                                        <connections>
+                                            <action selector="pushPageView:" destination="zIc-eW-6fX" eventType="touchUpInside" id="Fxf-ck-8Lb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="sRn-Zg-gF2" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="BSj-EL-s20"/>
-                            <constraint firstItem="sRn-Zg-gF2" firstAttribute="centerY" secondItem="Z2g-4m-atm" secondAttribute="centerY" id="jtc-Vk-a6s"/>
+                            <constraint firstItem="XQl-cw-nP5" firstAttribute="centerX" secondItem="Z2g-4m-atm" secondAttribute="centerX" id="Ljp-XQ-r8m"/>
+                            <constraint firstItem="XQl-cw-nP5" firstAttribute="centerY" secondItem="Z2g-4m-atm" secondAttribute="centerY" id="Z4M-d9-Xh8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3pi-N7-nbV"/>
                     </view>

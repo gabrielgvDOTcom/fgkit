@@ -1,5 +1,5 @@
 //
-//  MenuViewController.swift
+//  PageViewController.swift
 //  FGKit
 //
 //  Created by Gabriel Gárate Vivanco on 8/20/19.
@@ -8,32 +8,34 @@
 
 import UIKit
 
-final class MenuViewController: UIViewController {
+final class PageView: UIViewController {
 
     // MARK: - Public properties -
-    var presenter: MenuPresenterInterface!
+    var presenter: PagePresenterInterface!
 
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.viewDidLoad()
     }
-    
-    @IBAction func pushPageView(_ sender: UIButton) {
-        presenter.pushPageView()
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
-    @IBAction private func pushFormView(_ sender: Any) {
-        presenter.pushFormView()
-    }
-    
+
     // MARK: - deinit -
     deinit {
         debugLog("\(String(describing: self)) deinit")
     }
 }
-extension MenuViewController: MenuViewInterface {
+extension PageView: PageViewInterface {
 
     func showProgressHUD() {}
     func hideProgressHUD() {}
     func setViewTitle(_ title: String?) {}
     func setViewError(_ title: String?, message: String?) {}
+
+    func deliver(page: UIView) {
+
+        FGLayout.fill(view: page, container: self.view)
+    }
 }

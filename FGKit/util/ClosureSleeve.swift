@@ -8,15 +8,15 @@
 
 public class ClosureSleeve {
 
-    //MARK: - VARs
+    // MARK: - VARs
     let closure: () -> ()
 
-    //MARK: - Init
+    // MARK: - Init
     init (_ closure: @escaping () -> ()) {
         self.closure = closure
     }
 
-    //MARK: - Functions
+    // MARK: - Functions
     @objc func invoke () {
         closure()
     }

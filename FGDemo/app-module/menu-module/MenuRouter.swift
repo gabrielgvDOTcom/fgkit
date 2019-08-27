@@ -31,10 +31,14 @@ extension MenuRouter: MenuRouterInterface {
     func navigate(to option: MenuNavigationOption) {
         switch option {
         case .form: form()
+        case .page: page()
         }
     }
 
     private func form() {
         navigationController?.pushRouter(FormRouter())
+    }
+    private func page() {
+        navigationController?.pushRouter(PageRouter())
     }
 }

@@ -77,5 +77,9 @@ extension FormViewController: UITextFieldDelegate {
     }
 }
 extension FormViewController: FormViewInterface {
-    
+
+    func showProgressHUD() {}
+    func hideProgressHUD() {}
+    func setViewTitle(_ title: String?) {}
+    func setViewError(_ title: String?, message: String?) {}
 }
