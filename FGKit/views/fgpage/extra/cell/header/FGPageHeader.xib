@@ -43,10 +43,6 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="FvK-t8-CPD"/>
             <size key="customSize" width="535" height="50"/>
-            <connections>
-                <outlet property="selectedView" destination="0Fx-ca-MDI" id="3eb-td-ae6"/>
-                <outlet property="titleLabel" destination="5OC-y5-3Sa" id="a1k-Qe-g7k"/>
-            </connections>
         </collectionViewCell>
     </objects>
 </document>

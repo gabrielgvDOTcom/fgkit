@@ -23,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YOU-uf-ALT">
-                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="9z9-Ag-I4l"/>
@@ -35,30 +35,39 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                     <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fMK-xy-4tY"/>
+                        <outlet property="delegate" destination="-1" id="KMJ-vZ-2c1"/>
+                    </connections>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="KQc-ev-MNW">
-                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
-                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                    <color key="backgroundColor" red="0.0" green="0.62745098040000002" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hux-Q9-s3N">
-                        <size key="itemSize" width="50" height="50"/>
+                        <size key="itemSize" width="300" height="300"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                     <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2jo-Lf-xNy"/>
+                        <outlet property="delegate" destination="-1" id="Lvp-fe-PPb"/>
+                    </connections>
                 </collectionView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="bTi-GY-1s5" firstAttribute="trailing" secondItem="YOU-uf-ALT" secondAttribute="trailing" id="6ms-c1-nPt"/>
-                <constraint firstItem="YOU-uf-ALT" firstAttribute="leading" secondItem="bTi-GY-1s5" secondAttribute="leading" id="7po-KU-2nm"/>
+                <constraint firstItem="YOU-uf-ALT" firstAttribute="leading" secondItem="rDy-fN-kcO" secondAttribute="leading" id="0gT-UD-D0r"/>
                 <constraint firstItem="bTi-GY-1s5" firstAttribute="bottom" secondItem="KQc-ev-MNW" secondAttribute="bottom" id="BCp-Bb-5dv"/>
-                <constraint firstItem="YOU-uf-ALT" firstAttribute="top" secondItem="bTi-GY-1s5" secondAttribute="top" id="MFA-Xb-ab8"/>
-                <constraint firstItem="bTi-GY-1s5" firstAttribute="trailing" secondItem="KQc-ev-MNW" secondAttribute="trailing" id="Sxc-Ak-6ds"/>
                 <constraint firstItem="KQc-ev-MNW" firstAttribute="top" secondItem="YOU-uf-ALT" secondAttribute="bottom" id="TJY-LE-efi"/>
-                <constraint firstItem="KQc-ev-MNW" firstAttribute="leading" secondItem="bTi-GY-1s5" secondAttribute="leading" id="sPl-Pm-sBv"/>
+                <constraint firstItem="KQc-ev-MNW" firstAttribute="leading" secondItem="rDy-fN-kcO" secondAttribute="leading" id="Yvg-SF-9cP"/>
+                <constraint firstItem="YOU-uf-ALT" firstAttribute="trailing" secondItem="rDy-fN-kcO" secondAttribute="trailing" id="j1n-57-h8d"/>
+                <constraint firstItem="YOU-uf-ALT" firstAttribute="top" secondItem="rDy-fN-kcO" secondAttribute="top" id="weZ-x4-ifo"/>
+                <constraint firstItem="KQc-ev-MNW" firstAttribute="trailing" secondItem="rDy-fN-kcO" secondAttribute="trailing" id="zFz-um-kXN"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="bTi-GY-1s5"/>
+            <point key="canvasLocation" x="132" y="152.47376311844079"/>
         </view>
     </objects>
 </document>

@@ -13,6 +13,8 @@ final class PageView: UIViewController {
     // MARK: - Public properties -
     var presenter: PagePresenterInterface!
 
+    @IBOutlet private weak var containerView: UIView!
+
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +37,6 @@ extension PageView: PageViewInterface {
     func setViewError(_ title: String?, message: String?) {}
 
     func deliver(page: UIView) {
-
-        FGLayout.fill(view: page, container: self.view)
+        containerView.addSubview(page)
     }
 }

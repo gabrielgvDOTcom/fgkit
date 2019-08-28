@@ -23,7 +23,6 @@
 		357562952315E57000DC882B /* FGPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357562932315E57000DC882B /* FGPageHeader.swift */; };
 		357562962315E57000DC882B /* FGPageHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357562942315E57000DC882B /* FGPageHeader.xib */; };
 		3575629A2315E59300DC882B /* FGPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357562982315E59300DC882B /* FGPageCell.swift */; };
-		3575629B2315E59300DC882B /* FGPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357562992315E59300DC882B /* FGPageCell.xib */; };
 		358054E622FB5158001EE9CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358054E522FB5158001EE9CD /* AppDelegate.swift */; };
 		358054EE22FB5158001EE9CD /* FGDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 358054EC22FB5158001EE9CD /* FGDemo.xcdatamodeld */; };
 		358054F022FB515A001EE9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 358054EF22FB515A001EE9CD /* Assets.xcassets */; };
@@ -74,6 +73,7 @@
 		C3FEBBB4E1F1224DCBBF0AEC /* Pods_FGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59538CFC409804A7125099A3 /* Pods_FGKit.framework */; };
 		E54B586C2302556300A50B7D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B586B2302556300A50B7D /* Message.swift */; };
 		E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */; };
+		E5CADE1E23162BCA00E9D793 /* FGPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CADE1D23162BC900E9D793 /* FGPageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,7 +118,6 @@
 		357562932315E57000DC882B /* FGPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageHeader.swift; sourceTree = "<group>"; };
 		357562942315E57000DC882B /* FGPageHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGPageHeader.xib; sourceTree = "<group>"; };
 		357562982315E59300DC882B /* FGPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageCell.swift; sourceTree = "<group>"; };
-		357562992315E59300DC882B /* FGPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGPageCell.xib; sourceTree = "<group>"; };
 		358054E322FB5158001EE9CD /* FGDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FGDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358054E522FB5158001EE9CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		358054ED22FB5158001EE9CD /* FGDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FGDemo.xcdatamodel; sourceTree = "<group>"; };
@@ -175,6 +174,7 @@
 		87F5011ABD014E4949A24EA8 /* Pods-FGKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGKit.release.xcconfig"; path = "Target Support Files/Pods-FGKit/Pods-FGKit.release.xcconfig"; sourceTree = "<group>"; };
 		E54B586B2302556300A50B7D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		E5CADE1D23162BC900E9D793 /* FGPageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGPageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,8 +229,8 @@
 		357562092315960800DC882B /* cell */ = {
 			isa = PBXGroup;
 			children = (
+				E5CADE1C23162BB200E9D793 /* cell */,
 				357562972315E57500DC882B /* header */,
-				3575629C2315E59600DC882B /* cell */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -279,15 +279,6 @@
 				357562942315E57000DC882B /* FGPageHeader.xib */,
 			);
 			path = header;
-			sourceTree = "<group>";
-		};
-		3575629C2315E59600DC882B /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				357562982315E59300DC882B /* FGPageCell.swift */,
-				357562992315E59300DC882B /* FGPageCell.xib */,
-			);
-			path = cell;
 			sourceTree = "<group>";
 		};
 		358054E422FB5158001EE9CD /* FGDemo */ = {
@@ -518,6 +509,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E5CADE1C23162BB200E9D793 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				357562982315E59300DC882B /* FGPageCell.swift */,
+				E5CADE1D23162BC900E9D793 /* FGPageCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -630,7 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				357562962315E57000DC882B /* FGPageHeader.xib in Resources */,
-				3575629B2315E59300DC882B /* FGPageCell.xib in Resources */,
+				E5CADE1E23162BCA00E9D793 /* FGPageCell.xib in Resources */,
 				357562922315E50E00DC882B /* FGPage.xib in Resources */,
 				3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */,
 			);
@@ -794,7 +794,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D4B14BCAFD1540A44AB20CC /* Pods-FGDemo.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4SLU66GWH;
@@ -820,7 +820,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8298090665210D0FD1191FD7 /* Pods-FGDemo.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F4SLU66GWH;

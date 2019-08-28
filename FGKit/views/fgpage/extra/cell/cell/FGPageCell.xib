@@ -12,29 +12,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FGPageCell" id="YDR-vs-kqe" customClass="FGPageCell" customModule="FGKit" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <autoresizingMask key="autoresizingMask"/>
-                <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAQ-sJ-kee">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </subviews>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FGPageCell" id="1QZ-Jc-mck" customClass="FGPageCell" customModule="FGKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="535" height="311"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="535" height="311"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             </view>
-            <constraints>
-                <constraint firstAttribute="bottom" secondItem="OAQ-sJ-kee" secondAttribute="bottom" id="RXW-Yf-0Qt"/>
-                <constraint firstItem="OAQ-sJ-kee" firstAttribute="leading" secondItem="YDR-vs-kqe" secondAttribute="leading" id="npX-dd-DRw"/>
-                <constraint firstAttribute="trailing" secondItem="OAQ-sJ-kee" secondAttribute="trailing" id="uBT-mg-U0w"/>
-                <constraint firstItem="OAQ-sJ-kee" firstAttribute="top" secondItem="YDR-vs-kqe" secondAttribute="top" id="zs3-Hi-Mzg"/>
-            </constraints>
-            <viewLayoutGuide key="safeArea" id="y8w-o9-hMU"/>
-            <connections>
-                <outlet property="containerView" destination="OAQ-sJ-kee" id="ysy-t7-g91"/>
-            </connections>
+            <color key="backgroundColor" red="0.0" green="0.3803921569" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="FvK-t8-CPD"/>
+            <size key="customSize" width="535" height="311"/>
+            <point key="canvasLocation" x="47.10144927536232" y="175.11160714285714"/>
         </collectionViewCell>
     </objects>
 </document>

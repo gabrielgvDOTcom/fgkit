@@ -17,6 +17,6 @@ class FGPageCell: UICollectionViewCell {
     }
     
     func addView(view: UIView) {
-        FGLayout.fill(view: view, container: contentView)
+        
     }
 }

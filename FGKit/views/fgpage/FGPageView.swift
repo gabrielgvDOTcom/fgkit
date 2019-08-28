@@ -14,16 +14,8 @@ open class FGPageView: UIViewController {
     private var pages: [FGPageEntity] = []
 
     // MARK: - IBOutlet -
-    @IBOutlet private weak var headerCollection: UICollectionView! {
-        didSet {
-            headerCollection.register(UINib(nibName: "FGPageHeader", bundle: nil), forCellWithReuseIdentifier: "FGPageHeader")
-        }
-    }
-    @IBOutlet private weak var pageCollection: UICollectionView! {
-        didSet {
-            pageCollection.register(UINib(nibName: "FGPageCell", bundle: nil), forCellWithReuseIdentifier: "FGPageCell")
-        }
-    }
+    @IBOutlet private weak var headerCollection: UICollectionView!
+    @IBOutlet private weak var pageCollection: UICollectionView!
 
     // MARK: - Init -
     public init() {
@@ -37,6 +29,15 @@ open class FGPageView: UIViewController {
     // MARK: - Lifecycle -
     override open func viewDidLoad() {
         super.viewDidLoad()
+        
+        headerCollection.register(
+            UINib(nibName: "FGPageHeader", bundle: Bundle(for: type(of: self))),
+            forCellWithReuseIdentifier: "FGPageHeader"
+        )
+        pageCollection.register(
+            UINib(nibName: "FGPageCell", bundle: Bundle(for: type(of: self))),
+            forCellWithReuseIdentifier: "FGPageCell"
+        )
     }
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
