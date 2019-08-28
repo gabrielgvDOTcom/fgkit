@@ -10,8 +10,8 @@ import UIKit
 
 protocol PageRouterInterface: RouterInterface {}
 protocol PageViewInterface: ViewInterface {
-    
-    func deliver(page: UIView)
+
+    func deliver(page: [FGPageEntity])
 }
 protocol PagePresenterInterface: PresenterInterface {}
 protocol PageInteractorInterface: InteractorInterface {}

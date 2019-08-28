@@ -11,7 +11,7 @@ import UIKit
 open class FGPageView: UIViewController {
 
     // MARK: - VARs -
-    private var pages: [FGPageEntity] = []
+    public var pages: [FGPageEntity] = []
 
     // MARK: - IBOutlet -
     @IBOutlet private weak var headerCollection: UICollectionView!
@@ -42,20 +42,19 @@ open class FGPageView: UIViewController {
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     // MARK: - Random -
-    public func addPages(pages: [FGPageEntity]) -> UIView {
-        self.pages = pages
+    public func present(in view: UIView) {
         headerCollection.reloadData()
         pageCollection.reloadData()
-        return self.view
+        FGLayout.fill(view: self.view, container: view)
     }
 
     // MARK: - deinit -
     deinit {
-        debugPrint(String(describing: self), "deinit")
-        view = nil
+        debugLog("\(String(describing: self)) deinit")
         pages.removeAll()
+        view = nil
     }
 }
 extension FGPageView: UIScrollViewDelegate {
@@ -95,9 +94,9 @@ extension FGPageView: UICollectionViewDataSource {
         return cell
     }
 }
-extension FGPageView: UICollectionViewDelegate {
+extension FGPageView: UICollectionViewDelegateFlowLayout {
 
-    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView.tag == headerCollection.tag {
             var divisor: CGFloat = 2.5
             switch pages.count {
@@ -109,7 +108,7 @@ extension FGPageView: UICollectionViewDelegate {
         }
         return pageCollection.frame.size
     }
-    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         if collectionView.tag == headerCollection.tag {
             var space: CGFloat = UIScreen.main.bounds.width / 4.0
             switch pages.count {
@@ -120,10 +119,10 @@ extension FGPageView: UICollectionViewDelegate {
         }
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
-    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
-    private func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
     }
 }

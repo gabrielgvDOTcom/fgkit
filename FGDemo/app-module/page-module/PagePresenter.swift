@@ -14,14 +14,12 @@ final class PagePresenter {
     private unowned let view: PageViewInterface
     private let interactor: PageInteractorInterface
     private let router: PageRouterInterface
-    private let pageView: FGPageView
 
     // MARK: - Lifecycle -
     init(view: PageViewInterface, interactor: PageInteractorInterface, router: PageRouterInterface) {
         self.view = view
         self.interactor = interactor
         self.router = router
-        self.pageView = FGPageView()
     }
     deinit {
         debugLog("\(String(describing: self)) deinit")
@@ -30,7 +28,7 @@ final class PagePresenter {
 extension PagePresenter: PagePresenterInterface {
 
     func viewDidLoad() {
-        view.deliver(page: pageView.addPages(pages: [FGPageEntity(title: "Hola", controller: FormRouter())]))
+        view.deliver(page: [FGPageEntity(title: "Hola", controller: FormRouter())])
     }
     func viewWillAppear(animated: Bool) {}
     func viewDidAppear(animated: Bool) {}

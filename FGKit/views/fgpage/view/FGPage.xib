@@ -63,8 +63,8 @@
                 <constraint firstItem="KQc-ev-MNW" firstAttribute="top" secondItem="YOU-uf-ALT" secondAttribute="bottom" id="TJY-LE-efi"/>
                 <constraint firstItem="KQc-ev-MNW" firstAttribute="leading" secondItem="rDy-fN-kcO" secondAttribute="leading" id="Yvg-SF-9cP"/>
                 <constraint firstItem="YOU-uf-ALT" firstAttribute="trailing" secondItem="rDy-fN-kcO" secondAttribute="trailing" id="j1n-57-h8d"/>
-                <constraint firstItem="YOU-uf-ALT" firstAttribute="top" secondItem="rDy-fN-kcO" secondAttribute="top" id="weZ-x4-ifo"/>
                 <constraint firstItem="KQc-ev-MNW" firstAttribute="trailing" secondItem="rDy-fN-kcO" secondAttribute="trailing" id="zFz-um-kXN"/>
+                <constraint firstItem="YOU-uf-ALT" firstAttribute="top" secondItem="rDy-fN-kcO" secondAttribute="top" id="zqF-Dx-zRR"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="bTi-GY-1s5"/>
             <point key="canvasLocation" x="132" y="152.47376311844079"/>

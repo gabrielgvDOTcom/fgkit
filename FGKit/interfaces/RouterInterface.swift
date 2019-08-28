@@ -43,7 +43,7 @@ public protocol RouterInterface: class {
 extension BaseRouter: RouterInterface {
 
     public func dismiss(animated: Bool) {
-        navigationController?.dismiss(animated: true)
+        navigationController?.dismiss(animated: animated)
     }
     public func popFromNavigationController(animated: Bool) {
         let _ = navigationController?.popViewController(animated: animated)

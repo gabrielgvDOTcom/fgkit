@@ -13,11 +13,15 @@ final class PageView: UIViewController {
     // MARK: - Public properties -
     var presenter: PagePresenterInterface!
 
+    private var pageView: FGPageView?
+    
     @IBOutlet private weak var containerView: UIView!
 
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        pageView = FGPageView()
         presenter.viewDidLoad()
     }
     override func didReceiveMemoryWarning() {
@@ -27,6 +31,7 @@ final class PageView: UIViewController {
     // MARK: - deinit -
     deinit {
         debugLog("\(String(describing: self)) deinit")
+        pageView = nil
     }
 }
 extension PageView: PageViewInterface {
@@ -36,7 +41,8 @@ extension PageView: PageViewInterface {
     func setViewTitle(_ title: String?) {}
     func setViewError(_ title: String?, message: String?) {}
 
-    func deliver(page: UIView) {
-        containerView.addSubview(page)
+    func deliver(page: [FGPageEntity]) {
+        pageView?.pages = page
+        pageView?.present(in: containerView)
     }
 }
