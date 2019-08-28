@@ -34,10 +34,6 @@ open class FGPageView: UIViewController {
             UINib(nibName: "FGPageHeader", bundle: Bundle(for: type(of: self))),
             forCellWithReuseIdentifier: "FGPageHeader"
         )
-        pageCollection.register(
-            UINib(nibName: "FGPageCell", bundle: Bundle(for: type(of: self))),
-            forCellWithReuseIdentifier: "FGPageCell"
-        )
     }
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -89,8 +85,15 @@ extension FGPageView: UICollectionViewDataSource {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FGPageHeader", for: indexPath) as! FGPageHeader
             return cell
         }
+
+        let item = pages[indexPath.row].controller.viewController
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FGPageCell", for: indexPath) as! FGPageCell
-        cell.addView(view: pages[indexPath.row].view)
+        self.addChild(item)
+        cell.contentView.addSubview(item.view)
+        item.view.translatesAutoresizingMaskIntoConstraints = false
+        FGLayout.fill(view: item.view, container: cell.contentView)
+        item.didMove(toParent: self)
+        item.view.layoutIfNeeded()
         return cell
     }
 }

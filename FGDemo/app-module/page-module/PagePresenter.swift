@@ -28,7 +28,7 @@ final class PagePresenter {
 extension PagePresenter: PagePresenterInterface {
 
     func viewDidLoad() {
-        view.deliver(page: [FGPageEntity(title: "Hola", controller: FormRouter())])
+        view.deliver(page: [FGPageEntity(title: "Hola", controller: FormRouter()), FGPageEntity(title: "Hola", controller: FormRouter())])
     }
     func viewWillAppear(animated: Bool) {}
     func viewDidAppear(animated: Bool) {}

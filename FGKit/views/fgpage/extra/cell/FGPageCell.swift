@@ -9,14 +9,8 @@
 import UIKit
 
 class FGPageCell: UICollectionViewCell {
-    
-    @IBOutlet private weak var containerView: UIView!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-    
-    func addView(view: UIView) {
-        
     }
 }

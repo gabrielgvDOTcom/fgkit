@@ -19,7 +19,6 @@
 		3575622E2315A5FC00DC882B /* PageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357562282315A5FC00DC882B /* PageProtocol.swift */; };
 		3575622F2315A5FC00DC882B /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357562292315A5FC00DC882B /* PageView.swift */; };
 		357562312315B40200DC882B /* FGPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357562302315B40200DC882B /* FGPageEntity.swift */; };
-		357562922315E50E00DC882B /* FGPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357562912315E50E00DC882B /* FGPage.xib */; };
 		357562952315E57000DC882B /* FGPageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357562932315E57000DC882B /* FGPageHeader.swift */; };
 		357562962315E57000DC882B /* FGPageHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 357562942315E57000DC882B /* FGPageHeader.xib */; };
 		3575629A2315E59300DC882B /* FGPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357562982315E59300DC882B /* FGPageCell.swift */; };
@@ -46,6 +45,7 @@
 		3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26E22FA0A7700BA429F /* IntTransform.swift */; };
 		3595F27422FA0ADA00BA429F /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27322FA0ADA00BA429F /* Run.swift */; };
 		3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27522FA10BE00BA429F /* ClosureSleeve.swift */; };
+		359A6432231717AE00C8C00E /* FGPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 359A6431231717AC00C8C00E /* FGPage.xib */; };
 		35A99349230C6DC3003A62B2 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A99343230C6DC3003A62B2 /* Menu.storyboard */; };
 		35A9934A230C6DC3003A62B2 /* MenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A99344230C6DC3003A62B2 /* MenuProtocol.swift */; };
 		35A9934B230C6DC3003A62B2 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A99345230C6DC3003A62B2 /* MenuPresenter.swift */; };
@@ -69,9 +69,10 @@
 		35B03E4B230C7A320045C031 /* FormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E45230C7A320045C031 /* FormRouter.swift */; };
 		35B03E5C230DE84D0045C031 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E5B230DE84D0045C031 /* Log.swift */; };
 		35E46F1422FB5DC20073224F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E46F1322FB5DC20073224F /* UIView+Extension.swift */; };
+		A38E8BEF64CA2D625BA57E9A /* Pods_FGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD48C149A4FA75CF01510FDB /* Pods_FGKit.framework */; };
 		E54B586C2302556300A50B7D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B586B2302556300A50B7D /* Message.swift */; };
 		E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */; };
-		E5CADE1E23162BCA00E9D793 /* FGPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CADE1D23162BC900E9D793 /* FGPageCell.xib */; };
+		FF393019098D7987BB782669 /* Pods_FGDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEDB1B1E42EDCBCF59079B37 /* Pods_FGDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +112,6 @@
 		357562282315A5FC00DC882B /* PageProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageProtocol.swift; sourceTree = "<group>"; };
 		357562292315A5FC00DC882B /* PageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
 		357562302315B40200DC882B /* FGPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageEntity.swift; sourceTree = "<group>"; };
-		357562912315E50E00DC882B /* FGPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGPage.xib; sourceTree = "<group>"; };
 		357562932315E57000DC882B /* FGPageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageHeader.swift; sourceTree = "<group>"; };
 		357562942315E57000DC882B /* FGPageHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGPageHeader.xib; sourceTree = "<group>"; };
 		357562982315E59300DC882B /* FGPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageCell.swift; sourceTree = "<group>"; };
@@ -142,6 +142,7 @@
 		3595F26E22FA0A7700BA429F /* IntTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTransform.swift; sourceTree = "<group>"; };
 		3595F27322FA0ADA00BA429F /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		3595F27522FA10BE00BA429F /* ClosureSleeve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureSleeve.swift; sourceTree = "<group>"; };
+		359A6431231717AC00C8C00E /* FGPage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGPage.xib; sourceTree = "<group>"; };
 		35A99343230C6DC3003A62B2 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		35A99344230C6DC3003A62B2 /* MenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocol.swift; sourceTree = "<group>"; };
 		35A99345230C6DC3003A62B2 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -164,9 +165,14 @@
 		35B03E5B230DE84D0045C031 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		35E46EFE22FB54FE0073224F /* FGDemo-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FGDemo-Header.h"; sourceTree = "<group>"; };
 		35E46F1322FB5DC20073224F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		3C21ED7D13F8E286E4386663 /* Pods-FGKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGKit.debug.xcconfig"; path = "Target Support Files/Pods-FGKit/Pods-FGKit.debug.xcconfig"; sourceTree = "<group>"; };
+		89C071450607A6253CFCBDD9 /* Pods-FGKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGKit.release.xcconfig"; path = "Target Support Files/Pods-FGKit/Pods-FGKit.release.xcconfig"; sourceTree = "<group>"; };
+		99D113FF7AC5D91486545D53 /* Pods-FGDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGDemo.debug.xcconfig"; path = "Target Support Files/Pods-FGDemo/Pods-FGDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		BD48C149A4FA75CF01510FDB /* Pods_FGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA98C8878EC4A39995638072 /* Pods-FGDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGDemo.release.xcconfig"; path = "Target Support Files/Pods-FGDemo/Pods-FGDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DEDB1B1E42EDCBCF59079B37 /* Pods_FGDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E54B586B2302556300A50B7D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
-		E5CADE1D23162BC900E9D793 /* FGPageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGPageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35B03E39230C78550045C031 /* FGKit.framework in Frameworks */,
+				FF393019098D7987BB782669 /* Pods_FGDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +189,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A38E8BEF64CA2D625BA57E9A /* Pods_FGKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +227,7 @@
 		357562092315960800DC882B /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				E5CADE1C23162BB200E9D793 /* cell */,
+				357562982315E59300DC882B /* FGPageCell.swift */,
 				357562972315E57500DC882B /* header */,
 			);
 			path = cell;
@@ -257,7 +265,7 @@
 		357562902315E4FB00DC882B /* view */ = {
 			isa = PBXGroup;
 			children = (
-				357562912315E50E00DC882B /* FGPage.xib */,
+				359A6431231717AC00C8C00E /* FGPage.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -318,6 +326,7 @@
 				358054E422FB5158001EE9CD /* FGDemo */,
 				3595F21D22FA073000BA429F /* Products */,
 				B8E7FAF65F8C36887840FE9F /* Pods */,
+				46E8962660DD2FF4BCDCD30F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -478,20 +487,24 @@
 			path = storyboard;
 			sourceTree = "<group>";
 		};
+		46E8962660DD2FF4BCDCD30F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEDB1B1E42EDCBCF59079B37 /* Pods_FGDemo.framework */,
+				BD48C149A4FA75CF01510FDB /* Pods_FGKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B8E7FAF65F8C36887840FE9F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				99D113FF7AC5D91486545D53 /* Pods-FGDemo.debug.xcconfig */,
+				DA98C8878EC4A39995638072 /* Pods-FGDemo.release.xcconfig */,
+				3C21ED7D13F8E286E4386663 /* Pods-FGKit.debug.xcconfig */,
+				89C071450607A6253CFCBDD9 /* Pods-FGKit.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		E5CADE1C23162BB200E9D793 /* cell */ = {
-			isa = PBXGroup;
-			children = (
-				357562982315E59300DC882B /* FGPageCell.swift */,
-				E5CADE1D23162BC900E9D793 /* FGPageCell.xib */,
-			);
-			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,10 +527,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 358054F722FB515A001EE9CD /* Build configuration list for PBXNativeTarget "FGDemo" */;
 			buildPhases = (
+				90E868B5E7281884BCD6F971 /* [CP] Check Pods Manifest.lock */,
 				358054DF22FB5158001EE9CD /* Sources */,
 				358054E022FB5158001EE9CD /* Frameworks */,
 				358054E122FB5158001EE9CD /* Resources */,
 				35B03E3D230C78550045C031 /* Embed Frameworks */,
+				F414CCB7FEDB960768F70819 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -533,6 +548,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3595F22422FA073000BA429F /* Build configuration list for PBXNativeTarget "FGKit" */;
 			buildPhases = (
+				F229CF5B8AE51FBBA094ABB1 /* [CP] Check Pods Manifest.lock */,
 				3595F21722FA073000BA429F /* Headers */,
 				3595F21822FA073000BA429F /* Sources */,
 				3595F21922FA073000BA429F /* Frameworks */,
@@ -603,13 +619,76 @@
 			buildActionMask = 2147483647;
 			files = (
 				357562962315E57000DC882B /* FGPageHeader.xib in Resources */,
-				E5CADE1E23162BCA00E9D793 /* FGPageCell.xib in Resources */,
-				357562922315E50E00DC882B /* FGPage.xib in Resources */,
 				3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */,
+				359A6432231717AE00C8C00E /* FGPage.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90E868B5E7281884BCD6F971 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FGDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F229CF5B8AE51FBBA094ABB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FGKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F414CCB7FEDB960768F70819 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FGDemo/Pods-FGDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FGDemo/Pods-FGDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FGDemo/Pods-FGDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		358054DF22FB5158001EE9CD /* Sources */ = {
@@ -701,6 +780,7 @@
 /* Begin XCBuildConfiguration section */
 		358054F522FB515A001EE9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99D113FF7AC5D91486545D53 /* Pods-FGDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -726,6 +806,7 @@
 		};
 		358054F622FB515A001EE9CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA98C8878EC4A39995638072 /* Pods-FGDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -873,6 +954,7 @@
 		};
 		3595F22522FA073000BA429F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C21ED7D13F8E286E4386663 /* Pods-FGKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -901,6 +983,7 @@
 		};
 		3595F22622FA073000BA429F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C071450607A6253CFCBDD9 /* Pods-FGKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
