@@ -24,7 +24,7 @@ final class MenuViewController: UIViewController {
     @IBAction private func pushFormView(_ sender: Any) {
         presenter.pushFormView()
     }
-    
+
     // MARK: - deinit -
     deinit {
         debugLog("\(String(describing: self)) deinit")
