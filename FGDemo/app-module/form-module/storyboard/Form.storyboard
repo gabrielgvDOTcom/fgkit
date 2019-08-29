@@ -73,7 +73,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="0TX-e9-Orf" secondAttribute="trailing" constant="20" id="3ZC-HV-YGP"/>
                                                     <constraint firstAttribute="width" priority="999" constant="320" id="GjG-XF-XjD"/>
@@ -125,7 +125,7 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="O4L-k6-OYd" firstAttribute="top" secondItem="I00-oF-x1k" secondAttribute="top" constant="20" id="KMd-sz-qKF"/>
                                                     <constraint firstItem="O4L-k6-OYd" firstAttribute="leading" secondItem="I00-oF-x1k" secondAttribute="leading" constant="20" id="LYS-gp-ass"/>
@@ -134,7 +134,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="h9H-e2-Xaj" firstAttribute="top" secondItem="tfI-Z9-S1U" secondAttribute="topMargin" constant="20" id="ANY-nP-7fX"/>
@@ -163,7 +163,7 @@
                                 </connections>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lXc-L1-BWG" firstAttribute="trailing" secondItem="3pi-N7-nbV" secondAttribute="trailing" id="0gl-ge-MYz"/>
                             <constraint firstItem="lXc-L1-BWG" firstAttribute="bottom" secondItem="3pi-N7-nbV" secondAttribute="bottom" id="3Cy-yU-n4x"/>

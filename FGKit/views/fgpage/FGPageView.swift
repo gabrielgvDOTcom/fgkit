@@ -12,6 +12,7 @@ open class FGPageView: UIViewController {
 
     // MARK: - VARs -
     public var pages: [FGPageEntity] = []
+    private var selectedPage: Int = 0
 
     // MARK: - IBOutlet -
     @IBOutlet private weak var headerCollection: UICollectionView!
@@ -34,6 +35,13 @@ open class FGPageView: UIViewController {
             UINib(nibName: "FGPageHeader", bundle: Bundle(for: type(of: self))),
             forCellWithReuseIdentifier: "FGPageHeader"
         )
+        pageCollection.register(
+            UINib(nibName: "FGPageCell", bundle: Bundle(for: type(of: self))),
+            forCellWithReuseIdentifier: "FGPageCell"
+        )
+        if pages.count > 0 {
+            headerCollection.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: [])
+        }
     }
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -56,20 +64,19 @@ open class FGPageView: UIViewController {
 extension FGPageView: UIScrollViewDelegate {
 
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        /*if scrollView.tag == pageCollection.tag {
+        if scrollView.tag == pageCollection.tag {
             let page = Int(round(scrollView.contentOffset.x/pageCollection.frame.size.width))
             if page != selectedPage {
                 var position: UICollectionView.ScrollPosition = .centeredHorizontally
-                switch self.delegate?.numberOfSections(in: self) {
+                switch pages.count {
                 case 1, 2: position = .left
                 default: break
                 }
                 
                 selectedPage = page
                 headerCollection.selectItem(at: IndexPath(item: page, section: 0), animated: true, scrollPosition: position)
-                self.delegate?.pageView(self, didChangePage: page)
             }
-        }*/
+        }
     }
 }
 extension FGPageView: UICollectionViewDataSource {
@@ -83,6 +90,7 @@ extension FGPageView: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView.tag == headerCollection.tag {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FGPageHeader", for: indexPath) as! FGPageHeader
+            cell.display(title: pages[indexPath.row].title)
             return cell
         }
 
