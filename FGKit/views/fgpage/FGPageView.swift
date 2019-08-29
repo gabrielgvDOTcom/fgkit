@@ -39,9 +39,6 @@ open class FGPageView: UIViewController {
             UINib(nibName: "FGPageCell", bundle: Bundle(for: type(of: self))),
             forCellWithReuseIdentifier: "FGPageCell"
         )
-        if pages.count > 0 {
-            headerCollection.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: [])
-        }
     }
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -51,6 +48,7 @@ open class FGPageView: UIViewController {
     public func present(in view: UIView) {
         headerCollection.reloadData()
         pageCollection.reloadData()
+        headerCollection.selectItem(at: IndexPath(item: 0, section: 0), animated: false, scrollPosition: [])
         FGLayout.fill(view: self.view, container: view)
     }
 
@@ -72,7 +70,7 @@ extension FGPageView: UIScrollViewDelegate {
                 case 1, 2: position = .left
                 default: break
                 }
-                
+
                 selectedPage = page
                 headerCollection.selectItem(at: IndexPath(item: page, section: 0), animated: true, scrollPosition: position)
             }
@@ -115,19 +113,11 @@ extension FGPageView: UICollectionViewDelegateFlowLayout {
             case 2: divisor = 2
             default: break
             }
-            return CGSize(width: collectionView.bounds.width / divisor, height: headerCollection.frame.size.height)
+            return CGSize(width: headerCollection.bounds.width / divisor, height: headerCollection.bounds.height)
         }
-        return pageCollection.frame.size
+        return pageCollection.bounds.size
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        if collectionView.tag == headerCollection.tag {
-            var space: CGFloat = UIScreen.main.bounds.width / 4.0
-            switch pages.count {
-            case 1, 2: space = 0
-            default: break
-            }
-            return UIEdgeInsets(top: 0, left: space, bottom: space, right: 0)
-        }
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

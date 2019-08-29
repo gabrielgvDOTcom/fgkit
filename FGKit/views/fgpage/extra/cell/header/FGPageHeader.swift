@@ -15,25 +15,19 @@ class FGPageHeader: UICollectionViewCell {
     
     override var isSelected: Bool {
         didSet {
-            if self.isSelected {
-                selectedView.alpha = 1
-                titleLabel.style(FGPageStyled.shared().headerTitle)
-            } else {
-                selectedView.alpha = 0
-                titleLabel.style(FGPageStyled.shared().headerTitleSelected)
-            }
+            selectedView.alpha = isSelected ? 1 : 0
+            selectedView.backgroundColor = isSelected ? FGPageStyled.shared().headerBGSelected : UIColor.clear
+            titleLabel.style(isSelected ? FGPageStyled.shared().headerTitleSelected : FGPageStyled.shared().headerTitle)
         }
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        self.backgroundColor = FGPageStyled.shared().headerBGColor
+        self.backgroundColor = UIColor.clear
         titleLabel.style(FGPageStyled.shared().headerTitle)
-        selectedView.alpha = 0
-        selectedView.backgroundColor = FGPageStyled.shared().headerBGSelected
     }
-    
+
     func display(title: String) {
         titleLabel.text = title
     }

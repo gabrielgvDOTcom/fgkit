@@ -32,7 +32,7 @@ extension PagePresenter: PagePresenterInterface {
             FGPageEntity(title: "Hola", controller: FormRouter()),
             FGPageEntity(title: "Hola", controller: FormRouter()),
             FGPageEntity(title: "Hola", controller: FormRouter())
-            ])
+        ])
     }
     func viewWillAppear(animated: Bool) {}
     func viewDidAppear(animated: Bool) {}
