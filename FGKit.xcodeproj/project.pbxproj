@@ -45,6 +45,9 @@
 		3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26E22FA0A7700BA429F /* IntTransform.swift */; };
 		3595F27422FA0ADA00BA429F /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27322FA0ADA00BA429F /* Run.swift */; };
 		3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27522FA10BE00BA429F /* ClosureSleeve.swift */; };
+		359A654C2318342700C8C00E /* FGErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A654B2318342700C8C00E /* FGErrorView.swift */; };
+		359A654F2318344100C8C00E /* FGError.xib in Resources */ = {isa = PBXBuildFile; fileRef = 359A654E2318344100C8C00E /* FGError.xib */; };
+		359A65512318385800C8C00E /* FGErrorStyled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A65502318385800C8C00E /* FGErrorStyled.swift */; };
 		35A99349230C6DC3003A62B2 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A99343230C6DC3003A62B2 /* Menu.storyboard */; };
 		35A9934A230C6DC3003A62B2 /* MenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A99344230C6DC3003A62B2 /* MenuProtocol.swift */; };
 		35A9934B230C6DC3003A62B2 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A99345230C6DC3003A62B2 /* MenuPresenter.swift */; };
@@ -68,10 +71,12 @@
 		35B03E4B230C7A320045C031 /* FormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E45230C7A320045C031 /* FormRouter.swift */; };
 		35B03E5C230DE84D0045C031 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E5B230DE84D0045C031 /* Log.swift */; };
 		35E46F1422FB5DC20073224F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E46F1322FB5DC20073224F /* UIView+Extension.swift */; };
+		35F524E22318799E009308DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F524E12318799E009308DD /* Assets.xcassets */; };
 		6433DE16BBA163FECE68CA5A /* Pods_FGDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299CA75A42C1B23817F4D92C /* Pods_FGDemo.framework */; };
 		C3FEBBB4E1F1224DCBBF0AEC /* Pods_FGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59538CFC409804A7125099A3 /* Pods_FGKit.framework */; };
 		E54B586C2302556300A50B7D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B586B2302556300A50B7D /* Message.swift */; };
 		E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */; };
+		E5BA4BAB23208CD200CB9BC7 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */; };
 		E5CADE232317530200E9D793 /* FGPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CADE212317530200E9D793 /* FGPageCell.swift */; };
 		E5CADE242317530200E9D793 /* FGPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CADE222317530200E9D793 /* FGPageCell.xib */; };
 		E5CADE26231762CA00E9D793 /* FGPageStyled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CADE25231762CA00E9D793 /* FGPageStyled.swift */; };
@@ -145,6 +150,9 @@
 		3595F26E22FA0A7700BA429F /* IntTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTransform.swift; sourceTree = "<group>"; };
 		3595F27322FA0ADA00BA429F /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		3595F27522FA10BE00BA429F /* ClosureSleeve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureSleeve.swift; sourceTree = "<group>"; };
+		359A654B2318342700C8C00E /* FGErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGErrorView.swift; sourceTree = "<group>"; };
+		359A654E2318344100C8C00E /* FGError.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGError.xib; sourceTree = "<group>"; };
+		359A65502318385800C8C00E /* FGErrorStyled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGErrorStyled.swift; sourceTree = "<group>"; };
 		35A99343230C6DC3003A62B2 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		35A99344230C6DC3003A62B2 /* MenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocol.swift; sourceTree = "<group>"; };
 		35A99345230C6DC3003A62B2 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
@@ -167,6 +175,7 @@
 		35B03E5B230DE84D0045C031 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		35E46EFE22FB54FE0073224F /* FGDemo-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FGDemo-Header.h"; sourceTree = "<group>"; };
 		35E46F1322FB5DC20073224F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		35F524E12318799E009308DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		583F94A516B5AD6B931E6A42 /* Pods-FGKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGKit.debug.xcconfig"; path = "Target Support Files/Pods-FGKit/Pods-FGKit.debug.xcconfig"; sourceTree = "<group>"; };
 		59538CFC409804A7125099A3 /* Pods_FGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D4B14BCAFD1540A44AB20CC /* Pods-FGDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGDemo.debug.xcconfig"; path = "Target Support Files/Pods-FGDemo/Pods-FGDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +183,7 @@
 		87F5011ABD014E4949A24EA8 /* Pods-FGKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGKit.release.xcconfig"; path = "Target Support Files/Pods-FGKit/Pods-FGKit.release.xcconfig"; sourceTree = "<group>"; };
 		E54B586B2302556300A50B7D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		E5CADE212317530200E9D793 /* FGPageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FGPageCell.swift; sourceTree = "<group>"; };
 		E5CADE222317530200E9D793 /* FGPageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGPageCell.xib; sourceTree = "<group>"; };
 		E5CADE25231762CA00E9D793 /* FGPageStyled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageStyled.swift; sourceTree = "<group>"; };
@@ -212,6 +222,7 @@
 		3575620423158F6400DC882B /* views */ = {
 			isa = PBXGroup;
 			children = (
+				359A654A2318337400C8C00E /* fgerror */,
 				357562052315904A00DC882B /* fgpage */,
 			);
 			path = views;
@@ -347,6 +358,7 @@
 		3595F21E22FA073000BA429F /* FGKit */ = {
 			isa = PBXGroup;
 			children = (
+				35F524E12318799E009308DD /* Assets.xcassets */,
 				3575620423158F6400DC882B /* views */,
 				3595F22922FA07E600BA429F /* util */,
 				3595F22A22FA07F100BA429F /* styled */,
@@ -426,6 +438,7 @@
 				35A9936B230C721F003A62B2 /* UIStoryboard+Extension.swift */,
 				35A9936D230C7263003A62B2 /* UIViewController+Extension.swift */,
 				35A9936F230C7291003A62B2 /* UINavigationController+Extension.swift */,
+				E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -437,6 +450,24 @@
 				3595F26D22FA0A7700BA429F /* DateFormatTransform.swift */,
 			);
 			path = objectmapper;
+			sourceTree = "<group>";
+		};
+		359A654A2318337400C8C00E /* fgerror */ = {
+			isa = PBXGroup;
+			children = (
+				359A654B2318342700C8C00E /* FGErrorView.swift */,
+				359A65502318385800C8C00E /* FGErrorStyled.swift */,
+				359A654D2318343000C8C00E /* view */,
+			);
+			path = fgerror;
+			sourceTree = "<group>";
+		};
+		359A654D2318343000C8C00E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				359A654E2318344100C8C00E /* FGError.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		35A99342230C6DAD003A62B2 /* menu-module */ = {
@@ -632,9 +663,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359A654F2318344100C8C00E /* FGError.xib in Resources */,
 				357562962315E57000DC882B /* FGPageHeader.xib in Resources */,
 				E5CADE242317530200E9D793 /* FGPageCell.xib in Resources */,
 				357562922315E50E00DC882B /* FGPage.xib in Resources */,
+				35F524E22318799E009308DD /* Assets.xcassets in Resources */,
 				3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,6 +769,7 @@
 			files = (
 				35B03E30230C76A80045C031 /* InteractorInterface.swift in Sources */,
 				3595F23322FA084700BA429F /* UIFont+Extension.swift in Sources */,
+				359A65512318385800C8C00E /* FGErrorStyled.swift in Sources */,
 				E5CADE26231762CA00E9D793 /* FGPageStyled.swift in Sources */,
 				3595F26322FA098000BA429F /* DJailbreakDetector.m in Sources */,
 				3595F27022FA0A7700BA429F /* DateFormatTransform.swift in Sources */,
@@ -752,6 +786,7 @@
 				3595F23422FA084700BA429F /* UIButton+Extension.swift in Sources */,
 				35B03E34230C770A0045C031 /* RouterInterface.swift in Sources */,
 				353D12172301D074001C0A2D /* Field.swift in Sources */,
+				E5BA4BAB23208CD200CB9BC7 /* UITextField+Extension.swift in Sources */,
 				E5CADE232317530200E9D793 /* FGPageCell.swift in Sources */,
 				35A99370230C7291003A62B2 /* UINavigationController+Extension.swift in Sources */,
 				3595F26522FA098000BA429F /* LOOCryptString.m in Sources */,
@@ -760,6 +795,7 @@
 				35756219231598DB00DC882B /* FGPageView.swift in Sources */,
 				3595F23222FA084700BA429F /* UILabel+Extension.swift in Sources */,
 				353D12112301B8AA001C0A2D /* Form.swift in Sources */,
+				359A654C2318342700C8C00E /* FGErrorView.swift in Sources */,
 				3595F23522FA084700BA429F /* UserDefaults+Extension.swift in Sources */,
 				3595F23922FA08CF00BA429F /* Layout.swift in Sources */,
 				35B03E2E230C76890045C031 /* ViewInterface.swift in Sources */,

@@ -13,6 +13,8 @@ final class FormViewController: UIViewController {
     // MARK: - Public properties -
     var presenter: FormPresenterInterface!
 
+    private var errorView: FGErrorView?
+
     // MARK: - IBOutlets -
     @IBOutlet private weak var runTextField: UITextField!
     @IBOutlet private weak var scrollView: UIScrollView!
@@ -20,6 +22,9 @@ final class FormViewController: UIViewController {
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        errorView = FGErrorView(delegate: self)
+        errorView?.present("Error", message: "Algún Error", view: self.view)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -65,6 +70,13 @@ final class FormViewController: UIViewController {
     // MARK: - deinit -
     deinit {
         debugLog("\(String(describing: self)) deinit")
+        errorView = nil
+    }
+}
+extension FormViewController: FGErrorDelegate {
+    
+    func retryOperation(errorView: FGErrorView) {
+        
     }
 }
 extension FormViewController: UITextFieldDelegate {

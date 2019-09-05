@@ -108,6 +108,40 @@ public struct Styled {
             self.cornerRadius = corner
         }
     }
+    /// Estructura TextField, manejo de estilos para elementos UITextField.
+    public struct TextField {
+        
+        /// fuente del texto
+        public let font: UIFont
+        /// alineación del texto
+        public let align: NSTextAlignment
+        /// tipo de borde
+        public let borderStyle: UITextField.BorderStyle
+        
+        /**
+         Inicializa un nuevo elemento TextField para uso en UITextField.
+         
+         Forma de uso:
+         ```
+         Styled.TextField(
+             font: UIFont(.regular, size: 16),
+             align: .right,
+             border: .none,
+         )
+         ```
+         - Parameters:
+             - font: fuente del texto
+             - align: alineación del texto
+             - border: estilo del borde
+         
+         - Returns: Un objeto tipo Styled.TextField
+         */
+        public init(font: UIFont, align: NSTextAlignment, border: UITextField.BorderStyle) {
+            self.font = font
+            self.align = align
+            self.borderStyle = border
+        }
+    }
     /// Estructura Button, manejo de estilos para elementos UIButton.
     public struct Button {
 
