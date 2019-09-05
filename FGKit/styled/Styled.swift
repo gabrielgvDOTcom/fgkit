@@ -113,6 +113,8 @@ public struct Styled {
         
         /// fuente del texto
         public let font: UIFont
+        /// color del texto
+        public let color: UIColor
         /// alineación del texto
         public let align: NSTextAlignment
         /// tipo de borde
@@ -125,19 +127,22 @@ public struct Styled {
          ```
          Styled.TextField(
              font: UIFont(.regular, size: 16),
+             color: UIColor.black,
              align: .right,
              border: .none,
          )
          ```
          - Parameters:
              - font: fuente del texto
+             - color: color del texto
              - align: alineación del texto
              - border: estilo del borde
          
          - Returns: Un objeto tipo Styled.TextField
          */
-        public init(font: UIFont, align: NSTextAlignment, border: UITextField.BorderStyle) {
+        public init(font: UIFont, color: UIColor, align: NSTextAlignment, border: UITextField.BorderStyle) {
             self.font = font
+            self.color = color
             self.align = align
             self.borderStyle = border
         }
