@@ -36,7 +36,7 @@ public extension UITextField {
     // MARK: - Styled -
     func style(_ style: Styled.TextField) {
         self.font = style.font
-        self.tintColor = style.color
+        self.textColor = style.color
         self.textAlignment = style.align
         self.borderStyle = style.borderStyle
     }
