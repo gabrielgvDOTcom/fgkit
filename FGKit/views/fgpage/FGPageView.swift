@@ -103,6 +103,18 @@ extension FGPageView: UICollectionViewDataSource {
         return cell
     }
 }
+extension FGPageView: UICollectionViewDelegate {
+
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.tag == headerCollection.tag {
+            pageCollection.selectItem(
+                at: indexPath,
+                animated: true,
+                scrollPosition: UICollectionView.ScrollPosition.centeredHorizontally
+            )
+        }
+    }
+}
 extension FGPageView: UICollectionViewDelegateFlowLayout {
 
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
