@@ -58,9 +58,9 @@ open class FGErrorView: UIViewController {
         subtitleLabel.style(FGErrorStyled.shared().message)
         retryLabel.style(FGErrorStyled.shared().retry)
     }
-    public func present(_ title: String, message: String, view: UIView) {
-        titleLabel.text = title
-        subtitleLabel.text = message
+    public func present(_ title: String?, _ message: String?, view: UIView) {
+        titleLabel.text = title ?? "Ha ocurrido un Error"
+        subtitleLabel.text = message ?? "No se ha podido completar la operación por un error desconocido, inténtelo en un momento"
         FGLayout.fill(view: self.view, container: view)
     }
 
