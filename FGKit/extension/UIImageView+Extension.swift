@@ -10,22 +10,12 @@ import Kingfisher
 
 public extension UIImageView {
     
-    func remote(_ source: URL?, _ placeholder: UIImage?, cornerRadius: CGFloat) {
-        let processor = DownsamplingImageProcessor(size: self.frame.size)
-            >> RoundCornerImageProcessor(cornerRadius: cornerRadius)
-        self.kf.indicatorType = .activity
-        self.kf.setImage(
-            with: source,
-            placeholder: placeholder,
-            options: [.processor(processor), .transition(.fade(1)), .cacheOriginalImage]
-        ) {
-            result in
-            switch result {
-            case .success(let value):
-                debugLog("Task done for: \(value.source.url?.absoluteString ?? "")")
-            case .failure(let error):
-                debugLog("Job failed: \(error.localizedDescription)")
-            }
+    func remote(_ source: URL?, _ placeholder: UIImage?, radius: CGFloat? = 0, activity: Bool? = false) {
+        self.layer.cornerRadius = radius ?? 0
+        self.layer.masksToBounds = true
+        if let load = activity, load {
+            self.kf.indicatorType = .activity
         }
+        self.kf.setImage(with: source, placeholder: placeholder, options: [.transition(.fade(1)), .cacheOriginalImage])
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIImage {
+public extension UIImage {
 
     func withColor(color: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
