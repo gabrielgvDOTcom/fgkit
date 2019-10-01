@@ -74,6 +74,7 @@
 		35F524E22318799E009308DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F524E12318799E009308DD /* Assets.xcassets */; };
 		7AD33DDBC884A7407F923294 /* Pods_FGKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17C548333A9A3370C7DFE72 /* Pods_FGKit.framework */; };
 		7E4EC1EE054248DFD39BCF5C /* Pods_FGDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4CE461DFB3BDC5AF6814F2 /* Pods_FGDemo.framework */; };
+		E50FAEA0232DC309002350ED /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50FAE9F232DC309002350ED /* Util.swift */; };
 		E54B586C2302556300A50B7D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B586B2302556300A50B7D /* Message.swift */; };
 		E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */; };
 		E5BA4BAB23208CD200CB9BC7 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */; };
@@ -180,6 +181,7 @@
 		47CFD5B27F63A6599288BA04 /* Pods-FGDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGDemo.debug.xcconfig"; path = "Target Support Files/Pods-FGDemo/Pods-FGDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B17C548333A9A3370C7DFE72 /* Pods_FGKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FGKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D93E2E6CD93546594459A34F /* Pods-FGDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FGDemo.release.xcconfig"; path = "Target Support Files/Pods-FGDemo/Pods-FGDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E50FAE9F232DC309002350ED /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		E54B586B2302556300A50B7D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 				3595F27522FA10BE00BA429F /* ClosureSleeve.swift */,
 				E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */,
 				35B03E5B230DE84D0045C031 /* Log.swift */,
+				E50FAE9F232DC309002350ED /* Util.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -797,6 +800,7 @@
 				35B03E5C230DE84D0045C031 /* Log.swift in Sources */,
 				357562952315E57000DC882B /* FGPageHeader.swift in Sources */,
 				35756219231598DB00DC882B /* FGPageView.swift in Sources */,
+				E50FAEA0232DC309002350ED /* Util.swift in Sources */,
 				3595F23222FA084700BA429F /* UILabel+Extension.swift in Sources */,
 				353D12112301B8AA001C0A2D /* Form.swift in Sources */,
 				359A654C2318342700C8C00E /* FGErrorView.swift in Sources */,
