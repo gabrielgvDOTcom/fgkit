@@ -25,7 +25,8 @@ open class FGErrorView: UIViewController {
     @IBOutlet private weak var subtitleLabel: UILabel!
     @IBOutlet private weak var retryView: UIView!
     @IBOutlet private weak var retryLabel: UILabel!
-    
+    @IBOutlet private weak var retryIconImage: UIImageView!
+
     // MARK: - Init -
     public init(delegate: FGErrorDelegate) {
         self.delegate = delegate
@@ -57,10 +58,16 @@ open class FGErrorView: UIViewController {
         titleLabel.style(FGErrorStyled.shared().title)
         subtitleLabel.style(FGErrorStyled.shared().message)
         retryLabel.style(FGErrorStyled.shared().retry)
+        //TODO: Cambiar desde Styled
+        retryIconImage.image = UIImage(named: "refresh-icon")!.withColor(color: UIColor.darkGray)
+    }
+    public func remove() {
+        
     }
     public func present(_ title: String?, _ message: String?, view: UIView) {
         titleLabel.text = title ?? "Ha ocurrido un Error"
         subtitleLabel.text = message ?? "No se ha podido completar la operación por un error desconocido, inténtelo en un momento"
+        
         FGLayout.fill(view: self.view, container: view)
     }
 
