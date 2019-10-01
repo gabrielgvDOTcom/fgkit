@@ -62,13 +62,26 @@ open class FGErrorView: UIViewController {
         retryIconImage.image = UIImage(named: "refresh-icon")!.withColor(color: UIColor.darkGray)
     }
     public func remove() {
-        
+        UIView.animate(
+            withDuration: 0.25,
+            delay: 0.0,
+            options: .allowUserInteraction,
+            animations:{ [weak self] () -> Void in
+                self?.view.alpha = 0
+            }
+        ) { [weak self] (completed) -> Void in
+            self?.view.removeFromSuperview()
+        }
     }
-    public func present(_ title: String?, _ message: String?, view: UIView) {
+    public func present(_ title: String?, _ message: String?, content: UIView) {
         titleLabel.text = title ?? "Ha ocurrido un Error"
         subtitleLabel.text = message ?? "No se ha podido completar la operación por un error desconocido, inténtelo en un momento"
         
-        FGLayout.fill(view: self.view, container: view)
+        FGLayout.fill(view: view, container: content)
+        view.alpha = 0
+        UIView.animate(withDuration: 0.25) {
+            self.view.alpha = 1
+        }
     }
 
     // MARK: - deinit -
