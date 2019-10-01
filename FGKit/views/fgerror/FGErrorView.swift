@@ -58,8 +58,7 @@ open class FGErrorView: UIViewController {
         titleLabel.style(FGErrorStyled.shared().title)
         subtitleLabel.style(FGErrorStyled.shared().message)
         retryLabel.style(FGErrorStyled.shared().retry)
-        //TODO: Cambiar desde Styled
-        retryIconImage.image = UIImage(named: "refresh-icon")!.withColor(color: UIColor.darkGray)
+        retryIconImage.style(FGErrorStyled.shared().retryIcon)
     }
     public func remove() {
         UIView.animate(
@@ -71,6 +70,7 @@ open class FGErrorView: UIViewController {
             }
         ) { [weak self] (completed) -> Void in
             self?.view.removeFromSuperview()
+            //TODO: El controlador queda en memoria, hasta que se elimina desde navegación.
         }
     }
     public func present(_ title: String?, _ message: String?, content: UIView) {

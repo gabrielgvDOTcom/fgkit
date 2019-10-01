@@ -28,6 +28,13 @@ open class FGErrorStyled: NSObject {
             color: UIColor.darkGray
         )
     }
+    open var retryIcon: Styled.Icon {
+        return Styled.Icon(
+            name: "refresh-icon",
+            color: UIColor.darkGray,
+            size: 25
+        )
+    }
 
     // MARK: - Functions
     struct StaticData {

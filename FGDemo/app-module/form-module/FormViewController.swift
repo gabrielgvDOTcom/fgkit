@@ -22,9 +22,10 @@ final class FormViewController: UIViewController {
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         errorView = FGErrorView(delegate: self)
-        errorView?.present("Error", message: "Algún Error", view: self.view)
+        errorView?.retry = true
+        errorView?.present("Error", "Algún Error", content: self.view)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -76,7 +77,7 @@ final class FormViewController: UIViewController {
 extension FormViewController: FGErrorDelegate {
     
     func retryOperation(errorView: FGErrorView) {
-        
+        errorView.remove()
     }
 }
 extension FormViewController: UITextFieldDelegate {
