@@ -34,11 +34,12 @@ extension FormPresenter: FormPresenterInterface {
     func viewDidDisappear(animated: Bool) {}
 
     func validate(run: String) {
-        FGForm([["field": run, "label": "RUT", "rules": [FGFormType.dni]]]).validate { (error) -> (Void) in
+        FGForm([["field": run, "label": "RUT", "rules": [FGFormType.min_price(100000), FGFormType.max_price(110000)]]]).validate { (error) -> (Void) in
             if let error = error {
                 self.router.presentAlert(title: "Error", message: error.localizedDescription)
                 return
             }
+            print("todo bien")
         }
     }
 }

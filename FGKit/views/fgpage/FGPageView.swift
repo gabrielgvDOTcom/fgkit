@@ -40,6 +40,10 @@ open class FGPageView: UIViewController {
             forCellWithReuseIdentifier: "FGPageCell"
         )
     }
+    override open func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        pages.removeAll()
+    }
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -55,8 +59,6 @@ open class FGPageView: UIViewController {
     // MARK: - deinit -
     deinit {
         debugLog("\(String(describing: self)) deinit")
-        pages.removeAll()
-        view = nil
     }
 }
 extension FGPageView: UIScrollViewDelegate {

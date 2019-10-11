@@ -71,22 +71,12 @@ final class FormViewController: UIViewController {
     // MARK: - deinit -
     deinit {
         debugLog("\(String(describing: self)) deinit")
-        errorView = nil
     }
 }
 extension FormViewController: FGErrorDelegate {
     
     func retryOperation(errorView: FGErrorView) {
         errorView.remove()
-    }
-}
-extension FormViewController: UITextFieldDelegate {
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        switch textField.tag {
-        case runTextField.tag: runTextField.text = FGRun.format(runTextField.text!)
-        default: break
-        }
     }
 }
 extension FormViewController: FormViewInterface {

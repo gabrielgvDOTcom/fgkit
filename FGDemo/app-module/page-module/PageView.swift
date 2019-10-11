@@ -31,7 +31,6 @@ final class PageView: UIViewController {
     // MARK: - deinit -
     deinit {
         debugLog("\(String(describing: self)) deinit")
-        pageView = nil
     }
 }
 extension PageView: PageViewInterface {

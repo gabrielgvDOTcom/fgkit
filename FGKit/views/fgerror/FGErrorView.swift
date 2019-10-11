@@ -87,7 +87,5 @@ open class FGErrorView: UIViewController {
     // MARK: - deinit -
     deinit {
         debugLog("\(String(describing: self)) deinit")
-        retry = nil
-        view = nil
     }
 }

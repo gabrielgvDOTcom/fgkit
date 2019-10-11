@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9H-e2-Xaj">
-                                                <rect key="frame" x="27.5" y="48" width="320" height="170.5"/>
+                                                <rect key="frame" x="27.5" y="28" width="320" height="170.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0TX-e9-Orf">
                                                         <rect key="frame" x="20" y="20" width="280" height="130.5"/>
@@ -44,7 +42,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="0qe-Pt-qz8"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                         <connections>
@@ -60,7 +57,7 @@
                                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <connections>
-                                                                                    <action selector="validRUN:" destination="zIc-eW-6fX" eventType="touchUpInside" id="Skh-1n-uwe"/>
+                                                                                    <action selector="validRUN:" destination="zIc-eW-6fX" eventType="touchUpInside" id="XCw-hU-SI7"/>
                                                                                 </connections>
                                                                             </button>
                                                                         </subviews>
@@ -83,7 +80,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I00-oF-x1k">
-                                                <rect key="frame" x="27.5" y="238.5" width="320" height="170.5"/>
+                                                <rect key="frame" x="27.5" y="218.5" width="320" height="170.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O4L-k6-OYd">
                                                         <rect key="frame" x="20" y="20" width="280" height="130.5"/>
@@ -102,7 +99,6 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="40" id="RtZ-Xe-kyL"/>
                                                                         </constraints>
-                                                                        <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits"/>
                                                                     </textField>
