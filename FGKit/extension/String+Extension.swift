@@ -25,4 +25,8 @@ public extension String {
         amountWithPrefix = regex.stringByReplacingMatches(in: amountWithPrefix, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count), withTemplate: "")
         return amountWithPrefix
     }
+
+    func width(_ font: UIFont) -> CGFloat {
+        return self.size(withAttributes: [NSAttributedString.Key.font: font]).width
+    }
 }
