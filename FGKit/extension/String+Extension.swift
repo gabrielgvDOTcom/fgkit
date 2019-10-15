@@ -29,4 +29,9 @@ public extension String {
     func width(_ font: UIFont) -> CGFloat {
         return self.size(withAttributes: [NSAttributedString.Key.font: font]).width
     }
+    func height(_ width: CGFloat, _ font: UIFont, _ padding: CGFloat = 0) -> CGFloat {
+        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(with: constraintRect, options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedString.Key.font: font], context: nil)
+        return boundingBox.height + padding
+    }
 }
