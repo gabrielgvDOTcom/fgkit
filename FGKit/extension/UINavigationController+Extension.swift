@@ -11,6 +11,9 @@ import UIKit
 
 public extension UINavigationController {
     
+    func popRouter(_ router: BaseRouter, animated: Bool = true) {
+        self.popToViewController(router.viewController, animated: animated)
+    }
     func pushRouter(_ router: BaseRouter, animated: Bool = true) {
         self.pushViewController(router.viewController, animated: animated)
     }
