@@ -14,8 +14,4 @@ Pod::Spec.new do |spec|
 	spec.resources = 'FGKit/**/*.{xcassets,xib,storyboard}' 
 	spec.source_files = "FGKit/**/*.{h,swift}"
 	spec.static_framework = true
-
-	spec.dependency "ObjectMapper"
-	spec.dependency "Alamofire", "4.8.2"
-	spec.dependency "Kingfisher", "5.4.0"
 end

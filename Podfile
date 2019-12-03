@@ -4,7 +4,6 @@ use_frameworks!
 
 target 'FGKit' do
 	pod 'Kingfisher'
-	pod 'ObjectMapper'
 end
 target 'FGDemo' do
 	pod 'AlamofireObjectMapper'
