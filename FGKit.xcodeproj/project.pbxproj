@@ -41,8 +41,6 @@
 		3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */ = {isa = PBXBuildFile; fileRef = 3595F25122FA098000BA429F /* DJailbreakDetector.m-e */; };
 		3595F26922FA09CE00BA429F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26822FA09CE00BA429F /* UIColor+Extension.swift */; };
 		3595F26B22FA0A5800BA429F /* UIContol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */; };
-		3595F27022FA0A7700BA429F /* DateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26D22FA0A7700BA429F /* DateFormatTransform.swift */; };
-		3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26E22FA0A7700BA429F /* IntTransform.swift */; };
 		3595F27422FA0ADA00BA429F /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27322FA0ADA00BA429F /* Run.swift */; };
 		3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27522FA10BE00BA429F /* ClosureSleeve.swift */; };
 		359A654C2318342700C8C00E /* FGErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A654B2318342700C8C00E /* FGErrorView.swift */; };
@@ -152,8 +150,6 @@
 		3595F25122FA098000BA429F /* DJailbreakDetector.m-e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "DJailbreakDetector.m-e"; sourceTree = "<group>"; };
 		3595F26822FA09CE00BA429F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIContol+Extension.swift"; sourceTree = "<group>"; };
-		3595F26D22FA0A7700BA429F /* DateFormatTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatTransform.swift; sourceTree = "<group>"; };
-		3595F26E22FA0A7700BA429F /* IntTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntTransform.swift; sourceTree = "<group>"; };
 		3595F27322FA0ADA00BA429F /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		3595F27522FA10BE00BA429F /* ClosureSleeve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureSleeve.swift; sourceTree = "<group>"; };
 		359A654B2318342700C8C00E /* FGErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGErrorView.swift; sourceTree = "<group>"; };
@@ -376,7 +372,6 @@
 				3595F22A22FA07F100BA429F /* styled */,
 				353D120F2301B7EA001C0A2D /* form */,
 				3595F26722FA09C200BA429F /* extension */,
-				3595F26C22FA0A7700BA429F /* objectmapper */,
 				35A99371230C738A003A62B2 /* interfaces */,
 				3595F22822FA07DD00BA429F /* libraries */,
 				3595F21F22FA073000BA429F /* FGKit.h */,
@@ -459,15 +454,6 @@
 				E5E107FF2352D6350072D62E /* UICollectionView+Extension.swift */,
 			);
 			path = extension;
-			sourceTree = "<group>";
-		};
-		3595F26C22FA0A7700BA429F /* objectmapper */ = {
-			isa = PBXGroup;
-			children = (
-				3595F26E22FA0A7700BA429F /* IntTransform.swift */,
-				3595F26D22FA0A7700BA429F /* DateFormatTransform.swift */,
-			);
-			path = objectmapper;
 			sourceTree = "<group>";
 		};
 		359A654A2318337400C8C00E /* fgerror */ = {
@@ -791,7 +777,6 @@
 				E5E107DD2350220B0072D62E /* Int+Extension.swift in Sources */,
 				E5CADE26231762CA00E9D793 /* FGPageStyled.swift in Sources */,
 				3595F26322FA098000BA429F /* DJailbreakDetector.m in Sources */,
-				3595F27022FA0A7700BA429F /* DateFormatTransform.swift in Sources */,
 				35A9936E230C7263003A62B2 /* UIViewController+Extension.swift in Sources */,
 				3595F26B22FA0A5800BA429F /* UIContol+Extension.swift in Sources */,
 				3595F26922FA09CE00BA429F /* UIColor+Extension.swift in Sources */,
@@ -822,7 +807,6 @@
 				E5E107FE2352D5D70072D62E /* Class.swift in Sources */,
 				3595F23922FA08CF00BA429F /* Layout.swift in Sources */,
 				35B03E2E230C76890045C031 /* ViewInterface.swift in Sources */,
-				3595F27122FA0A7700BA429F /* IntTransform.swift in Sources */,
 				357562312315B40200DC882B /* FGPageEntity.swift in Sources */,
 				E57CBE072343A5EA00880F5E /* UImageView+Extension.swift in Sources */,
 				E54B586C2302556300A50B7D /* Message.swift in Sources */,

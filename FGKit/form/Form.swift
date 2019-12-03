@@ -6,8 +6,6 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
-import ObjectMapper
-
 public enum FGFormType {
 
     case dni
@@ -27,9 +25,7 @@ public struct FGForm {
     
     var form: [FGFormField] = []
     
-    public init(_ form: [[String : Any]]) {
-        self.form = Mapper<FGFormField>().mapArray(JSONObject: form)!
-    }
+    public init(_ form: [[String : Any]]) {}
     public func validate(_ completion: @escaping (NSError?) -> (Void)) -> Void {
         for item in form {
             for rule in item.rules {
