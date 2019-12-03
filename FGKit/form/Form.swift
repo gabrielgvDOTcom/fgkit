@@ -6,6 +6,29 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
+public class FGValidator {
+    
+    private var form: [String] = []
+    
+    public init() {}
+    
+    public func add(_ field: String, _ placeholder: String, with rules: [FGRule]) {
+        form.append("hola")
+        //return rules.compactMap({ $0.check(text) }).first
+    }
+    public func validate(_ completion: @escaping (NSError?) -> Void) {
+        
+    }
+}
+public struct FGRule {
+    
+    let check: (String) -> String?
+    
+    static let required = FGRule(check: {
+        return $0.length == 0 ? "Must not be empty" : nil
+    })
+}
+
 public enum FGFormType {
 
     case dni
@@ -19,6 +42,8 @@ public enum FGFormType {
     case min_price(Int)
     case multiple(Int, _ price: Bool)
 }
+
+
 
 /// Estructura *FGForm*, una pequeña clase validadora de campos.
 public struct FGForm {
