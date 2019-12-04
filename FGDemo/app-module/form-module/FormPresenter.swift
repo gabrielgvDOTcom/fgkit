@@ -34,11 +34,12 @@ extension FormPresenter: FormPresenterInterface {
     func viewDidDisappear(animated: Bool) {}
 
     func validate(run: String) {
-        let form = FGValidator()
-        form.add(run, "RUN", with: [.required])
-        form.add("", "ASD", with: [.required])
+        let form = FGForm()
+        form.add(run, "RUN", with: [.required, .number(.only)])
         form.validate { (error) -> (Void) in
-            
+            if let error = error {
+                print(error)
+            }
         }
     }
 }
