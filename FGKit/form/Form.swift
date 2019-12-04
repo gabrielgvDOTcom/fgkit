@@ -6,25 +6,42 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
+public class FGField {
+    
+    var field: String
+    var placeholder: String
+    var rules: [FGRule] = []
+    
+    init(f: String, p: String, r: [FGRule]) {
+        field = f
+        placeholder = p
+        rules = r
+    }
+}
 public class FGValidator {
     
-    private var form: [String] = []
+    private var form: [FGField] = []
     
     public init() {}
     
     public func add(_ field: String, _ placeholder: String, with rules: [FGRule]) {
-        form.append("hola")
-        //return rules.compactMap({ $0.check(text) }).first
+        form.append(FGField(f: field, p: placeholder, r: rules))
     }
     public func validate(_ completion: @escaping (NSError?) -> Void) {
-        
+        for f in form {
+            if let msg = f.rules.compactMap({ $0.check(f.field) }).first {
+                print(msg)
+                return
+            }
+        }
     }
+    
 }
 public struct FGRule {
     
     let check: (String) -> String?
     
-    static let required = FGRule(check: {
+    static public let required = FGRule(check: {
         return $0.length == 0 ? "Must not be empty" : nil
     })
 }

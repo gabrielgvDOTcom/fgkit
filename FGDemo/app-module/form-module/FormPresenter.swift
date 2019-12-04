@@ -35,7 +35,8 @@ extension FormPresenter: FormPresenterInterface {
 
     func validate(run: String) {
         let form = FGValidator()
-        form.add(run, "RUN", with: [])
+        form.add(run, "RUN", with: [.required])
+        form.add("", "ASD", with: [.required])
         form.validate { (error) -> (Void) in
             
         }
