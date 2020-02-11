@@ -67,8 +67,8 @@
 		35B03E4A230C7A320045C031 /* FormProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E44230C7A320045C031 /* FormProtocol.swift */; };
 		35B03E4B230C7A320045C031 /* FormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E45230C7A320045C031 /* FormRouter.swift */; };
 		35B03E5C230DE84D0045C031 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E5B230DE84D0045C031 /* Log.swift */; };
-		35E46F1422FB5DC20073224F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E46F1322FB5DC20073224F /* UIView+Extension.swift */; };
 		35F524E22318799E009308DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F524E12318799E009308DD /* Assets.xcassets */; };
+		E552F66623F2D7490025FB6A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66523F2D7490025FB6A /* UIView+Extension.swift */; };
 		E57CBE072343A5EA00880F5E /* UImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57CBE062343A5EA00880F5E /* UImageView+Extension.swift */; };
 		E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */; };
 		E5BA4BAB23208CD200CB9BC7 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */; };
@@ -169,8 +169,8 @@
 		35B03E45230C7A320045C031 /* FormRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormRouter.swift; sourceTree = "<group>"; };
 		35B03E5B230DE84D0045C031 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		35E46EFE22FB54FE0073224F /* FGDemo-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FGDemo-Header.h"; sourceTree = "<group>"; };
-		35E46F1322FB5DC20073224F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		35F524E12318799E009308DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E552F66523F2D7490025FB6A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E57CBE062343A5EA00880F5E /* UImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Extension.swift"; sourceTree = "<group>"; };
 		E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -388,7 +388,6 @@
 		3595F22B22FA07F800BA429F /* extension */ = {
 			isa = PBXGroup;
 			children = (
-				35E46F1322FB5DC20073224F /* UIView+Extension.swift */,
 				3595F22E22FA084700BA429F /* UILabel+Extension.swift */,
 				3595F23022FA084700BA429F /* UIButton+Extension.swift */,
 				E57CBE062343A5EA00880F5E /* UImageView+Extension.swift */,
@@ -424,6 +423,7 @@
 				E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */,
 				E5E107FB2352CFDD0072D62E /* UITableView+Extension.swift */,
 				E5E107FF2352D6350072D62E /* UICollectionView+Extension.swift */,
+				E552F66523F2D7490025FB6A /* UIView+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -679,8 +679,8 @@
 				3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */,
 				353D12132301C91B001C0A2D /* String+Extension.swift in Sources */,
 				3595F27422FA0ADA00BA429F /* Run.swift in Sources */,
-				35E46F1422FB5DC20073224F /* UIView+Extension.swift in Sources */,
 				3595F23422FA084700BA429F /* UIButton+Extension.swift in Sources */,
+				E552F66623F2D7490025FB6A /* UIView+Extension.swift in Sources */,
 				35B03E34230C770A0045C031 /* RouterInterface.swift in Sources */,
 				E5BA4BAB23208CD200CB9BC7 /* UITextField+Extension.swift in Sources */,
 				E5CADE232317530200E9D793 /* FGPageCell.swift in Sources */,

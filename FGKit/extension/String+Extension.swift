@@ -6,8 +6,6 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
-import Foundation
-
 public extension String {
     
     var email: Bool {
@@ -25,6 +23,19 @@ public extension String {
         amountWithPrefix = regex.stringByReplacingMatches(in: amountWithPrefix, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count), withTemplate: "")
         return amountWithPrefix
     }
+    var hideEmailPrefix: String {
+       if self.contains("@") {
+            let part = self.components(separatedBy: "@")
+            let newText = String(repeating: "*", count: part[0].count)
+            return newText + "@" + part[1]
+       }
+       return self
+    }
+    var hidePhonePrefix: String {
+        return String(self.enumerated().map { index, char in
+           return [0, 1, self.count - 1, self.count - 2].contains(index) ? char : "X"
+        })
+    }
 
     func width(_ font: UIFont) -> CGFloat {
         return self.size(withAttributes: [NSAttributedString.Key.font: font]).width
@@ -38,5 +49,19 @@ public extension String {
             context: nil
         )
         return boundingBox.height + padding
+    }
+}
+public extension NSMutableAttributedString {
+    
+    @discardableResult func normal(_ text: String) -> NSMutableAttributedString {
+        let normal = NSAttributedString(string: text)
+        append(normal)
+        return self
+    }
+    @discardableResult func bold(_ text: String, font: UIFont) -> NSMutableAttributedString {
+        let attrs: [NSAttributedString.Key: Any] = [.font: font]
+        let boldString = NSMutableAttributedString(string:text, attributes: attrs)
+        append(boldString)
+        return self
     }
 }
