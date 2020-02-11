@@ -70,7 +70,9 @@ open class FGAlertView: UIViewController {
     
     // MARK: - Notification -
     @objc private func removeView(_ notification: Notification) {
-        guard let done = notification.userInfo?["done"] as? (() -> Void) else { return }
+        guard let done = notification.userInfo?["done"] as? (() -> Void) else {
+            return self.dismiss(animated: true, completion: nil)
+        }
         self.dismiss(animated: true) { done() }
     }
 

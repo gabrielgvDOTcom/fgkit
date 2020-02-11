@@ -69,13 +69,14 @@ open class FGAlertAction {
         )
         button.action(for: .touchUpInside) { [weak self] in
             DispatchQueue.main.async {
-                if let done = self?.action {
-                    NotificationCenter.default.post(
-                        name: NSNotification.Name(rawValue: "CloseAlertView"),
-                        object: nil,
-                        userInfo: ["done": done]
-                    )
-                }
+                var userInfo: [String:Any] = [:]
+                if let done = self?.action { userInfo["done"] = done }
+                
+                NotificationCenter.default.post(
+                    name: NSNotification.Name(rawValue: "CloseAlertView"),
+                    object: nil,
+                    userInfo: userInfo
+                )
             }
         }
         return button
