@@ -16,7 +16,7 @@ public class ShadowStyle {
     let radius: CGFloat
     let scale: Bool
     
-    init(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
+    public init(color: UIColor, opacity: Float = 0.5, offSet: CGSize, radius: CGFloat = 1, scale: Bool = true) {
         self.color = color
         self.opacity = opacity
         self.offSet = offSet
