@@ -33,7 +33,6 @@ open class FGAlertView: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
 
-        iconView.isHidden = true
         titleLabel.style(Styled.FGAlert.Title)
         messageLabel.style(Styled.FGAlert.Message)
         blurView.style(Styled.FGAlert.BGView)
@@ -71,7 +70,8 @@ open class FGAlertView: UIViewController {
     
     // MARK: - Notification -
     @objc private func removeView(_ notification: Notification) {
-        self.dismiss(animated: true, completion: nil)
+        guard let done = notification.userInfo?["done"] as? (() -> Void) else { return }
+        self.dismiss(animated: true) { done() }
     }
 
     // MARK: - deinit -

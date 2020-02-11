@@ -30,13 +30,13 @@
                     <color key="backgroundColor" white="0.0" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkO-xA-dhs">
-                    <rect key="frame" x="57" y="288.33333333333331" width="300" height="159.66666666666669"/>
+                    <rect key="frame" x="57" y="285.66666666666669" width="300" height="164.66666666666669"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kuz-Qv-AT5">
-                            <rect key="frame" x="20" y="20.000000000000007" width="260" height="119.66666666666669"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kuz-Qv-AT5">
+                            <rect key="frame" x="20" y="20.000000000000007" width="260" height="124.66666666666669"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sfS-z5-Huh">
-                                    <rect key="frame" x="0.0" y="0.0" width="260" height="119.66666666666667"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="sfS-z5-Huh">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="124.66666666666667"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3Z-vL-HvQ">
                                             <rect key="frame" x="0.0" y="0.0" width="260" height="60"/>
@@ -56,8 +56,8 @@
                                                 <constraint firstAttribute="bottom" secondItem="tV8-N3-j83" secondAttribute="bottom" id="UVJ-Lg-V3A"/>
                                             </constraints>
                                         </view>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-U1-tVf">
-                                            <rect key="frame" x="0.0" y="80" width="260" height="39.666666666666657"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SJe-U1-tVf">
+                                            <rect key="frame" x="0.0" y="90" width="260" height="34.666666666666657"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMQ-cd-A4y">
                                                     <rect key="frame" x="0.0" y="0.0" width="260" height="17.333333333333332"/>
@@ -73,7 +73,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhD-uM-sag">
-                                                    <rect key="frame" x="0.0" y="22.333333333333371" width="260" height="17.333333333333329"/>
+                                                    <rect key="frame" x="0.0" y="17.333333333333314" width="260" height="17.333333333333329"/>
                                                     <attributedString key="attributedText">
                                                         <fragment content="Message">
                                                             <attributes>

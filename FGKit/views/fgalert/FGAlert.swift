@@ -34,8 +34,8 @@ open class FGAlert {
     public func present(container: UIViewController) {
         if let controller = alert, (controller.presentingViewController == nil) {
             controller.action(objects: actions)
-            controller.modalPresentationStyle = .overCurrentContext
             controller.data(title: title, message: message, icon: icon)
+            controller.modalPresentationStyle = .overCurrentContext
             container.navigationController?.present(controller, animated: true, completion: nil)
         }
     }
@@ -69,8 +69,13 @@ open class FGAlertAction {
         )
         button.action(for: .touchUpInside) { [weak self] in
             DispatchQueue.main.async {
-                if let done = self?.action { done() }
-                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "CloseAlertView"), object: nil)
+                if let done = self?.action {
+                    NotificationCenter.default.post(
+                        name: NSNotification.Name(rawValue: "CloseAlertView"),
+                        object: nil,
+                        userInfo: ["done": done]
+                    )
+                }
             }
         }
         return button
