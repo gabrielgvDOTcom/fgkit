@@ -17,13 +17,13 @@ open class FGAlert {
 
     // MARK: - IBOutlet -
     var icon: UIImage?
-    var title: String = ""
-    var message: String = ""
+    var title: String?
+    var message: String?
     var actions: [FGAlertAction] = []
     private var alert: FGAlertView?
 
     // MARK: - Init -
-    public init(title: String, message: String, icon: UIImage? = nil) {
+    public init(title: String?, message: String?, icon: UIImage? = nil) {
         self.title = title
         self.message = message
         self.icon = icon

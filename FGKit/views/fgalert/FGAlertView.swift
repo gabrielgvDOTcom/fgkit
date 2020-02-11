@@ -58,13 +58,14 @@ open class FGAlertView: UIViewController {
         })
         buttonStackView.isHidden = false
     }
-    func data(title: String, message: String, icon: UIImage? = nil) {
-        if let icon = icon {
-            iconView.isHidden = false
-            iconImage.image = icon
-        }
+    func data(title: String?, message: String?, icon: UIImage? = nil) {
+        iconView.isHidden = (icon == nil)
+        titleLabel.isHidden = (title == nil)
+        messageLabel.isHidden = (message == nil)
+
         titleLabel.text = title
         messageLabel.text = message
+        iconImage.image = icon
     }
     
     // MARK: - Notification -
