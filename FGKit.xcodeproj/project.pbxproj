@@ -39,7 +39,7 @@
 		3595F26522FA098000BA429F /* LOOCryptString.m in Sources */ = {isa = PBXBuildFile; fileRef = 3595F25022FA098000BA429F /* LOOCryptString.m */; };
 		3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */ = {isa = PBXBuildFile; fileRef = 3595F25122FA098000BA429F /* DJailbreakDetector.m-e */; };
 		3595F26922FA09CE00BA429F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26822FA09CE00BA429F /* UIColor+Extension.swift */; };
-		3595F26B22FA0A5800BA429F /* UIContol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */; };
+		3595F26B22FA0A5800BA429F /* UIControl+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F26A22FA0A5800BA429F /* UIControl+Extension.swift */; };
 		3595F27422FA0ADA00BA429F /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27322FA0ADA00BA429F /* Run.swift */; };
 		3595F27622FA10BF00BA429F /* ClosureSleeve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595F27522FA10BE00BA429F /* ClosureSleeve.swift */; };
 		359A654C2318342700C8C00E /* FGErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359A654B2318342700C8C00E /* FGErrorView.swift */; };
@@ -69,6 +69,10 @@
 		35B03E5C230DE84D0045C031 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E5B230DE84D0045C031 /* Log.swift */; };
 		35F524E22318799E009308DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F524E12318799E009308DD /* Assets.xcassets */; };
 		E552F66623F2D7490025FB6A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66523F2D7490025FB6A /* UIView+Extension.swift */; };
+		E552F66923F2DA690025FB6A /* FGAlertStyled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66823F2DA690025FB6A /* FGAlertStyled.swift */; };
+		E552F66C23F2DAFA0025FB6A /* FGAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = E552F66B23F2DAFA0025FB6A /* FGAlert.xib */; };
+		E552F66E23F2DB7E0025FB6A /* FGAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66D23F2DB7E0025FB6A /* FGAlertView.swift */; };
+		E552F67023F2DCA90025FB6A /* FGAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66F23F2DCA90025FB6A /* FGAlert.swift */; };
 		E57CBE072343A5EA00880F5E /* UImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57CBE062343A5EA00880F5E /* UImageView+Extension.swift */; };
 		E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */; };
 		E5BA4BAB23208CD200CB9BC7 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */; };
@@ -142,7 +146,7 @@
 		3595F25022FA098000BA429F /* LOOCryptString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOOCryptString.m; sourceTree = "<group>"; };
 		3595F25122FA098000BA429F /* DJailbreakDetector.m-e */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "DJailbreakDetector.m-e"; sourceTree = "<group>"; };
 		3595F26822FA09CE00BA429F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIContol+Extension.swift"; sourceTree = "<group>"; };
+		3595F26A22FA0A5800BA429F /* UIControl+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl+Extension.swift"; sourceTree = "<group>"; };
 		3595F27322FA0ADA00BA429F /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		3595F27522FA10BE00BA429F /* ClosureSleeve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureSleeve.swift; sourceTree = "<group>"; };
 		359A654B2318342700C8C00E /* FGErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGErrorView.swift; sourceTree = "<group>"; };
@@ -171,6 +175,10 @@
 		35E46EFE22FB54FE0073224F /* FGDemo-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FGDemo-Header.h"; sourceTree = "<group>"; };
 		35F524E12318799E009308DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E552F66523F2D7490025FB6A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E552F66823F2DA690025FB6A /* FGAlertStyled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGAlertStyled.swift; sourceTree = "<group>"; };
+		E552F66B23F2DAFA0025FB6A /* FGAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGAlert.xib; sourceTree = "<group>"; };
+		E552F66D23F2DB7E0025FB6A /* FGAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGAlertView.swift; sourceTree = "<group>"; };
+		E552F66F23F2DCA90025FB6A /* FGAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGAlert.swift; sourceTree = "<group>"; };
 		E57CBE062343A5EA00880F5E /* UImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Extension.swift"; sourceTree = "<group>"; };
 		E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		E5BA4BAA23208CD200CB9BC7 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
@@ -205,6 +213,7 @@
 		3575620423158F6400DC882B /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E552F66723F2DA1F0025FB6A /* fgalert */,
 				359A654A2318337400C8C00E /* fgerror */,
 				357562052315904A00DC882B /* fgpage */,
 			);
@@ -415,7 +424,7 @@
 				3595F22F22FA084700BA429F /* UIFont+Extension.swift */,
 				3595F26822FA09CE00BA429F /* UIColor+Extension.swift */,
 				3575620223158ADE00DC882B /* UIImage+Extension.swift */,
-				3595F26A22FA0A5800BA429F /* UIContol+Extension.swift */,
+				3595F26A22FA0A5800BA429F /* UIControl+Extension.swift */,
 				3595F23122FA084700BA429F /* UserDefaults+Extension.swift */,
 				35A9936B230C721F003A62B2 /* UIStoryboard+Extension.swift */,
 				35A9936D230C7263003A62B2 /* UIViewController+Extension.swift */,
@@ -504,6 +513,25 @@
 			children = (
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E552F66723F2DA1F0025FB6A /* fgalert */ = {
+			isa = PBXGroup;
+			children = (
+				E552F66F23F2DCA90025FB6A /* FGAlert.swift */,
+				E552F66D23F2DB7E0025FB6A /* FGAlertView.swift */,
+				E552F66823F2DA690025FB6A /* FGAlertStyled.swift */,
+				E552F66A23F2DAE70025FB6A /* view */,
+			);
+			path = fgalert;
+			sourceTree = "<group>";
+		};
+		E552F66A23F2DAE70025FB6A /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E552F66B23F2DAFA0025FB6A /* FGAlert.xib */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		E5CADE1C23162BB200E9D793 /* cell */ = {
@@ -629,6 +657,7 @@
 				357562922315E50E00DC882B /* FGPage.xib in Resources */,
 				35F524E22318799E009308DD /* Assets.xcassets in Resources */,
 				3595F26622FA098000BA429F /* DJailbreakDetector.m-e in Resources */,
+				E552F66C23F2DAFA0025FB6A /* FGAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +692,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E552F66923F2DA690025FB6A /* FGAlertStyled.swift in Sources */,
 				35B03E30230C76A80045C031 /* InteractorInterface.swift in Sources */,
 				3595F23322FA084700BA429F /* UIFont+Extension.swift in Sources */,
 				359A65512318385800C8C00E /* FGErrorStyled.swift in Sources */,
@@ -670,7 +700,7 @@
 				E5CADE26231762CA00E9D793 /* FGPageStyled.swift in Sources */,
 				3595F26322FA098000BA429F /* DJailbreakDetector.m in Sources */,
 				35A9936E230C7263003A62B2 /* UIViewController+Extension.swift in Sources */,
-				3595F26B22FA0A5800BA429F /* UIContol+Extension.swift in Sources */,
+				3595F26B22FA0A5800BA429F /* UIControl+Extension.swift in Sources */,
 				3595F26922FA09CE00BA429F /* UIColor+Extension.swift in Sources */,
 				E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */,
 				35A9936C230C721F003A62B2 /* UIStoryboard+Extension.swift in Sources */,
@@ -688,6 +718,7 @@
 				35A99370230C7291003A62B2 /* UINavigationController+Extension.swift in Sources */,
 				3595F26522FA098000BA429F /* LOOCryptString.m in Sources */,
 				35B03E5C230DE84D0045C031 /* Log.swift in Sources */,
+				E552F67023F2DCA90025FB6A /* FGAlert.swift in Sources */,
 				357562952315E57000DC882B /* FGPageHeader.swift in Sources */,
 				35756219231598DB00DC882B /* FGPageView.swift in Sources */,
 				3595F23222FA084700BA429F /* UILabel+Extension.swift in Sources */,
@@ -697,6 +728,7 @@
 				E5E107FE2352D5D70072D62E /* Class.swift in Sources */,
 				3595F23922FA08CF00BA429F /* Layout.swift in Sources */,
 				35B03E2E230C76890045C031 /* ViewInterface.swift in Sources */,
+				E552F66E23F2DB7E0025FB6A /* FGAlertView.swift in Sources */,
 				357562312315B40200DC882B /* FGPageEntity.swift in Sources */,
 				E57CBE072343A5EA00880F5E /* UImageView+Extension.swift in Sources */,
 				3575620323158ADE00DC882B /* UIImage+Extension.swift in Sources */,

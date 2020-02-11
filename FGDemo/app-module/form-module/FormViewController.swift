@@ -14,6 +14,7 @@ final class FormViewController: UIViewController {
     var presenter: FormPresenterInterface!
 
     private var errorView: FGErrorView?
+    private var alert: FGAlert?
 
     // MARK: - IBOutlets -
     @IBOutlet private weak var runTextField: UITextField!
@@ -22,14 +23,17 @@ final class FormViewController: UIViewController {
     // MARK: - Lifecycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        errorView = FGErrorView(delegate: self)
-        errorView?.retry = true
-        errorView?.present("Error", "Algún Error", content: self.view)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         registerNotifications()
+        
+        alert = FGAlert(title: "hola", message: "Que hace")
+        alert?.addAction(FGAlertAction(title: "Cerrar", handler: .done))
+        alert?.addAction(FGAlertAction(title: "Aceptar", handler: .action, {
+            print("hola")
+        }))
+        alert?.present(container: self)
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
