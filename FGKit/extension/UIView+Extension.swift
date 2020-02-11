@@ -12,6 +12,18 @@ public extension UIView {
         self.backgroundColor = style.bgColor
         self.layer.cornerRadius = style.cornerRadius
         self.layer.masksToBounds = true
+        
+        if let shadow = style.shadow {
+            layer.masksToBounds = false
+            layer.shadowColor = shadow.color.cgColor
+            layer.shadowOpacity = shadow.opacity
+            layer.shadowOffset = shadow.offSet
+            layer.shadowRadius = shadow.radius
+
+            layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+            layer.shouldRasterize = true
+            layer.rasterizationScale = shadow.scale ? UIScreen.main.scale : 1
+        }
     }
 
     func dropShadow(scale: Bool = true) {

@@ -24,13 +24,21 @@ open class FGAlertStyled: NSObject {
     open var contentView: Styled.View {
         return Styled.View(
             bgColor: UIColor.white,
-            corner: 5.0
+            corner: 5.0,
+            shadow: ShadowStyle(
+                color: .red,
+                opacity: 0.4,
+                offSet: CGSize(width: 0, height: 15),
+                radius: 15,
+                scale: true
+            )
         )
     }
     open var bgView: Styled.View {
         return Styled.View(
             bgColor: UIColor.black.withAlphaComponent(0.9),
-            corner: 0.0
+            corner: 0.0,
+            shadow: nil
         )
     }
     open var title: Styled.Text {
