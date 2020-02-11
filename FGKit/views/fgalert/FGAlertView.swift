@@ -37,7 +37,6 @@ open class FGAlertView: UIViewController {
         titleLabel.style(Styled.FGAlert.Title)
         messageLabel.style(Styled.FGAlert.Message)
         blurView.style(Styled.FGAlert.BGView)
-        contentView.style(Styled.FGAlert.ContentView)
         
         NotificationCenter.default.addObserver(
             self,
@@ -66,6 +65,8 @@ open class FGAlertView: UIViewController {
         titleLabel.text = title
         messageLabel.text = message
         iconImage.image = icon
+
+        contentView.style(Styled.FGAlert.ContentView)
     }
     
     // MARK: - Notification -

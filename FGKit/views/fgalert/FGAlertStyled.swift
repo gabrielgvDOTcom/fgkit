@@ -25,13 +25,7 @@ open class FGAlertStyled: NSObject {
         return Styled.View(
             bgColor: UIColor.white,
             corner: 5.0,
-            shadow: ShadowStyle(
-                color: .red,
-                opacity: 0.4,
-                offSet: CGSize(width: 0, height: 15),
-                radius: 15,
-                scale: true
-            )
+            shadow: nil
         )
     }
     open var bgView: Styled.View {

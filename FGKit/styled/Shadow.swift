@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class ShadowStyle {
+public class ShadowStyle {
     
     let color: UIColor
     let opacity: Float
