@@ -41,4 +41,11 @@ extension MenuRouter: MenuRouterInterface {
     private func page() {
         navigationController?.pushRouter(PageRouter())
     }
+    
+    func showErrorAlert(message: String) {
+        
+    }
+    func showActionAlert(title: String, message: String, actions: [FGAlertAction]) {
+        presentCustomAlert(with: title, message: message, icon: UIImage(named: ""))
+    }
 }

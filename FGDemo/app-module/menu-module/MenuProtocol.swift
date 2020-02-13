@@ -16,6 +16,8 @@ enum MenuNavigationOption {
 protocol MenuRouterInterface: RouterInterface {
 
     func navigate(to option: MenuNavigationOption)
+    func showErrorAlert(message: String)
+    func showActionAlert(title: String, message: String, actions: [FGAlertAction])
 }
 protocol MenuViewInterface: ViewInterface {
 }
@@ -25,4 +27,5 @@ protocol MenuPresenterInterface: PresenterInterface {
     func pushPageView()
 }
 protocol MenuInteractorInterface: InteractorInterface {
+    
 }

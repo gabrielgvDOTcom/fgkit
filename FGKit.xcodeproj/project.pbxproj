@@ -71,8 +71,7 @@
 		E552F66623F2D7490025FB6A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66523F2D7490025FB6A /* UIView+Extension.swift */; };
 		E552F66923F2DA690025FB6A /* FGAlertStyled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66823F2DA690025FB6A /* FGAlertStyled.swift */; };
 		E552F66C23F2DAFA0025FB6A /* FGAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = E552F66B23F2DAFA0025FB6A /* FGAlert.xib */; };
-		E552F66E23F2DB7E0025FB6A /* FGAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66D23F2DB7E0025FB6A /* FGAlertView.swift */; };
-		E552F67023F2DCA90025FB6A /* FGAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66F23F2DCA90025FB6A /* FGAlert.swift */; };
+		E552F66E23F2DB7E0025FB6A /* FGAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66D23F2DB7E0025FB6A /* FGAlertController.swift */; };
 		E552F67523F306380025FB6A /* Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F67423F306380025FB6A /* Shadow.swift */; };
 		E57CBE072343A5EA00880F5E /* UImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57CBE062343A5EA00880F5E /* UImageView+Extension.swift */; };
 		E5ACB80B230CD8C000A9D614 /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */; };
@@ -178,8 +177,7 @@
 		E552F66523F2D7490025FB6A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E552F66823F2DA690025FB6A /* FGAlertStyled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGAlertStyled.swift; sourceTree = "<group>"; };
 		E552F66B23F2DAFA0025FB6A /* FGAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGAlert.xib; sourceTree = "<group>"; };
-		E552F66D23F2DB7E0025FB6A /* FGAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGAlertView.swift; sourceTree = "<group>"; };
-		E552F66F23F2DCA90025FB6A /* FGAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGAlert.swift; sourceTree = "<group>"; };
+		E552F66D23F2DB7E0025FB6A /* FGAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGAlertController.swift; sourceTree = "<group>"; };
 		E552F67423F306380025FB6A /* Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadow.swift; sourceTree = "<group>"; };
 		E57CBE062343A5EA00880F5E /* UImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Extension.swift"; sourceTree = "<group>"; };
 		E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
@@ -521,8 +519,7 @@
 		E552F66723F2DA1F0025FB6A /* fgalert */ = {
 			isa = PBXGroup;
 			children = (
-				E552F66F23F2DCA90025FB6A /* FGAlert.swift */,
-				E552F66D23F2DB7E0025FB6A /* FGAlertView.swift */,
+				E552F66D23F2DB7E0025FB6A /* FGAlertController.swift */,
 				E552F66823F2DA690025FB6A /* FGAlertStyled.swift */,
 				E552F66A23F2DAE70025FB6A /* view */,
 			);
@@ -722,7 +719,6 @@
 				35A99370230C7291003A62B2 /* UINavigationController+Extension.swift in Sources */,
 				3595F26522FA098000BA429F /* LOOCryptString.m in Sources */,
 				35B03E5C230DE84D0045C031 /* Log.swift in Sources */,
-				E552F67023F2DCA90025FB6A /* FGAlert.swift in Sources */,
 				357562952315E57000DC882B /* FGPageHeader.swift in Sources */,
 				35756219231598DB00DC882B /* FGPageView.swift in Sources */,
 				3595F23222FA084700BA429F /* UILabel+Extension.swift in Sources */,
@@ -732,7 +728,7 @@
 				E5E107FE2352D5D70072D62E /* Class.swift in Sources */,
 				3595F23922FA08CF00BA429F /* Layout.swift in Sources */,
 				35B03E2E230C76890045C031 /* ViewInterface.swift in Sources */,
-				E552F66E23F2DB7E0025FB6A /* FGAlertView.swift in Sources */,
+				E552F66E23F2DB7E0025FB6A /* FGAlertController.swift in Sources */,
 				357562312315B40200DC882B /* FGPageEntity.swift in Sources */,
 				E57CBE072343A5EA00880F5E /* UImageView+Extension.swift in Sources */,
 				3575620323158ADE00DC882B /* UIImage+Extension.swift in Sources */,

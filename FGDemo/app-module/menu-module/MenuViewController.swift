@@ -13,7 +13,7 @@ final class MenuViewController: UIViewController {
     // MARK: - Public properties -
     var presenter: MenuPresenterInterface!
     
-    private var alert: FGAlert?
+    //private var alert: FGAlert?
 
     // MARK: - Lifecycle -
     override func viewDidLoad() {
@@ -27,12 +27,12 @@ final class MenuViewController: UIViewController {
         presenter.pushFormView()
     }
     @IBAction func presentAlertView(_ sender: UIButton) {
-        alert = FGAlert(title: "hola", message: "Que hace")
+        /*alert = FGAlert(title: "hola", message: "Que hace")
         alert?.addAction(FGAlertAction(title: "Cerrar", handler: .done))
         alert?.addAction(FGAlertAction(title: "Aceptar", handler: .action, {
             print("hola")
         }))
-        alert?.present(container: self)
+        alert?.present(container: self)*/
     }
 
     // MARK: - deinit -

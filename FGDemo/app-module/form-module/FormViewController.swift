@@ -14,7 +14,7 @@ final class FormViewController: UIViewController {
     var presenter: FormPresenterInterface!
 
     private var errorView: FGErrorView?
-    private var alert: FGAlert?
+    //private var alert: FGAlert?
 
     // MARK: - IBOutlets -
     @IBOutlet private weak var runTextField: UITextField!
@@ -28,12 +28,12 @@ final class FormViewController: UIViewController {
         super.viewWillAppear(animated)
         registerNotifications()
         
-        alert = FGAlert(title: "hola", message: "Que hace")
+        /*alert = FGAlert(title: "hola", message: "Que hace")
         alert?.addAction(FGAlertAction(title: "Cerrar", handler: .done))
         alert?.addAction(FGAlertAction(title: "Aceptar", handler: .action, {
             print("hola")
         }))
-        alert?.present(container: self)
+        alert?.present(container: self)*/
     }
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)

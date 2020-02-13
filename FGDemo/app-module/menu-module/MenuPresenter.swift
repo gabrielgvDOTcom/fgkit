@@ -37,6 +37,15 @@ extension MenuPresenter: MenuPresenterInterface {
         router.navigate(to: .form)
     }
     func pushPageView() {
-        router.navigate(to: .page)
+        router.showActionAlert(
+            title: "hola",
+            message: "test",
+            actions: [
+                FGAlertAction(title: "cancelar", style: .cancel),
+                FGAlertAction(title: "aceptar", style: .default, handler: { (_) in
+                    print("hola que hace")
+                })
+            ]
+        )
     }
 }
