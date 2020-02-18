@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 	spec.platform = :ios, "10.0"
 	spec.requires_arc = true
 	spec.source = { git: "https://github.com/gabrielgvDOTcom/fgkit", tag: spec.version, submodules: true }
-	spec.resources = 'FGKit/**/*.{xcassets,xib,storyboard}' 
+	spec.resources = 'FGKit/**/*.{strings,xcassets,xib,storyboard}' 
 	spec.source_files = "FGKit/**/*.{h,swift}"
 	spec.static_framework = true
 end
