@@ -55,7 +55,7 @@ extension BaseRouter: RouterInterface {
     public func presentAlert(with title: String?, message: String?, actions: [UIAlertAction] = []) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         actions.isEmpty ?
-            alert.addAction(UIAlertAction(title: FGBundle().localized(key: "ok"), style: .cancel)) :
+            alert.addAction(UIAlertAction(title: Bundle.current.localizedString(forKey: "ok", value: nil, table: nil), style: .cancel)) :
             actions.forEach { alert.addAction($0) }
         navigationController?.present(alert, animated: true, completion: nil)
     }
@@ -69,7 +69,7 @@ extension BaseRouter: RouterInterface {
         let alert = FGAlertController(title: title, message: message, icon: icon)
         alert.modalPresentationStyle = .overCurrentContext
         actions.isEmpty ?
-            alert.addAction(FGAlertAction(title: FGBundle().localized(key: "ok"), style: .cancel)) :
+            alert.addAction(FGAlertAction(title: Bundle.current.localizedString(forKey: "ok", value: nil, table: nil), style: .cancel)) :
             actions.forEach { alert.addAction($0) }
         navigationController?.present(alert, animated: true, completion: nil)
     }

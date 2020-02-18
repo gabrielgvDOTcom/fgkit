@@ -39,7 +39,7 @@ extension FGFormRule {
     }
 
     private func message(key: String) -> String {
-        return FGBundle().localized(key: key)
+        return Bundle.current.localizedString(forKey: key, value: nil, table: nil)
     }
 }
 class FGFormField {
@@ -69,7 +69,7 @@ public class FGForm {
                     code: 0,
                     userInfo: [
                         NSLocalizedRecoverySuggestionErrorKey: String(format: msg, f.placeholder),
-                        NSLocalizedDescriptionKey: FGBundle().localized(key: "form.title")
+                        NSLocalizedDescriptionKey: Bundle.current.localizedString(forKey: "form.title", value: nil, table: nil)
                     ]
                 ))
             }
