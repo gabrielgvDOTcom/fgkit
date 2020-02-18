@@ -36,10 +36,10 @@ extension FormPresenter: FormPresenterInterface {
     func validate(run: String) {
         let form = FGForm()
         form.add(run, "RUN", with: [.required, .number(.only)])
-        form.validate { (error) -> (Void) in
-            if let error = error {
-                print(error)
-            }
+        form.validate({
+            print("good")
+        }) { (error) in
+            print(error)
         }
     }
 }
