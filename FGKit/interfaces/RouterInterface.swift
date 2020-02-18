@@ -8,16 +8,14 @@
 
 import UIKit
 
-private var bundle = Bundle(identifier: "cl.weekg.FGKit")
-
 open class BaseRouter {
     
     private unowned var _viewController: UIViewController
     private var _temporaryStoredViewController: UIViewController?
     
     public init(viewController: UIViewController) {
-        _temporaryStoredViewController = viewController
         _viewController = viewController
+        _temporaryStoredViewController = viewController
     }
 }
 public extension BaseRouter {
@@ -57,7 +55,7 @@ extension BaseRouter: RouterInterface {
     public func presentAlert(with title: String?, message: String?, actions: [UIAlertAction] = []) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         actions.isEmpty ?
-            alert.addAction(UIAlertAction(title: bundle!.localizedString(forKey: "ok", value: nil, table: nil), style: .cancel)) :
+            alert.addAction(UIAlertAction(title: FGBundle().localized(key: "ok"), style: .cancel)) :
             actions.forEach { alert.addAction($0) }
         navigationController?.present(alert, animated: true, completion: nil)
     }
@@ -71,7 +69,7 @@ extension BaseRouter: RouterInterface {
         let alert = FGAlertController(title: title, message: message, icon: icon)
         alert.modalPresentationStyle = .overCurrentContext
         actions.isEmpty ?
-            alert.addAction(FGAlertAction(title: bundle!.localizedString(forKey: "ok", value: nil, table: nil), style: .cancel)) :
+            alert.addAction(FGAlertAction(title: FGBundle().localized(key: "ok"), style: .cancel)) :
             actions.forEach { alert.addAction($0) }
         navigationController?.present(alert, animated: true, completion: nil)
     }

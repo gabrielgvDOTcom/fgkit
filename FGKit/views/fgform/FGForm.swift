@@ -39,8 +39,7 @@ extension FGFormRule {
     }
 
     private func message(key: String) -> String {
-        guard let msg = Bundle(identifier: "cl.weekg.FGKit")?.localizedString(forKey: key, value: nil, table: nil) else { return "" }
-        return msg
+        return FGBundle().localized(key: key)
     }
 }
 class FGFormField {
@@ -62,28 +61,23 @@ public class FGForm {
     
     public init() {}
     
-    public func add(_ field: String, _ placeholder: String, with rules: [FGFormRule]) {
-        form.append(FGFormField(field: field, placeholder: placeholder, rules: rules))
-    }
     public func validate(_ success: () -> Void, _ error: (NSError) -> Void) {
         for f in form {
             if let msg = f.rules.compactMap({ $0.validate(f.field) }).first {
-                let bundle = Bundle(for: type(of: self))
                 return error(NSError(
                     domain: "cl.weekg.FGKit",
                     code: 0,
                     userInfo: [
                         NSLocalizedRecoverySuggestionErrorKey: String(format: msg, f.placeholder),
-                        NSLocalizedDescriptionKey: bundle.localizedString(
-                            forKey: "form.title",
-                            value: nil,
-                            table: nil
-                        )
+                        NSLocalizedDescriptionKey: FGBundle().localized(key: "form.title")
                     ]
                 ))
             }
         }
         success()
+    }
+    public func add(_ field: String, _ placeholder: String, with rules: [FGFormRule]) {
+        form.append(FGFormField(field: field, placeholder: placeholder, rules: rules))
     }
 
     @available(*, deprecated, message: "")

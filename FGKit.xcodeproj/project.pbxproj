@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		353D12112301B8AA001C0A2D /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12102301B8AA001C0A2D /* Form.swift */; };
+		353D12112301B8AA001C0A2D /* FGForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12102301B8AA001C0A2D /* FGForm.swift */; };
 		353D12132301C91B001C0A2D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353D12122301C91B001C0A2D /* String+Extension.swift */; };
 		3575620323158ADE00DC882B /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3575620223158ADE00DC882B /* UIImage+Extension.swift */; };
 		35756219231598DB00DC882B /* FGPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35756218231598DB00DC882B /* FGPageView.swift */; };
@@ -69,6 +69,7 @@
 		35B03E5C230DE84D0045C031 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B03E5B230DE84D0045C031 /* Log.swift */; };
 		35F524E22318799E009308DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F524E12318799E009308DD /* Assets.xcassets */; };
 		E538AF9323FC2FAB0033F45B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E538AF9523FC2FAB0033F45B /* Localizable.strings */; };
+		E538AF9923FC53040033F45B /* FGBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E538AF9823FC53040033F45B /* FGBundle.swift */; };
 		E552F66623F2D7490025FB6A /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66523F2D7490025FB6A /* UIView+Extension.swift */; };
 		E552F66923F2DA690025FB6A /* FGAlertStyled.swift in Sources */ = {isa = PBXBuildFile; fileRef = E552F66823F2DA690025FB6A /* FGAlertStyled.swift */; };
 		E552F66C23F2DAFA0025FB6A /* FGAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = E552F66B23F2DAFA0025FB6A /* FGAlert.xib */; };
@@ -111,7 +112,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		353D12102301B8AA001C0A2D /* Form.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		353D12102301B8AA001C0A2D /* FGForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGForm.swift; sourceTree = "<group>"; };
 		353D12122301C91B001C0A2D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		3575620223158ADE00DC882B /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		35756218231598DB00DC882B /* FGPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGPageView.swift; sourceTree = "<group>"; };
@@ -178,6 +179,7 @@
 		E538AF8F23FC2F510033F45B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		E538AF9423FC2FAB0033F45B /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		E538AF9623FC2FAE0033F45B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E538AF9823FC53040033F45B /* FGBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGBundle.swift; sourceTree = "<group>"; };
 		E552F66523F2D7490025FB6A /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E552F66823F2DA690025FB6A /* FGAlertStyled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FGAlertStyled.swift; sourceTree = "<group>"; };
 		E552F66B23F2DAFA0025FB6A /* FGAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FGAlert.xib; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		3575620423158F6400DC882B /* views */ = {
 			isa = PBXGroup;
 			children = (
+				E538AF9723FC52A00033F45B /* fgform */,
 				E552F66723F2DA1F0025FB6A /* fgalert */,
 				359A654A2318337400C8C00E /* fgerror */,
 				357562052315904A00DC882B /* fgpage */,
@@ -385,7 +388,6 @@
 				E5ACB80A230CD8C000A9D614 /* NibDesignable.swift */,
 				35B03E5B230DE84D0045C031 /* Log.swift */,
 				E5E107FD2352D5D70072D62E /* Class.swift */,
-				353D12102301B8AA001C0A2D /* Form.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -527,6 +529,15 @@
 				E538AF9523FC2FAB0033F45B /* Localizable.strings */,
 			);
 			path = kit;
+			sourceTree = "<group>";
+		};
+		E538AF9723FC52A00033F45B /* fgform */ = {
+			isa = PBXGroup;
+			children = (
+				353D12102301B8AA001C0A2D /* FGForm.swift */,
+				E538AF9823FC53040033F45B /* FGBundle.swift */,
+			);
+			path = fgform;
 			sourceTree = "<group>";
 		};
 		E552F66723F2DA1F0025FB6A /* fgalert */ = {
@@ -737,13 +748,14 @@
 				357562952315E57000DC882B /* FGPageHeader.swift in Sources */,
 				35756219231598DB00DC882B /* FGPageView.swift in Sources */,
 				3595F23222FA084700BA429F /* UILabel+Extension.swift in Sources */,
-				353D12112301B8AA001C0A2D /* Form.swift in Sources */,
+				353D12112301B8AA001C0A2D /* FGForm.swift in Sources */,
 				359A654C2318342700C8C00E /* FGErrorView.swift in Sources */,
 				3595F23522FA084700BA429F /* UserDefaults+Extension.swift in Sources */,
 				E5E107FE2352D5D70072D62E /* Class.swift in Sources */,
 				3595F23922FA08CF00BA429F /* Layout.swift in Sources */,
 				35B03E2E230C76890045C031 /* ViewInterface.swift in Sources */,
 				E552F66E23F2DB7E0025FB6A /* FGAlertController.swift in Sources */,
+				E538AF9923FC53040033F45B /* FGBundle.swift in Sources */,
 				357562312315B40200DC882B /* FGPageEntity.swift in Sources */,
 				E57CBE072343A5EA00880F5E /* UImageView+Extension.swift in Sources */,
 				3575620323158ADE00DC882B /* UIImage+Extension.swift in Sources */,
