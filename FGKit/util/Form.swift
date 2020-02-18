@@ -71,7 +71,7 @@ public class FGForm {
         for f in form {
             if let msg = f.rules.compactMap({ $0.validate(f.field) }).first {
                 return error(NSError(
-                    domain: bundle!.bundleIdentifier!,
+                    domain: "cl.weekg.FGKit",
                     code: 0,
                     userInfo: [
                         NSLocalizedRecoverySuggestionErrorKey: String(format: msg, f.placeholder),
