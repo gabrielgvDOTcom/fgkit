@@ -8,8 +8,6 @@
 
 import Foundation
 
-private var bundle = Bundle(identifier: "cl.weekg.FGKit")
-
 public enum FGFormRule {
 
     case dni
@@ -41,7 +39,7 @@ extension FGFormRule {
     }
 
     private func message(key: String) -> String {
-        guard let msg = bundle?.localizedString(forKey: key, value: nil, table: nil) else { return "" }
+        guard let msg = Bundle(identifier: "cl.weekg.FGKit")?.localizedString(forKey: key, value: nil, table: nil) else { return "" }
         return msg
     }
 }
@@ -70,12 +68,13 @@ public class FGForm {
     public func validate(_ success: () -> Void, _ error: (NSError) -> Void) {
         for f in form {
             if let msg = f.rules.compactMap({ $0.validate(f.field) }).first {
+                let bundle = Bundle(for: type(of: self))
                 return error(NSError(
                     domain: "cl.weekg.FGKit",
                     code: 0,
                     userInfo: [
                         NSLocalizedRecoverySuggestionErrorKey: String(format: msg, f.placeholder),
-                        NSLocalizedDescriptionKey: bundle!.localizedString(
+                        NSLocalizedDescriptionKey: bundle.localizedString(
                             forKey: "form.title",
                             value: nil,
                             table: nil
@@ -86,6 +85,7 @@ public class FGForm {
         }
         success()
     }
+
     @available(*, deprecated, message: "")
     public func validate(_ completion: @escaping (NSError?) -> Void) {
         for f in form {
