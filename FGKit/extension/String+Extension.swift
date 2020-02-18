@@ -36,9 +36,15 @@ public extension String {
            return [0, 1, self.count - 1, self.count - 2].contains(index) ? char : "X"
         })
     }
-
+    var localized: String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+    }
+    
     func width(_ font: UIFont) -> CGFloat {
         return self.size(withAttributes: [NSAttributedString.Key.font: font]).width
+    }
+    func localized(withComment comment: String) -> String {
+        return NSLocalizedString(self, comment: comment)
     }
     func height(_ font: UIFont, _ padding: CGFloat = 0) -> CGFloat {
         let constraintRect = CGSize(width: width(font), height: .greatestFiniteMagnitude)
