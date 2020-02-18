@@ -11,8 +11,8 @@
 "form.required" = "%@ es requerido";
 "form.incorrect.format" = "%@ no contiene un formato correcto";
 "form.number.only" = "%@ únicamente puede contener dígitos";
-"form.number.min" = "%@ no puede ser menor de \(i) caracteres";
-"form.number.max" = "%@ no puede ser mayor de \(i) caracteres";
+"form.number.min" = "%@ no puede ser menor de %i caracteres";
+"form.number.max" = "%@ no puede ser mayor de %i caracteres";
 "form.equal_to" = "Existen campos en el formulario que no coinciden";
 
 "ok" = "Aceptar";

@@ -11,8 +11,8 @@
 "form.required" = "%@ is required";
 "form.incorrect.format" = "%@ does not contain a correct format";
 "form.number.only" = "%@ can only contain digits";
-"form.number.min" = "%@ cannot be less than \(i) characters.";
-"form.number.max" = "%@ cannot be greater than \(i) characters.";
+"form.number.min" = "%@ cannot be less than %i characters.";
+"form.number.max" = "%@ cannot be greater than %i characters.";
 "form.equal_to" = "There are fields in the form that do not match";
 
 "ok" = "OK";

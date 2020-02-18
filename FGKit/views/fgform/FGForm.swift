@@ -31,15 +31,15 @@ extension FGFormRule {
         case .email: guard t.email else { return message(key: "form.incorrect.format") }
         case .required: guard t.length >= 1 else { return message(key: "form.required") }
         case .equal_to(let i): guard t.elementsEqual(i) else { return message(key: "form.equal_to") }
-        case .number(.min(let i)): guard t.length >= i else { return message(key: "form.number.min") }
-        case .number(.max(let i)): guard t.length <= i else { return message(key: "form.number.max") }
+        case .number(.min(let i)): guard t.length >= i else { return String(format: message(key: "form.number.min"), "%@", i) }
+        case .number(.max(let i)): guard t.length <= i else { return String(format: message(key: "form.number.max"), "%@", i) }
         case .number(.only): guard CharacterSet.decimalDigits.isSuperset(of: CharacterSet(charactersIn: t)) else { return message(key: "form.number.only") }
         }
         return nil
     }
 
     private func message(key: String) -> String {
-        return NSLocalizedString(key, tableName: nil, bundle: Bundle.current, comment: "")
+        return NSLocalizedString(key, tableName: "FGKit", bundle: Bundle.current, comment: "")
     }
 }
 class FGFormField {
@@ -69,7 +69,7 @@ public class FGForm {
                     code: 0,
                     userInfo: [
                         NSLocalizedRecoverySuggestionErrorKey: String(format: msg, f.placeholder),
-                        NSLocalizedDescriptionKey: NSLocalizedString("form.title", tableName: nil, bundle: Bundle.current, comment: "")
+                        NSLocalizedDescriptionKey: NSLocalizedString("form.title", tableName: "FGKit", bundle: Bundle.current, comment: "")
                     ]
                 ))
             }
