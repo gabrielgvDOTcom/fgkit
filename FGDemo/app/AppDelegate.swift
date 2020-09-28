@@ -17,11 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         let navigation = UINavigationController()
-        navigation.setRootRouter(MenuRouter())
+        navigation.setRootRouter(MainRouter())
+        
+        //create instance of swRevealVC based on front and rear VC
+        let swRevealVC = SWRevealViewController(
+            rearViewController: SidebarRouter().viewController,
+            frontViewController: navigation
+        );
+        swRevealVC?.toggleAnimationType = SWRevealToggleAnimationType.easeOut;
+        swRevealVC?.toggleAnimationDuration = 0.30;
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigation
+        window?.rootViewController = swRevealVC
         window?.makeKeyAndVisible()
+
+        /*let navigation = UINavigationController()
+        navigation.setRootRouter(SidebarRouter())
+
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = navigation
+        window?.makeKeyAndVisible()*/
         
         return true
     }

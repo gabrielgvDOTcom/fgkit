@@ -20,10 +20,8 @@ public struct FGSecurity {
         return Data(bytes: hash, count: digestLength)
     }
     public static func sha256(_ str: String) -> String {
-        if let stringData = str.data(using: String.Encoding.utf8) {
-            return hexStringFromData(digest(input: stringData))
-        }
-        return ""
+        guard let stringData = str.data(using: String.Encoding.utf8) else { return "" }
+        return hexStringFromData(digest(input: stringData))
     }
     public static func hexStringFromData(_ input: Data) -> String {
         return digest(input: input).map{ String(format: "%02hhx", $0)}.joined()

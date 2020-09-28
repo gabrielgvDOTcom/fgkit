@@ -6,7 +6,7 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension String {
     
@@ -17,7 +17,7 @@ public extension String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines).count
     }
     var price: String {
-        return ((self.numbers as NSString).integerValue).price
+        return ((self.numbers as NSString).integerValue).toClpPrice
     }
     var numbers: String {
         var amountWithPrefix = self
@@ -25,13 +25,51 @@ public extension String {
         amountWithPrefix = regex.stringByReplacingMatches(in: amountWithPrefix, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, self.count), withTemplate: "")
         return amountWithPrefix
     }
-
+    var hideEmailPrefix: String {
+       if self.contains("@") {
+            let part = self.components(separatedBy: "@")
+            let newText = String(repeating: "*", count: part[0].count)
+            return newText + "@" + part[1]
+       }
+       return self
+    }
+    var hidePhonePrefix: String {
+        return String(self.enumerated().map { index, char in
+           return [0, 1, self.count - 1, self.count - 2].contains(index) ? char : "X"
+        })
+    }
+    var localized: String {
+        return NSLocalizedString(self, tableName: nil, bundle: Bundle.main, value: "", comment: "")
+    }
+    
     func width(_ font: UIFont) -> CGFloat {
         return self.size(withAttributes: [NSAttributedString.Key.font: font]).width
     }
-    func height(_ width: CGFloat, _ font: UIFont, _ padding: CGFloat = 0) -> CGFloat {
-        let constraintRect = CGSize(width: width, height: .greatestFiniteMagnitude)
-        let boundingBox = self.boundingRect(with: constraintRect, options: [.usesLineFragmentOrigin, .usesFontLeading], attributes: [NSAttributedString.Key.font: font], context: nil)
+    func localized(withComment comment: String) -> String {
+        return NSLocalizedString(self, comment: comment)
+    }
+    func height(_ font: UIFont, _ padding: CGFloat = 0) -> CGFloat {
+        let constraintRect = CGSize(width: width(font), height: .greatestFiniteMagnitude)
+        let boundingBox = self.boundingRect(
+            with: constraintRect,
+            options: [.usesLineFragmentOrigin, .usesFontLeading],
+            attributes: [NSAttributedString.Key.font: font],
+            context: nil
+        )
         return boundingBox.height + padding
+    }
+}
+public extension NSMutableAttributedString {
+    
+    @discardableResult func normal(_ text: String) -> NSMutableAttributedString {
+        let normal = NSAttributedString(string: text)
+        append(normal)
+        return self
+    }
+    @discardableResult func bold(_ text: String, font: UIFont) -> NSMutableAttributedString {
+        let attrs: [NSAttributedString.Key: Any] = [.font: font]
+        let boldString = NSMutableAttributedString(string:text, attributes: attrs)
+        append(boldString)
+        return self
     }
 }

@@ -15,3 +15,6 @@ FOUNDATION_EXPORT double FGKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char FGKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <FGKit/PublicHeader.h>
+
+#import <FGKit/DJailbreakDetector.h>
+#import <FGKit/SWRevealViewController.h>

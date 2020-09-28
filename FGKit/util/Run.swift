@@ -25,7 +25,7 @@ public struct FGRun {
 
         var tmp = run
         if let prs = params, !prs.isEmpty {
-            for item in prs {
+            Dollar.each(prs) { (item) in
                 tmp = tmp.replacingOccurrences(of: item, with: "", options: .literal, range: nil)
             }
         } else {

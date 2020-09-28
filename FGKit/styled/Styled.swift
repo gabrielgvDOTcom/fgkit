@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Foundation
 
 /// Estructura de Estilos, funciones y estructuras utiles para el manejo de estilos en elementos.
 public struct Styled {
@@ -84,6 +83,8 @@ public struct Styled {
         
         /// color del fondo
         public let bgColor: UIColor
+        /// sombreado de la vista
+        public let shadow: ShadowStyle?
         /// borde redondeado
         public let cornerRadius: CGFloat
         
@@ -94,17 +95,26 @@ public struct Styled {
          ```
          Styled.View(
             bgColor: UIColor.gray,
-            corner: 5.0
+            corner: 5.0,
+            shadow: ShadowStyle(
+                color: .red,
+                opacity: 0.4,
+                offSet: CGSize(width: 0, height: 15),
+                radius: 15,
+                scale: true
+            )
          )
          ```
          - Parameters:
              - bgColor: color del fondo
+             - shadow: sombreado de la vista
              - corner: borde redondeado en Float
          
          - Returns: Un objeto tipo Styled.View
          */
-        public init(bgColor: UIColor, corner: CGFloat) {
+        public init(bgColor: UIColor, corner: CGFloat, shadow: ShadowStyle?) {
             self.bgColor = bgColor
+            self.shadow = shadow
             self.cornerRadius = corner
         }
     }

@@ -6,7 +6,7 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 open class FGErrorStyled: NSObject {
     

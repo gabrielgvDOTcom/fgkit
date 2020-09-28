@@ -14,8 +14,8 @@ open class BaseRouter {
     private var _temporaryStoredViewController: UIViewController?
     
     public init(viewController: UIViewController) {
-        _temporaryStoredViewController = viewController
         _viewController = viewController
+        _temporaryStoredViewController = viewController
     }
 }
 public extension BaseRouter {
@@ -35,10 +35,10 @@ public protocol RouterInterface: class {
     func popFromNavigationController(animated: Bool)
 
     func presentErrorAlert(with message: String?)
-    func presentAlert(with title: String?, message: String?)
     func presentAlert(with title: String?, message: String?, actions: [UIAlertAction])
-
     func presentActionSheet(with title: String?, message: String?, actions: [UIAlertAction])
+
+    func presentCustomAlert(with title: String?, message: String?, icon: UIImage?, actions: [FGAlertAction])
 }
 extension BaseRouter: RouterInterface {
 
@@ -50,22 +50,27 @@ extension BaseRouter: RouterInterface {
     }
 
     public func presentErrorAlert(with message: String?) {
-        let okAction = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
-        presentAlert(with: "Ha ocurrido un error", message: message, actions: [okAction])
+        presentAlert(with: "Ha ocurrido un error", message: message)
     }
-    public func presentAlert(with title: String?, message: String?) {
-        let okAction = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
-        presentAlert(with: title, message: message, actions: [okAction])
-    }
-    public func presentAlert(with title: String?, message: String?, actions: [UIAlertAction]) {
+    public func presentAlert(with title: String?, message: String?, actions: [UIAlertAction] = []) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        actions.isEmpty ?
+            alert.addAction(UIAlertAction(title: NSLocalizedString("ok", tableName: "FGKit", bundle: Bundle.current, comment: ""), style: .cancel)) :
+            actions.forEach { alert.addAction($0) }
+        navigationController?.present(alert, animated: true, completion: nil)
+    }
+    public func presentActionSheet(with title: String?, message: String?, actions: [UIAlertAction]) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
         actions.forEach { alert.addAction($0) }
         navigationController?.present(alert, animated: true, completion: nil)
     }
 
-    public func presentActionSheet(with title: String?, message: String?, actions: [UIAlertAction]) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
-        actions.forEach { alert.addAction($0) }
+    public func presentCustomAlert(with title: String?, message: String?, icon: UIImage? = nil, actions: [FGAlertAction] = []) {
+        let alert = FGAlertController(title: title, message: message, icon: icon)
+        alert.modalPresentationStyle = .overCurrentContext
+        actions.isEmpty ?
+            alert.addAction(FGAlertAction(title: NSLocalizedString("ok", tableName: "FGKit", bundle: Bundle.current, comment: ""), style: .cancel)) :
+            actions.forEach { alert.addAction($0) }
         navigationController?.present(alert, animated: true, completion: nil)
     }
 }

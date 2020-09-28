@@ -58,7 +58,7 @@ open class FGPageView: UIViewController {
 
     // MARK: - deinit -
     deinit {
-        debugLog("\(String(describing: self)) deinit")
+        debugPrint("\(String(describing: self)) deinit")
     }
 }
 extension FGPageView: UIScrollViewDelegate {

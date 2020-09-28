@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  FGKit
+
+  Created by Gabriel Gárate vivanco on 18-02-20.
+  Copyright © 2020 weeKG. All rights reserved.
+*/
+
+"form.title" = "Formulario";
+
+"form.required" = "%@ es requerido";
+"form.incorrect.format" = "%@ no contiene un formato correcto";
+"form.number.only" = "%@ únicamente puede contener dígitos";
+"form.number.min" = "%@ no puede ser menor de %i caracteres";
+"form.number.max" = "%@ no puede ser mayor de %i caracteres";
+"form.equal_to" = "Existen campos en el formulario que no coinciden";
+
+"ok" = "Aceptar";
