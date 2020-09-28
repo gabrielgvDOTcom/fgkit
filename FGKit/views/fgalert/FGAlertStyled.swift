@@ -6,6 +6,8 @@
 //  Copyright © 2020 weeKG. All rights reserved.
 //
 
+import UIKit
+
 public extension Styled {
         
     struct FGAlert {

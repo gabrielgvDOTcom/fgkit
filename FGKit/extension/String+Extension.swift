@@ -6,6 +6,8 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
+import UIKit
+
 public extension String {
     
     var email: Bool {
@@ -15,7 +17,7 @@ public extension String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines).count
     }
     var price: String {
-        return ((self.numbers as NSString).integerValue).price
+        return ((self.numbers as NSString).integerValue).toClpPrice
     }
     var numbers: String {
         var amountWithPrefix = self

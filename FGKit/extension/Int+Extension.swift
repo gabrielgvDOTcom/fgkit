@@ -6,11 +6,11 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public extension Int {
     
-    var price: String {
+    var toClpPrice: String {
         let number = NSNumber(value: self)
         guard number != 0 as NSNumber else { return "$0" }
 

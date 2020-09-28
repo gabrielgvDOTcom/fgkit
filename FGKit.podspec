@@ -4,11 +4,11 @@ Pod::Spec.new do |spec|
 	spec.summary = "FGKit"
 	spec.homepage = "https://github.com/gabrielgvDOTcom/fgkit"
 	spec.license = { :type => "MIT", :file => "LICENSE.txt" }
-	spec.authors = { "weeKG" => "hola@weekg.cl" }
-	spec.social_media_url = "https://twitter.com/weekg"
+	spec.authors = { "Gabriel Gárate Vivanco" => "hola@gabrielgv.com" }
+	spec.social_media_url = "https://twitter.com/gabrielgv"
 	spec.swift_version = "5.0"
 
-	spec.platform = :ios, "10.0"
+	spec.platform = :ios, "11.0"
 	spec.requires_arc = true
 	spec.source = { git: "https://github.com/gabrielgvDOTcom/fgkit", tag: spec.version, submodules: true }
 	spec.resources = 'FGKit/**/*.{strings,xcassets,xib,storyboard}' 

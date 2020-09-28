@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Foundation
 
 /// Estructura de Estilos, funciones y estructuras utiles para el manejo de estilos en elementos.
 public struct Styled {

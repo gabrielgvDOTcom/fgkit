@@ -6,7 +6,6 @@
 //  Copyright © 2019 weeKG. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public extension UIStoryboard {

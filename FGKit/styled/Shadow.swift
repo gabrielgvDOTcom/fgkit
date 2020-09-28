@@ -6,7 +6,7 @@
 //  Copyright © 2020 weeKG. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public class ShadowStyle {
     

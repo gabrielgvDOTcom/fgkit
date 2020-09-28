@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Foundation
 
 public extension FGAlertAction {
     
@@ -106,6 +105,6 @@ public class FGAlertController: UIViewController {
     // MARK: - deinit -
     deinit {
         NotificationCenter.default.removeObserver("CloseAlertView")
-        debugLog("\(String(describing: self)) deinit")
+        debugPrint("\(String(describing: self)) deinit")
     }
 }
