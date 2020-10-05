@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let navigation = UINavigationController()
+        /*let navigation = UINavigationController()
         navigation.setRootRouter(MainRouter())
         
         //create instance of swRevealVC based on front and rear VC
@@ -29,14 +29,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = swRevealVC
-        window?.makeKeyAndVisible()
+        window?.makeKeyAndVisible()*/
 
-        /*let navigation = UINavigationController()
+        let navigation = UINavigationController()
         navigation.setRootRouter(SidebarRouter())
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navigation
-        window?.makeKeyAndVisible()*/
+        window?.makeKeyAndVisible()
         
         return true
     }

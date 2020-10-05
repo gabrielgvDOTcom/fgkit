@@ -26,7 +26,7 @@ final class MainView: UIViewController {
     
     // MARK: - Action´s Buttons -
     @IBAction func menuAction(_ sender: UIBarButtonItem) {
-        self.revealViewController()?.revealToggle(animated: true)
+        // self.revealViewController()?.revealToggle(animated: true)
     }
     
     // MARK: - Private Functions -

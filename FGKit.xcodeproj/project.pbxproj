@@ -62,8 +62,6 @@
 		E56B2F51252024F70049BBCC /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B2F50252024F70049BBCC /* MainPresenter.swift */; };
 		E56B2F54252025050049BBCC /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B2F53252025050049BBCC /* MainRouter.swift */; };
 		E56B2F57252025100049BBCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56B2F56252025100049BBCC /* Main.storyboard */; };
-		E56B2F6B25202BE50049BBCC /* SWRevealViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E56B2F6925202BE50049BBCC /* SWRevealViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E56B2F6C25202BE50049BBCC /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E56B2F6A25202BE50049BBCC /* SWRevealViewController.m */; };
 		E56B2F762520F2190049BBCC /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B2F752520F2190049BBCC /* SidebarView.swift */; };
 		E56B2F7B2520F2280049BBCC /* Sidebar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E56B2F7A2520F2280049BBCC /* Sidebar.storyboard */; };
 		E56B2F7E2520F2780049BBCC /* SidebarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56B2F7D2520F2780049BBCC /* SidebarProtocol.swift */; };
@@ -170,8 +168,6 @@
 		E56B2F50252024F70049BBCC /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		E56B2F53252025050049BBCC /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		E56B2F56252025100049BBCC /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		E56B2F6925202BE50049BBCC /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		E56B2F6A25202BE50049BBCC /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		E56B2F752520F2190049BBCC /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		E56B2F7A2520F2280049BBCC /* Sidebar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sidebar.storyboard; sourceTree = "<group>"; };
 		E56B2F7D2520F2780049BBCC /* SidebarProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarProtocol.swift; sourceTree = "<group>"; };
@@ -348,7 +344,6 @@
 			isa = PBXGroup;
 			children = (
 				E56B2F9F252124E60049BBCC /* Dollar */,
-				E56B2F6825202BCE0049BBCC /* SWRevealViewController */,
 				3595F24C22FA098000BA429F /* DSJailBreakDetection */,
 			);
 			path = libraries;
@@ -512,15 +507,6 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		E56B2F6825202BCE0049BBCC /* SWRevealViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E56B2F6925202BE50049BBCC /* SWRevealViewController.h */,
-				E56B2F6A25202BE50049BBCC /* SWRevealViewController.m */,
-			);
-			path = SWRevealViewController;
-			sourceTree = "<group>";
-		};
 		E56B2F742520F2090049BBCC /* Sidebar */ = {
 			isa = PBXGroup;
 			children = (
@@ -570,7 +556,6 @@
 			files = (
 				3595F22122FA073000BA429F /* FGKit.h in Headers */,
 				3595F26422FA098000BA429F /* DJailbreakDetector.h in Headers */,
-				E56B2F6B25202BE50049BBCC /* SWRevealViewController.h in Headers */,
 				3595F26222FA098000BA429F /* LOOCryptString.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,7 +712,6 @@
 				3595F27422FA0ADA00BA429F /* Run.swift in Sources */,
 				3595F23422FA084700BA429F /* UIButton+Extension.swift in Sources */,
 				E56B2FA52521254F0049BBCC /* AutoCurry.swift in Sources */,
-				E56B2F6C25202BE50049BBCC /* SWRevealViewController.m in Sources */,
 				E552F66623F2D7490025FB6A /* UIView+Extension.swift in Sources */,
 				35B03E34230C770A0045C031 /* RouterInterface.swift in Sources */,
 				E5BA4BAB23208CD200CB9BC7 /* UITextField+Extension.swift in Sources */,
@@ -806,6 +790,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.weekg.FGDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FGDemo/FGDemo-Header.h";
@@ -832,6 +817,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.weekg.FGDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "FGDemo/FGDemo-Header.h";
@@ -972,6 +958,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SNLHFZ2J8G;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -985,6 +972,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = cl.weekg.FGKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -1000,6 +988,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SNLHFZ2J8G;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1013,6 +1002,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = cl.weekg.FGKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
